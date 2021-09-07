@@ -1,0 +1,263 @@
+@import "variables";
+@import "type";
+  
+.hero, .about, .building {
+    z-index: 10;
+    
+    &>* {
+        z-index: 10;
+
+        &>* {
+            z-index: 10;
+        }
+    }
+}
+
+.hero {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: pem(60px) 1fr;
+    grid-template-areas: "desc" "title";
+    background-color: transparent;
+    padding-left: pem(107px);
+    padding-right: pem(50px);
+    padding-top: pem(73px);
+    max-width: pem(1700px);
+
+    h1 {
+        font-family: $mono;
+        font-size: pem(18px);
+        line-height: pem(36px, 18px);
+        text-transform: lowercase;
+        z-index: 10;
+    }
+
+    @include mobile() {
+        h1 {
+            font-size: pem(15px);
+        }
+    }
+
+    h2 {
+        @extend %hype-set;
+        z-index: 10;
+        text-align: center;
+    }
+
+    h3 {
+        @extend %section-sub;
+        margin-top: pem(60px, 24px);
+        margin-bottom: pem(14px, 24px);
+        margin-left: pem(10px, 24px);
+        z-index: 10;
+        text-align: center;
+    }
+
+    a {
+        position: relative;
+        font-size: pem(18px);
+        line-height: 88%;
+        letter-spacing: 0;
+        margin-left: pem(10px, 18px);
+        z-index: 10;
+    }
+
+    .lab_description {
+        grid-area: desc;
+        font-size: pem(13px);
+        line-height: 125%;
+        letter-spacing: 0;
+        margin-left: pem(23px, 13px);
+    }
+
+    .project_title {
+        grid-area: title;
+        align-self: center;
+        justify-self: end;
+        width: pem(675px);
+        z-index: 10;
+    }
+
+    .big_update {
+        position: relative;
+        grid-area: title;
+        align-self: end;
+        justify-self: start;
+        width: 85%;
+        z-index: 10;
+        padding-bottom: pem(150px);
+        margin-left: pem(23px);
+        
+        p {
+            position: absolute;
+            right: 0;
+            margin-top: pem(15px);
+        }
+
+        a {
+            position: absolute;
+            right: 0;
+            margin-top: pem(10px);
+        }
+    }
+
+}
+
+.hotfire {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    object-fit: cover;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1050px) {
+    .big_update {
+        h2 {
+            font-size: pem(150px);
+        }
+    }
+}
+
+@include mobile() {
+    .big_update {
+        padding-bottom: 20vh !important;
+        h2 {
+            text-align: left;
+        }
+    }
+
+    .hotfire {
+        object-position: 35% 50%;
+    }
+}
+
+@include mobile() {
+    .hero {
+        padding: 0 5%;
+
+        .project_title {
+            justify-self: center;
+            align-self: center;
+            width: pem(320px, 12px);
+        }
+
+        .lab_description {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    }
+}
+
+.hiringbanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: pem(50px) pem(107px);
+
+    h1 {
+        @extend %section-header;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.projecthighlight {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title";
+    background-color: transparent;
+    padding-left: pem(107px);
+    padding-right: pem(50px);
+    padding-top: pem(73px);
+    max-width: pem(1700px);
+    padding-bottom: pem(73px);
+
+    div {
+        grid-area: title;
+        align-self: start;
+        justify-self: end;
+        width: pem(675px);
+        z-index: 10;
+    }
+
+    h1 {
+        font-family: $mono;
+        font-size: pem(18px);
+        line-height: pem(36px, 18px);
+        text-transform: lowercase;
+        z-index: 10;
+    }
+
+    @include mobile() {
+        h1 {
+            font-size: pem(15px);
+        }
+    }
+
+    h2 {
+        @extend %hype-set;
+        z-index: 10;
+    }
+
+    h3 {
+        @extend %section-sub;
+        margin-top: pem(60px, 24px);
+        margin-bottom: pem(14px, 24px);
+        margin-left: pem(10px, 24px);
+        z-index: 10;
+    }
+
+    a {
+        position: relative;
+        font-size: pem(18px);
+        line-height: 88%;
+        letter-spacing: 0;
+        margin-left: pem(10px, 18px);
+        z-index: 10;
+    }
+}
+
+.halcyon {
+    position: absolute;
+    width: pem(126px);
+    height: pem(1057px);
+    left: 45%;
+    top: pem(-325px);
+    transform: rotate(68deg);
+    z-index: 2;
+    object-fit: contain;
+}
+
+.earth {
+    position: absolute;
+    width: pem(325px);
+    height: pem(300px);
+    left: 0;
+    bottom: pem(-120px);
+    z-index: 1;
+    object-fit: contain;
+}
+
+@include mobile() {
+    .halcyon {
+        font-size: pem(29px);
+        width: pem(50.99px);
+        height: pem(426.57px);
+        top: pem(-50px);
+        left: 43%;
+        transform: rotate(60deg);
+    }
+    
+    .earth {
+        width: pem(1136.15px);
+        height: pem(1141.21px);
+        left: pem(-900px);
+        top: pem(300px);
+    }
+}

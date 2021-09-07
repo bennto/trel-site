@@ -1,0 +1,129 @@
+@import "variables";
+
+.hero {
+    position: relative;
+    height: pem(750px);
+    display: grid;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: pem(50px);
+        width: pem(16px);
+        height: pem(88px);
+        background-image: url('../public/icons/down-arrow.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    div {
+        align-self: center;
+    }
+
+    h1 {
+        font-size: pem(95px);
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: pem(30px);
+        font-size: pem(24px);
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+}
+
+.donate {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 5fr 3fr;
+    grid-template-areas: ". content ."
+                         ". buttons .";
+    padding: 0 pem(107px) pem(100px) pem(107px);
+
+    p {
+        grid-area: content;
+        align-self: center;
+        font-size: pem(20px);
+        line-height: 150%;
+        max-width: pem(750px, 20px);
+        letter-spacing: 0;
+    }
+
+    .buttons {
+        grid-area: buttons;
+        align-self: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0 5%;
+
+        a {
+            position: relative;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: -0.01em;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-image: url('../public/icons/external-link.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 15px;
+                right: -25px;
+                top: -5px;
+            }
+        }
+    }
+}
+
+.tiers {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 20px;
+    padding: 0 pem(107px) pem(100px) pem(107px);
+
+    div {
+        grid-column: 2 / 3;
+        font-size: pem(20px);
+        max-width: pem(750px, 20px);
+    }
+
+    h1 {
+        margin-bottom: pem(20px);
+    }
+
+    h2 {
+        font-family: $mono;
+        border-bottom: 1px solid white;
+        text-transform: lowercase;
+        font-size: pem(20px);
+    }
+    .supporters {
+        display: flex;
+        align-items: center;
+        padding-top: pem(10px);
+        padding-bottom: pem(20px);
+        font-size: pem(18px, 20px);
+        
+        img {
+            object-fit: contain;
+            height: pem(80px);
+            padding: 20px;
+        }
+    }
+}
+
+.smallimage {
+    font-size: pem(15px);
+}

@@ -1,0 +1,38 @@
+//LAYOUT
+$mobile-width: 480px;
+
+@mixin mobile() {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+
+// COLOR
+$dark: #000000;
+$light: #ffffff;
+
+
+// TYPOGRAPHY
+$sans: 'Aeonik', sans-serif;
+$mono: 'Coanda', monospace;
+
+
+// MOLTEN LEADING
+$min-font: 13;
+$max-font: 23;
+$min-width: 480;
+$max-width: 2400;
+
+// mobile support
+$mobile-min-font: 10;
+$mobile-max-font: 13;
+$mobile-min-width: 270;
+$mobile-max-width: 500;
+
+
+
+// FUNCTIONS
+@function pem($pixel, $context: 18px) {
+    @return ($pixel / $context) * 1em;
+}

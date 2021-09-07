@@ -1,0 +1,58 @@
+@import "variables";
+
+:root {
+  font-size: calc(#{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width})));
+  background-color: $dark;
+}
+
+@include mobile() {
+  :root {
+    font-size: calc(#{$mobile-min-font}px + (#{$mobile-max-font} - #{$mobile-min-font}) * ( (100vw - #{$mobile-min-width}px) / ( #{$mobile-max-width} - #{$mobile-min-width})));
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+ }
+
+/* Typography */
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('../public/fonts/AeonikTRIAL-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Coanda';
+  src: url('../public/fonts/CoandaTRIAL-Regular.otf');
+}
+
+li, a, h1, h2, h3, h4, h5 ,h6, p {
+  font-family: 'Aeonik';
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}

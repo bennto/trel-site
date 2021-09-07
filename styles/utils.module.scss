@@ -1,0 +1,36 @@
+@import "variables";
+@import "type";
+
+a.textbutton {
+  @extend %text-button;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../public/icons/long-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: pem(40px);
+    height: pem(12px);
+    right: pem(-50px);
+    top: pem(6px);
+  }
+}
+
+a.whitebutton {
+  @extend %text-button;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../public/icons/long-white-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: pem(40px);
+    height: pem(12px);
+    right: pem(-50px);
+    top: pem(6px);
+  }
+}

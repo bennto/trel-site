@@ -1,0 +1,70 @@
+%base {
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    letter-spacing: 0;
+    color: $light;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiasing;
+    text-size-adjust: 100%;
+}
+
+%hype-set {
+    @extend %base;
+    font-size: pem(200px);
+    line-height: 75%;
+    letter-spacing: -0.03em;
+}
+
+@include mobile() {
+    %hype-set {
+        font-size: pem(135px);
+    }       
+}
+
+// PAGE SECTIONS
+
+%section-header {
+    @extend %base;
+    font-size: pem(80px);
+    line-height: 100%;
+}
+
+@include mobile() {
+    %section-header {
+        font-size: pem(64px);
+    }
+}
+
+%section-sub {
+    @extend %base;
+    font-size: pem(24px);
+    line-height: 125%;
+}
+
+@include mobile() {
+    %section-sub {
+        font-size: pem(18px);
+    }
+}
+
+%section-paragraph {
+    @extend %base;
+    font-size: pem(20px);
+    line-height: 125%;
+}
+
+@include mobile() {
+    %section-paragraph {
+        font-size: pem(15px);
+    }
+}
+
+
+
+%text-button {
+    @extend %base;
+    position: relative;
+    font-size: pem(18px);
+    line-height: 88%;
+}
