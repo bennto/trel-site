@@ -16,7 +16,7 @@ export default function Home () {
             incubating the next generation of innovators &amp; rocketeers.</p>
         <div className={styles.big_update}>
           <h1>lab update</h1>
-          <h2>We tested</h2>
+          <h2>We hotfired</h2>
           <p>more info coming soon</p>
         </div>
       </section>
