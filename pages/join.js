@@ -121,13 +121,13 @@ export default function Join () {
                                 <li><p>#1 Poptart flavor</p></li>
                             </ul>
                         </div>
-                        <DateToDate from={"Opened Monday May 17th"} to={"Closed 11:59pm Friday May 28th"} isEnded="true"/>
+                        <DateToDate from={"Opened Friday Sep. 10th"} to={"Closed 11:59pm Friday Sep. 17th"} />
                         <p className={styles.footnote}>Submitting your resume is not required for our application process.</p>
                     </div>
                     <div className={styles.card}>
                         <h3>Interview with our teams</h3>
                         <p className={styles.desc}>We will schedule a time that works for you. Come as you are, we want to know the real you.</p>
-                        <DateToDate from={"Began Tuesday May 18th"} to={"Decisions Thursday June 3rd"}/>
+                        <DateToDate from={"Began Friday Sep. 17th"} to={"Decisions Friday Sep. 24th"}/>
                         <p className={styles.footnote}>These interviews will be held on Zoom. You will have one interview for each team you applied for. Submitting an application does not guarantee you will get an interview.</p>
                     </div>
                     <div className={styles.card}></div>
