@@ -79,12 +79,13 @@
             }
         }
 
-        li>p {
-            font-size: pem(14px);
-            line-height: 1.5em;
-            margin-top: pem(4px, 14px);
-            margin-bottom: pem(8px, 14px);
-        }
+        mark {
+            display: inline-block;
+            line-height: 20px;
+            background-color: #cecece;
+            padding: 0 4px 0 4px;
+            margin-right: 2px;
+        } 
     }
 }
 
@@ -284,9 +285,6 @@
 .font1 { 
     font-family: 'Coanda';
     font-size: pem(24px);
-}
-.font2 {
-
 }
 
 .choices {
