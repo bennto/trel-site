@@ -10,7 +10,7 @@ $mobile-width: 480px;
 
 // COLOR
 $dark: #000000;
-$light: #ffffff;
+$light: #f3f3f3;
 
 
 // TYPOGRAPHY
@@ -35,4 +35,11 @@ $mobile-max-width: 500;
 // FUNCTIONS
 @function pem($pixel, $context: 18px) {
     @return ($pixel / $context) * 1em;
+}
+
+@function wid($percent, $context: 97) {
+    @return ($percent * $context) / 100; 
+}
+@function hei($percent, $context: 92) {
+    @return ($percent * $context) / 100; 
 }

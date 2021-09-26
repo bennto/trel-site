@@ -1,263 +1,204 @@
 @import "variables";
 @import "type";
-  
-.hero, .about, .building {
-    z-index: 10;
-    
-    &>* {
-        z-index: 10;
 
-        &>* {
-            z-index: 10;
-        }
-    }
-}
-
-.hero {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: pem(60px) 1fr;
-    grid-template-areas: "desc" "title";
-    background-color: transparent;
-    padding-left: pem(107px);
-    padding-right: pem(50px);
-    padding-top: pem(73px);
-    max-width: pem(1700px);
-
-    h1 {
-        font-family: $mono;
-        font-size: pem(18px);
-        line-height: pem(36px, 18px);
-        text-transform: lowercase;
-        z-index: 10;
-    }
-
-    @include mobile() {
-        h1 {
-            font-size: pem(15px);
-        }
-    }
-
-    h2 {
-        @extend %hype-set;
-        z-index: 10;
-        text-align: center;
-    }
-
-    h3 {
-        @extend %section-sub;
-        margin-top: pem(60px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
-        text-align: center;
-    }
-
-    a {
-        position: relative;
-        font-size: pem(18px);
-        line-height: 88%;
-        letter-spacing: 0;
-        margin-left: pem(10px, 18px);
-        z-index: 10;
-    }
-
-    .lab_description {
-        grid-area: desc;
-        font-size: pem(13px);
-        line-height: 125%;
-        letter-spacing: 0;
-        margin-left: pem(23px, 13px);
-    }
-
-    .project_title {
-        grid-area: title;
-        align-self: center;
-        justify-self: end;
-        width: pem(675px);
-        z-index: 10;
-    }
-
-    .big_update {
-        position: relative;
-        grid-area: title;
-        align-self: end;
-        justify-self: start;
-        width: 85%;
-        z-index: 10;
-        padding-bottom: pem(150px);
-        margin-left: pem(23px);
-        
-        p {
-            position: absolute;
-            right: 0;
-            margin-top: pem(15px);
-        }
-
-        a {
-            position: absolute;
-            right: 0;
-            margin-top: pem(10px);
-        }
-    }
-
-}
-
-.hotfire {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    object-fit: cover;
-    z-index: 3;
-}
-
-@media screen and (max-width: 1050px) {
-    .big_update {
-        h2 {
-            font-size: pem(150px);
-        }
-    }
-}
-
-@include mobile() {
-    .big_update {
-        padding-bottom: 20vh !important;
-        h2 {
-            text-align: left;
-        }
-    }
-
-    .hotfire {
-        object-position: 35% 50%;
-    }
-}
-
-@include mobile() {
-    .hero {
-        padding: 0 5%;
-
-        .project_title {
-            justify-self: center;
-            align-self: center;
-            width: pem(320px, 12px);
-        }
-
-        .lab_description {
-            display: none;
-            width: 0;
-            height: 0;
-        }
-    }
-}
-
-.hiringbanner {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: pem(50px) pem(107px);
+    flex-direction: column;
+    h1, h2, h3, p {
+        color: $light;
+    }
 
-    h1 {
-        @extend %section-header;
-
-        &:hover {
-            cursor: pointer;
+    .hero {
+        margin-top: 30vh;
+        margin-bottom: 100px;
+        h1, h2 {
+            text-align: center;
         }
-    }
-}
-
-.projecthighlight {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-areas: "title";
-    background-color: transparent;
-    padding-left: pem(107px);
-    padding-right: pem(50px);
-    padding-top: pem(73px);
-    max-width: pem(1700px);
-    padding-bottom: pem(73px);
-
-    div {
-        grid-area: title;
-        align-self: start;
-        justify-self: end;
-        width: pem(675px);
-        z-index: 10;
-    }
-
-    h1 {
-        font-family: $mono;
-        font-size: pem(18px);
-        line-height: pem(36px, 18px);
-        text-transform: lowercase;
-        z-index: 10;
-    }
-
-    @include mobile() {
         h1 {
-            font-size: pem(15px);
+            font-size: 3rem;
+            line-height: 100px;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        svg {
+            display: block;
+            margin: auto;
+            margin-top: hei(20vh);
+            path {
+                color: $light;
+                fill: $light;
+            }
+            circle {
+                stroke: $light;
+            }
         }
     }
-
-    h2 {
-        @extend %hype-set;
-        z-index: 10;
+    .section {
+        margin: 10% 175px 0 175px;
+        display: flex;
+        flex-direction: row;
+        .thumb {
+            width: 70%;
+            height: auto;
+            p {
+                font-size: 1rem;
+                letter-spacing: 0.03rem;
+                line-height: 45px;
+                text-align: justify;
+            }
+            .rocketeers, .halcyonthumb {
+                width: 100%;
+                height: auto;
+            }
+            .halcyonthumb {
+                cursor: pointer;
+            }
+            .slideshow {
+                width: 100%;
+                overflow: hidden;
+                .slider1 {
+                    display: flex;
+                    animation: scroll1 16s linear infinite;
+                    .slide {
+                        display: flex;
+                        justify-content: center;
+                        overflow: visible;
+                        height: 100px;
+                        // use bottom two variables to calc slider width
+                        width: 250px;
+                        margin: 0 100px 16px 100px;
+                    }
+                }
+                .slider2 {
+                    // animation: scroll 10s linear infinite;
+                    display: flex;
+                    animation: scroll2 12s linear infinite;
+                    .slide {
+                        display: flex;
+                        justify-content: center;
+                        overflow: visible;
+                        height: 100px;
+                        // use bottom two variables to calc slider width
+                        // a little harder bc 3 smalls + 1 large logo
+                        width: 250px;
+                        margin: 0 80px 16px 80px;
+                        .small {
+                            width: 100px;
+                            height: auto;
+                        }
+                    }
+                }
+                .slider3 {
+                    // animation: scroll 10s linear infinite;
+                    display: flex;
+                    animation: scroll3 8s linear infinite;
+                    .slide {
+                        display: flex;
+                        justify-content: center;
+                        overflow: visible;
+                        height: 100px;
+                        // use bottom two variables to calc slider width
+                        width: 250px;
+                        margin: 0 60px 16px 60px;
+                    }
+                }
+            }
+        }
+        .text {
+            width: 40%;
+            h3 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            h2 {
+                font-size: 1.3rem;
+                opacity: 0.5;
+            }
+            h1 {
+                font-size: 3rem;
+                letter-spacing: 0.1rem;
+                font-weight: bold;
+            }
+            .halcyon {
+                font-size: 4rem;
+                cursor: pointer;
+            }
+            .linkbox {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                border-style: solid;
+                border-color: $light;
+                border-width: 2px;
+                border-radius: 30px;
+                transition: color 2s;
+                p {
+                    margin: 0 20px 0 20px;
+                }
+            }
+        }
+        .break {
+            width: 50px;
+        }
     }
-
-    h3 {
-        @extend %section-sub;
-        margin-top: pem(60px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
-    }
-
-    a {
-        position: relative;
-        font-size: pem(18px);
-        line-height: 88%;
-        letter-spacing: 0;
-        margin-left: pem(10px, 18px);
-        z-index: 10;
+    .conclude {
+        margin: 200px 175px 200px 175px;
+        text-align: center;
+        .blastoff {
+            font-size: 3.5rem;
+            letter-spacing: 0.2rem;
+            font-weight: bold;
+        }
+        .linebreak {
+            height: 80px;
+        }
+        .identity {
+            $size: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .sponsor, .educator, .applicant {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: $size;
+                height: $size / 4 * 5;
+                border-style: solid;
+                border-color: $light;
+                border-width: 3px;
+                border-radius: 10px;
+                svg {
+                    width: 80%;
+                    height: auto;
+                    margin-bottom: 50px;
+                    cursor: pointer;
+                    ellipse, path, circle {
+                        fill: none;
+                        stroke: $light;
+                        stroke-width: 6px;
+                    }
+                }
+            }
+            .break {
+                width: $size / 4;
+            }
+        }
     }
 }
 
-.halcyon {
-    position: absolute;
-    width: pem(126px);
-    height: pem(1057px);
-    left: 45%;
-    top: pem(-325px);
-    transform: rotate(68deg);
-    z-index: 2;
-    object-fit: contain;
+// animations + quirky features
+@keyframes scroll1 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(calc(-100px*2 - 250px) * 2))}
 }
-
-.earth {
-    position: absolute;
-    width: pem(325px);
-    height: pem(300px);
-    left: 0;
-    bottom: pem(-120px);
-    z-index: 1;
-    object-fit: contain;
+@keyframes scroll2 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(calc(-80px*2 - 250px) + calc(-80px*2 - 100px) * 3))}
 }
-
-@include mobile() {
-    .halcyon {
-        font-size: pem(29px);
-        width: pem(50.99px);
-        height: pem(426.57px);
-        top: pem(-50px);
-        left: 43%;
-        transform: rotate(60deg);
-    }
-    
-    .earth {
-        width: pem(1136.15px);
-        height: pem(1141.21px);
-        left: pem(-900px);
-        top: pem(300px);
-    }
+@keyframes scroll3 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(calc(-58px*2 - 250px) * 4))}
 }

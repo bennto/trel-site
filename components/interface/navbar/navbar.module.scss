@@ -1,3 +1,6 @@
+@import '../../../styles/variables';
+@import '../../../styles/type';
+
 @function pem($pixel, $context: 18px) {
     @return ($pixel / $context) * 1em;
 }
@@ -5,22 +8,18 @@
 .navbar {
     position: fixed;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 97%;
     padding-top: pem(30px);
-    z-index: 100;
-
-     .brand {
-        margin-left: pem(32px);
-
-        svg {
-
-            path {
-                color: white;
-                fill: white;
-            }
+    z-index: 101;
+    
+    svg {
+        width: 140px;
+        height: auto;
+        path {
+            color: $light;
+            fill: $light;
         }
     }
     
@@ -34,13 +33,18 @@
             display: inline;
             margin-left: pem(44px);
             text-transform: lowercase;
-            font-size: pem(15px);
+            font-size: pem(22px);
             line-height: 125%;
             color: white;
         }
-
-        .disabled {
-            opacity: 0.5;
-        }
     }
+}
+
+.placeholder {
+    position: fixed;
+    background-color: $dark;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
 }

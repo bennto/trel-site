@@ -2,25 +2,12 @@
 @import "../../../styles/type";
 
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    grid-template-rows: pem(45px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    padding: pem(30px);
+    margin-bottom: 20px;
     z-index: 100;
-
-    &>* {
-        align-self: center;
-        justify-self: center;
-
-        &:first-child {
-            justify-self: start;
-        }
-
-        &:last-child {
-            justify-self: end;
-        }
-    }
 
     svg {
         object-fit: contain;
@@ -48,8 +35,8 @@
                     height: pem(20px);
 
                     path {
-                        color: white;
-                        fill: white;
+                        color: $light;
+                        fill: $light;
                     }
                 }
             }

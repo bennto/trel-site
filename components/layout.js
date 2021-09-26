@@ -7,8 +7,9 @@ export const siteTitle = "Texas Rocket Engineering Lab"
 
 export default function Layout({ children }) {
     return (
-        <>
-        <Navbar />
+        <div className={styles.container}>
+            <Navbar className={styles.navbar} />
+            <div className={styles.placeholder} />
             <Head>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -31,7 +32,7 @@ export default function Layout({ children }) {
                 <meta name="titter:card" content="summary_large_image" />
             </Head>
             <main className={styles.main}>{children}</main>
-        <Footer />
-        </>
+            <Footer className={styles.footer} />
+        </div>
     )
 }
