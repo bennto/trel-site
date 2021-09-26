@@ -65,7 +65,9 @@ export default function Home () {
             <h1>Help Us Do What We Do</h1>
             <br />
             <div className={styles.linkbox}>
-              <p>Become a Sponsor</p>
+              <Link href={'/donate'}>
+                <p>Become a Sponsor</p>
+              </Link>
             </div>
           </div>
           <div className={styles.break}></div>
