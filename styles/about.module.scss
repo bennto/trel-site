@@ -38,10 +38,6 @@
     }
 }
 
-@include mobile() {
-    
-}
-
 .building, .huge, .sponsors, .place {
     display: grid;
     padding-top: pem(90px);
@@ -139,7 +135,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .building {
         .building_desc {
             p {
@@ -261,7 +257,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .huge {
         grid-template-areas: "title" "rocket";
         grid-template-columns: 1fr;
@@ -329,7 +325,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .sponsors {
         padding: 0 pem(25px);
 
@@ -397,7 +393,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .place {
         grid-template-columns: 1fr 16fr 1fr;
         margin-top: pem(50px);

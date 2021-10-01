@@ -1,5 +1,5 @@
-@import "variables";
-@import "type";
+@import './variables';
+@import "./type";
 
 .container {
     display: flex;
@@ -17,6 +17,14 @@
         h1 {
             font-size: 3rem;
             line-height: 100px;
+            @include for-tablet {
+                font-size: 4rem;
+                line-height: 70px;
+                margin-bottom: 20px;
+            }
+            @include for-mobile {
+                
+            }
         }
         h2 {
             font-size: 2rem;
@@ -38,15 +46,42 @@
         margin: 10% 175px 0 175px;
         display: flex;
         flex-direction: row;
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            @include for-mobile {
+                font-size: 3rem;
+            }
+        }
+        h2 {
+            font-size: 1.3rem;
+            opacity: 0.5;
+            @include for-tablet {
+                margin-top: 10px;
+            }
+        }
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2rem;
+            letter-spacing: 0.03rem;
+            line-height: 45px;
+            @include for-tablet {
+                font-size: 1.5rem;
+                margin-top: 10px;
+            }
+            @include for-mobile {
+                font-size: 2rem;
+                margin-top: 20px;
+                line-height: 35px;
+            }
+        }
         .thumb {
             width: 70%;
             height: auto;
-            p {
-                font-size: 1rem;
-                letter-spacing: 0.03rem;
-                line-height: 45px;
-                text-align: justify;
-            }
             .rocketeers, .halcyonthumb {
                 width: 100%;
                 height: auto;
@@ -104,22 +139,20 @@
                     }
                 }
             }
+            @include for-tablet {
+                width: 100%;
+            }
+        }
+        @include for-tablet {
+            flex-direction: column;
+            margin: 10% 10px 0 10px;
+        }
+        @include for-mobile {
+            flex-direction: column;
+            margin: 10% 10px 0 10px;
         }
         .text {
             width: 40%;
-            h3 {
-                font-size: 2rem;
-                font-weight: bold;
-            }
-            h2 {
-                font-size: 1.3rem;
-                opacity: 0.5;
-            }
-            h1 {
-                font-size: 3rem;
-                letter-spacing: 0.1rem;
-                font-weight: bold;
-            }
             .halcyon {
                 font-size: 4rem;
                 cursor: pointer;
@@ -139,14 +172,22 @@
                     margin: 0 20px 0 20px;
                 }
             }
+            @include for-tablet {
+                width: 100%;
+            }
         }
         .break {
             width: 50px;
         }
+        @include for-mobile {
+            margin: 80px 20px 40px 20px;
+        }
     }
     .conclude {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 200px 175px 200px 175px;
-        text-align: center;
         .blastoff {
             font-size: 3.5rem;
             letter-spacing: 0.2rem;
@@ -154,9 +195,15 @@
         }
         .linebreak {
             height: 80px;
+            @include for-tablet {
+                eight: 20px;
+            }
+            @include for-mobile {
+                height: 20px;
+            }
         }
         .identity {
-            $size: 500px;
+            width: 80%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -165,27 +212,56 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: $size;
-                height: $size / 4 * 5;
+                width: 400px;
+                height: 500px;
                 border-style: solid;
                 border-color: $light;
                 border-width: 3px;
                 border-radius: 10px;
+                cursor: pointer;
                 svg {
                     width: 80%;
                     height: auto;
                     margin-bottom: 50px;
-                    cursor: pointer;
                     ellipse, path, circle {
                         fill: none;
                         stroke: $light;
                         stroke-width: 6px;
                     }
+                    @include for-mobile {
+                        display: none;
+                    }
+                }
+                @include for-mobile {
+                    flex-direction: row;
+                    width: 90%;
+                    height: 50px;
+                    margin-bottom: 10px;
                 }
             }
             .break {
-                width: $size / 4;
+                width: 80px;
+                @include for-tablet {
+                    width: 40px;
+                }
+                @include for-mobile {
+                    width: 50px;
+                }
             }
+            @include for-tablet {
+                width: 100%;
+            }
+            @include for-mobile {
+                flex-direction: column;
+            }
+        }
+        @include for-tablet {
+            margin: 10% 10px 0 10px;
+            width: 100%;
+        }
+        @include for-mobile {
+            margin: 10% 10px 0 10px;
+            width: 100%;
         }
     }
 }

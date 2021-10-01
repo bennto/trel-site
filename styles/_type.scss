@@ -16,7 +16,7 @@
     letter-spacing: -0.03em;
 }
 
-@include mobile() {
+@include for-mobile() {
     %hype-set {
         font-size: pem(135px);
     }       
@@ -30,7 +30,7 @@
     line-height: 100%;
 }
 
-@include mobile() {
+@include for-mobile() {
     %section-header {
         font-size: pem(64px);
     }
@@ -42,7 +42,7 @@
     line-height: 125%;
 }
 
-@include mobile() {
+@include for-mobile() {
     %section-sub {
         font-size: pem(18px);
     }
@@ -54,7 +54,7 @@
     line-height: 125%;
 }
 
-@include mobile() {
+@include for-mobile() {
     %section-paragraph {
         font-size: pem(15px);
     }

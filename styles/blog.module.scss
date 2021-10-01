@@ -1,0 +1,76 @@
+@import "variables";
+@import "type";
+
+$small: 400px;
+$medium: 900px;
+
+.blog {
+    h1 {
+        margin: 180px 0 40px 0;
+        text-align: center;
+        font-size: 70px;
+
+        @media screen and (max-width: $medium) {
+            display: none;
+        }
+    }
+    h2 {
+        margin: 0 80px 30px 10vw;
+        font-size: 25px;
+
+        @media screen and (max-width: $medium) {
+            margin-top: 100px;
+        }
+    }
+    .container {
+        display: flex;
+        
+        .dadbod {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80vw;
+            margin: auto;
+            justify-content: center;
+        }
+        .artbox {
+            background-color: #18181c;
+            margin: 0 10px 15px 10px;
+            width: 280px;
+            height: 360px;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+
+            @media screen and (max-width: $medium) {
+                background-color: #18181c;
+                margin: 0 10px 15px 10px;
+                width: 100vw;
+                height: 360px;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+
+            img {
+                max-height: 64%;
+            }
+            .content {
+                margin: 20px 20px 20px 20px;
+
+                h5 {
+                    font-size: 13px;
+                    margin-bottom: 16px;
+                }
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+                h6 {
+                    margin-top: 6px;
+                    opacity: 0.5;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

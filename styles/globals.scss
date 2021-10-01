@@ -5,7 +5,7 @@
   background-color: $dark;
 }
 
-@include mobile() {
+@include for-mobile() {
   :root {
     font-size: calc(#{$mobile-min-font}px + (#{$mobile-max-font} - #{$mobile-min-font}) * ( (100vw - #{$mobile-min-width}px) / ( #{$mobile-max-width} - #{$mobile-min-width})));
   }

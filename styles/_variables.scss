@@ -1,12 +1,13 @@
-//LAYOUT
-$mobile-width: 480px;
+// media queries
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
 
-@mixin mobile() {
-    @media screen and (max-width: 600px) {
-        @content;
-    }
+@mixin for-mobile() {
+    @media (max-width: $breakpoint-mobile) { @content; }
 }
-
+@mixin for-tablet() {
+    @media (max-width: $breakpoint-tablet) { @content; }
+}
 
 // COLOR
 $dark: #000000;

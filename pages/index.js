@@ -8,6 +8,7 @@ export default function Home () {
   return (
     <Layout>
       <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>{siteTitle}</title>
       </Head>
       <div className={styles.container}>
@@ -39,6 +40,7 @@ export default function Home () {
           <div className={styles.text}>
             <h3>We are the Texas Rocket Engineering Lab (TREL)</h3>
           </div>
+          <div className={styles.break}></div>
           <div className={styles.thumb}>
             <p>We make people who make rockets. Through long-term rocket projects, TREL demystifies applied rocket science in an environment focused on diversity, equity and inclusion, knowledge-sharing, and community engagement to teach the interdisciplinary collaboration required by aerospace organizations.</p>
           </div>
@@ -58,7 +60,7 @@ export default function Home () {
             <p>description</p>
           </div>
         </div>
-        <div className={styles.section}> {/* sponsors */}
+        <div id={styles.sponsors} className={styles.section}> {/* sponsors */}
           <div className={styles.text}>
             <h2>our sponsors</h2>
             <br />
@@ -118,8 +120,32 @@ export default function Home () {
                 <div className={styles.slide}>
                   <img className={styles.small} src={'./logos/aws.svg'} />
                 </div>
+                <div className={styles.slide}>
+                  <img src={'./logos/ASE.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/ni.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/eos.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/aws.svg'} />
+                </div>
               </div>
               <div className={styles.slider3}>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/procurify.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/emerson.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/boeinglogo.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/blueorigin.svg'} />
+                </div>
                 <div className={styles.slide}>
                   <img className={styles.sponsor} src={'./logos/procurify.svg'} />
                 </div>
@@ -159,7 +185,6 @@ export default function Home () {
                   <circle cx="312.501" cy="312.501" r="293.75" />
                   <path d="M117.386 532.046c22.949-98.113 62.148-175.263 110.202-218.005l56.122 192.046 18.533-150.909c-7.807-8.879-15.444-24.463-23.052-41.137h66.624c-7.056 16.201-14.276 31.719-23.07 41.034l18.546 151.018 56.127-192.052c48.048 42.742 87.253 119.892 110.196 218.005v-.027c-51.899 46.17-120.255 74.232-195.113 74.232-74.845 0-143.189-28.052-195.084-74.205" />
                 </svg>
-              
                 <h1 className={styles.role}>Sponsor</h1>
               </div>
             </Link>

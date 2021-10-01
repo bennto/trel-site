@@ -224,7 +224,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .application {
         .container {
             padding: 0 pem(25px);
@@ -421,7 +421,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .keepmind {
         padding: 0 pem(25px);
 

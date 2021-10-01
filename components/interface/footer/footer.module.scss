@@ -75,7 +75,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .footer {
 
         svg {
