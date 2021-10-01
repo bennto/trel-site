@@ -37,7 +37,7 @@
             z-index: 10;
         }
     
-        @include mobile() {
+        @include for-mobile() {
             h1 {
                 font-size: pem(15px);
             }
@@ -280,7 +280,7 @@
     }
 }
 
-@include mobile() {
+@include for-mobile() {
     .hero {
         .halcyon {
             top: 5%;
