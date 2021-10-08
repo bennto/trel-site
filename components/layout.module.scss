@@ -8,8 +8,10 @@
     }
 
     .placeholder {
-        height: 100px;
+        height: $navbar;
     }
-
+    .main {
+        min-height: 80vh;
+    }
     
 }
