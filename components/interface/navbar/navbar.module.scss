@@ -15,7 +15,7 @@
     z-index: 101;
     
     svg {
-        width: 140px;
+        width: 150px;
         height: auto;
         path {
             color: $light;
@@ -33,9 +33,13 @@
             display: inline;
             margin-left: pem(44px);
             text-transform: lowercase;
-            font-size: pem(22px);
+            font-size: 1.5rem;
             line-height: 125%;
             color: white;
+        }
+
+        @include for-mobile {
+            display: none;
         }
     }
 }
@@ -45,6 +49,6 @@
     background-color: $dark;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: $navbar;
     z-index: 100;
 }

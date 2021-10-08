@@ -4,6 +4,12 @@ import Link from 'next/link'
 export default function Navbar() {
     return (
         <>
+            <head>
+                <meta name="viewport" content="height=device-height, 
+                        width=device-width, initial-scale=1.0, 
+                        minimum-scale=1.0, maximum-scale=1.0, 
+                        user-scalable=no, target-densitydpi=device-dpi" />
+            </head>
             <nav className={styles.navbar}>
                     <Link href={'/'}><a>
                         <svg viewBox="0 0 75 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +21,7 @@ export default function Navbar() {
                     </a></Link>
                 <ul>
                     <li><Link href={'/halcyon'}><a>Halcyon</a></Link></li>
-                    <li><Link href={'/about'}><a>About</a></Link></li>
+                    <li><Link href={'/blog'}><a>Blog</a></Link></li>
                     <li><Link href={'/join'}><a>Join Us</a></Link></li>
                     <li><Link href={'/donate'}><a>Donate</a></Link></li>
                 </ul>

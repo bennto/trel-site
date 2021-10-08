@@ -48,7 +48,7 @@ export default function PostPage({ source, frontMatter }) {
         }
         .styleme {
           font-size: 1.2em;
-          line-height: 35px;
+          line-height: 50px;
         }
         @media (max-width: 768px) {
           .boxme {

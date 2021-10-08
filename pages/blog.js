@@ -8,11 +8,13 @@ import styles from '../styles/blog.module.scss'
 
 const Blog = ({ posts }) => {
     return (
-        <Layout>    
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Layout>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />    
+            </head>
+
             <section className={styles.blog}>
                 <h1>Blog</h1>
-                <h2>Our Latest Updates</h2>
                 <div className={styles.container}> {/* outer flex to keep content centered */}
                     <div className={styles.gutter}></div>
                     <div className={styles.dadbod}> {/* all the posts are in here */}
@@ -21,12 +23,14 @@ const Blog = ({ posts }) => {
                             as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
                             href={`/posts/[slug]`}>
                                 <div className={styles.artbox}>
-                                    <img src={`${post.data.picture}`}></img>
-                                    <div className ={styles.content}>
+                                    <div className={styles.imgbox}>
+                                        <img src={`${post.data.picture}`}></img>
+                                    </div>
+                                    <div className={styles.infobox}>
                                         <h5>{post.data.date}</h5>
-                                        <a>{post.data.title}</a>
                                         <h6>by {post.data.author}</h6>
                                     </div>
+                                    <a>{post.data.title}</a>
                                 </div>
                             </Link>
                         ))}
@@ -34,6 +38,7 @@ const Blog = ({ posts }) => {
                     <div className={styles.gutter}></div>
                 </div>
             </section>
+            <br />
         </Layout>
     )
 }

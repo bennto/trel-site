@@ -1,75 +1,98 @@
 @import "variables";
 @import "type";
 
-$small: 400px;
-$medium: 900px;
-
 .blog {
+    display: flex;
+    flex-direction: column;
     h1 {
-        margin: 180px 0 40px 0;
+        margin: 180px 0 160px 0;
         text-align: center;
         font-size: 70px;
-
-        @media screen and (max-width: $medium) {
-            display: none;
+        @include for-tablet {
+            margin: 60px 0 60px 0;
         }
-    }
-    h2 {
-        margin: 0 80px 30px 10vw;
-        font-size: 25px;
-
-        @media screen and (max-width: $medium) {
-            margin-top: 100px;
+        @include for-tablet {
+            margin: 0 0 60px 0;
         }
     }
     .container {
         display: flex;
-        
+        .gutter {
+            width: 10%;
+            @include for-mobile {
+                display: none;
+            }
+            @include for-tablet {
+                display: none;
+            }
+        }
         .dadbod {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 80vw;
             margin: auto;
-            justify-content: center;
-        }
-        .artbox {
-            background-color: #18181c;
-            margin: 0 10px 15px 10px;
-            width: 280px;
-            height: 360px;
-            border-radius: 4px;
-            overflow: hidden;
-            cursor: pointer;
-
-            @media screen and (max-width: $medium) {
-                background-color: #18181c;
-                margin: 0 10px 15px 10px;
-                width: 100vw;
-                height: 360px;
+            width: 90%;
+            justify-content: space-evenly;
+            .artbox {
+                width: 30%;
+                height: 600px;
                 border-radius: 4px;
                 overflow: hidden;
+                cursor: pointer;
+    
+                .imgbox {
+                    width: auto;
+                    height: 320px;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    img {
+                        display: absolute;
+                        max-height: 110%;
+                        object-fit: fill;
+                        margin: auto;
+                    }
+                    @include for-tablet {
+                        height: 210px;
+                    }
+                    @include for-mobile {
+                        height: 160px;
+                    }
+                }
+                    .infobox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        h5 {
+                            font-family: $mono;
+                            font-size: 0.8rem;
+                            margin: 4px 0 16px 0;
+                        }
+                        h6 {
+                            opacity: 0.5;
+                            font-size: 0.8rem;
+                        }
+                    }
+                    a {
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                    }
+                @include for-tablet {
+                    width: 45%;
+                    margin: 0 10px 0 10px;
+                    height: 400px;
+                }
+                @include for-mobile {
+                    width: 45%;
+                    margin: 0 10px 0 10px;
+                    height: 330px;
+                }
             }
-
-            img {
-                max-height: 64%;
+            @include for-tablet {
+                width: 100%;
             }
-            .content {
-                margin: 20px 20px 20px 20px;
-
-                h5 {
-                    font-size: 13px;
-                    margin-bottom: 16px;
-                }
-                a {
-                    font-size: 20px;
-                    text-decoration: none;
-                }
-                h6 {
-                    margin-top: 6px;
-                    opacity: 0.5;
-                    font-size: 13px;
-                }
+            @include for-mobile {
+                width: 100%;
             }
         }
     }

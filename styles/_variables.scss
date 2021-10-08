@@ -1,12 +1,20 @@
 // media queries
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
+$breakpoint-laptop: 1366px;
+$breakpoint-highres: 1920px;
 
 @mixin for-mobile() {
     @media (max-width: $breakpoint-mobile) { @content; }
 }
 @mixin for-tablet() {
     @media (max-width: $breakpoint-tablet) { @content; }
+}
+@mixin for-laptop() {
+    @media (max-width: $breakpoint-laptop) { @content; }
+}
+@mixin for-highres() {
+    @media (max-width: $breakpoint-highres) { @content; }
 }
 
 // COLOR
@@ -31,7 +39,8 @@ $mobile-max-font: 13;
 $mobile-min-width: 270;
 $mobile-max-width: 500;
 
-
+// etc
+$navbar: 140px;
 
 // FUNCTIONS
 @function pem($pixel, $context: 18px) {

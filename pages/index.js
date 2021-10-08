@@ -55,9 +55,19 @@ export default function Home () {
           <div className={styles.text}>
             <h2>current project</h2>
             <br />
-            <h1 className={styles.halcyon}>Halcyon</h1>
+            <a href='/halcyon'>
+              <h1 className={styles.halcyon}>Halcyon</h1>
+            </a>
             <br />
-            <p>description</p>
+            <p>
+              Halcyon is our student-designed liquid propellant rocket that will launch past the Karman Line. 
+            </p>
+            <br />
+            <div className={styles.linkbox}>
+              <Link href={'/halcyon'}>
+                <p>Learn More</p>
+              </Link>
+            </div>
           </div>
         </div>
         <div id={styles.sponsors} className={styles.section}> {/* sponsors */}
