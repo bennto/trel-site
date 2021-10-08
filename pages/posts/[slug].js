@@ -14,8 +14,9 @@ export default function PostPage({ source, frontMatter }) {
   // Customlink originates in the components folder, how it's styled is defined there.
   const components = {
     a: CustomLink,
-    h2: (props) => <h2 style={{ marginBottom: "20px", fontSize: "1.5em" }}>{props.children}</h2>,
-    p: (props) => <p style={{ marginBottom: "30px", fontSize: "0.8em" }}>{props.children}</p>,
+    h3: (props) => <h3 style={{ color: "#adadad" }}>{props.children}</h3>,
+    h2: (props) => <h2 style={{ marginBottom: "20px", fontSize: "1.5em", color: "#adadad" }}>{props.children}</h2>,
+    p: (props) => <p style={{ marginBottom: "30px", fontSize: "0.8em", color: "#adadad" }}>{props.children}</p>,
     img: (props) => <img src={props.src} style={{ display: "block", width: "80%", height: "auto", margin: "auto"}}></img>,
   }
   
@@ -48,6 +49,7 @@ export default function PostPage({ source, frontMatter }) {
         }
         .styleme {
           font-size: 1.2em;
+          color: #adadad;
           line-height: 50px;
         }
         @media (max-width: 768px) {
