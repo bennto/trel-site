@@ -28,7 +28,7 @@ export default function Halcyon () {
     pushing the boundaries of collegiate rocketry.</p>
                     <ul>
                         <li><p>thrust <br/>3,500 lbf</p></li>
-                        <li><p>propellants <br/>RP-1 LoX</p></li>
+                        <li><p>propellants <br/>RP-1 LOx</p></li>
                         <li><p>apogee <br/>100+ km</p></li>
                         <li><p>payload <br/>11 lbs</p></li>
                         <li><p>max speed <br/>mach 3.5</p></li>

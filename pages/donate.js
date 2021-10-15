@@ -28,22 +28,42 @@ export default function Donate () {
                 <h1>Our Sponsors</h1>
                 <h2>Halcyon</h2>
                 <div className={styles.supporters}>
-                    <img src={'./logos/cockrell.svg'} />
-                    <img src={'./logos/firefly.svg'} />
+                    <a href="https://cockrell.utexas.edu/" target="_blank">
+                        <img src={'./logos/cockrell.svg'} />
+                    </a>
+                    <a href="https://firefly.com/" target="_blank">
+                        <img src={'./logos/firefly.svg'} />
+                    </a>
                 </div>
                 <h2>Trailblazer</h2>
                 <div className={styles.supporters}>
-                    <img src={'./logos/ASE.svg'} />
-                    <img src={'./logos/ni.svg'} />
-                    <img src={'./logos/eos.svg'} />
-                    <img src={'./logos/aws.svg'} />
+                    <a href="https://www.ae.utexas.edu/" target="_blank">
+                        <img src={'./logos/ASE.svg'} />
+                    </a>
+                    <a href="https://www.ni.com/en-us.html" target="_blank">
+                        <img src={'./logos/ni.svg'} />
+                    </a>
+                    <a href="https://www.eos.info/en" target="_blank">
+                        <img src={'./logos/eos.svg'} />
+                    </a>
+                    <a href="https://aws.amazon.com/" target="_blank">
+                        <img src={'./logos/aws.svg'} />
+                    </a>
                 </div>
                 <h2>Pioneer</h2>
                 <div className={styles.supporters}>
-                    <img className={styles.smallimage} src={'./logos/procurify.svg'} />
-                    <img src={'./logos/emerson.svg'} />
-                    <img className={styles.smallimage} src={'./logos/boeinglogo.svg'} />
-                    <img className={styles.smallimage} src={'./logos/blueorigin.svg'} />
+                    <a href="https://www.procurify.com/" target="_blank">
+                        <img className={styles.smallimage} src={'./logos/procurify.svg'} />
+                    </a>
+                    <a href="https://www.emerson.com/en-us/global" target="_blank">
+                        <img src={'./logos/emerson.svg'} />
+                    </a>
+                    <a href="https://www.boeing.com/" target="_blank">
+                        <img className={styles.smallimage} src={'./logos/boeinglogo.svg'} />
+                    </a>
+                    <a href="https://www.blueorigin.com/" target="_blank">
+                        <img className={styles.smallimage} src={'./logos/blueorigin.svg'} />
+                    </a>
                 </div>
                 </div>
             </section>

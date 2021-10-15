@@ -13,8 +13,8 @@ export default function Join () {
             <Head>{siteTitle}</Head>
             <section className={styles.hero}>
                 <div>
-                    <h1>We Are Recruiting!</h1>
-                    <h2>see how you can join our team</h2>
+                    <h1>Recruiting is Closed!</h1>
+                    <h2>see how you can't join our team</h2>
                 </div>
             </section>
             <section className={styles.application}>

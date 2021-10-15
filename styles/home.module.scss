@@ -182,6 +182,15 @@
         @include for-mobile {
             margin: 80px 20px 40px 20px;
         }
+        
+    }
+    #sponsors {
+        @include for-tablet {
+            flex-direction: column-reverse;
+        }
+        @include for-mobile {
+            flex-direction: column-reverse;
+        }
     }
     .conclude {
         display: flex;
@@ -256,11 +265,11 @@
             }
         }
         @include for-tablet {
-            margin: 10% 10px 0 10px;
+            margin: 20% 10px 40px 10px;
             width: 100%;
         }
         @include for-mobile {
-            margin: 10% 10px 0 10px;
+            margin: 20% 10px 40px 10px;
             width: 100%;
         }
     }
