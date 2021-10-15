@@ -35,21 +35,20 @@
             justify-content: space-evenly;
             .artbox {
                 width: 30%;
-                height: 600px;
+                height: 550px;
                 border-radius: 4px;
                 overflow: hidden;
                 cursor: pointer;
     
                 .imgbox {
                     width: auto;
-                    height: 320px;
+                    height: 210px;
                     overflow: hidden;
                     border-radius: 4px;
                     img {
-                        display: absolute;
-                        max-height: 110%;
-                        object-fit: fill;
-                        margin: auto;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
                     @include for-tablet {
                         height: 210px;
