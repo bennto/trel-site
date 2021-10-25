@@ -19,7 +19,7 @@ export default function Donate () {
                 <p>Making space travel accessible to everyone takes a village, and some support. We work with organizations across the country who believe in our mission and support our goals through financial support, material donations, and mentorship. <br /> <br />
                 If you are interested in becoming a part of our vision, check out our donation package, go to our donation site or email us. Thank you for your support!</p>
                 <div className={styles.buttons}>
-                    <a href="http://www.trel.typical.systems/TREL%20Donation%20Package.pdf" target="_blank">See our Donation Packet</a>
+                    <a onClick={() => {alert("New donation packet coming soon!")}} >See our Donation Packet</a>
                     <a href="https://utdirect.utexas.edu/apps/utgiving/online/nlogon/?menu1=ENTL&solicit=TRL&response=DJ0TRL" target="_blank">Donate to TREL</a>
                 </div>
             </section>
