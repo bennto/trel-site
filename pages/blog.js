@@ -18,7 +18,7 @@ const Blog = ({ posts }) => {
                 <div className={styles.container}> {/* outer flex to keep content centered */}
                     <div className={styles.gutter}></div>
                     <div className={styles.dadbod}> {/* all the posts are in here */}
-                        {posts.map((post) => (
+                        {posts.slice(0).reverse().map((post) => (
                             <Link
                             as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
                             href={`/posts/[slug]`}>
