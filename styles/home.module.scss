@@ -11,35 +11,48 @@
     .hero {
         margin-top: 30vh;
         margin-bottom: 20vh;
-        h1, h2 {
-            text-align: center;
+        .notVideo {
+            position: relative;
+            z-index: 102;
+            .heroTitle, .heroSub {
+                text-align: center;
+            }
+            .heroTitle {
+                font-size: 3rem;
+                line-height: 100px;
+                @include for-tablet {
+                    font-size: 4rem;
+                    line-height: 70px;
+                    margin-bottom: 20px;
+                }
+                @include for-mobile {
+                    
+                }
+            }
+            .heroSub {
+                font-size: 2rem;
+            }
+            .heroArrow {
+                display: block;
+                margin: auto;
+                margin-top: hei(20vh);
+                path {
+                    color: $light;
+                    fill: $light;
+                }
+                circle {
+                    stroke: $light;
+                }
+            }
         }
-        h1 {
-            font-size: 3rem;
-            line-height: 100px;
-            @include for-tablet {
-                font-size: 4rem;
-                line-height: 70px;
-                margin-bottom: 20px;
-            }
-            @include for-mobile {
-                
-            }
-        }
-        h2 {
-            font-size: 2rem;
-        }
-        svg {
-            display: block;
-            margin: auto;
-            margin-top: hei(20vh);
-            path {
-                color: $light;
-                fill: $light;
-            }
-            circle {
-                stroke: $light;
-            }
+        .heroVid {
+            position: absolute;
+            object-fit: contain;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 101;
+            opacity: 40%;
         }
     }
     .section {

@@ -13,12 +13,16 @@ export default function Home () {
       </Head>
       <div className={styles.container}>
         <div className={styles.hero}>
-          <h1>We are an interdisciplinary research lab</h1>
-          <h2>incubating innovaters and rocketeers</h2>
-          <svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M56.8328 88.3691C58.0044 89.5407 59.9039 89.5407 61.0755 88.3691L80.1674 69.2772C81.3389 68.1057 81.3389 66.2062 80.1674 65.0346C78.9958 63.863 77.0963 63.863 75.9247 65.0346L58.9542 82.0052L41.9836 65.0346C40.812 63.863 38.9125 63.863 37.741 65.0346C36.5694 66.2062 36.5694 68.1057 37.741 69.2772L56.8328 88.3691ZM55.9542 31.6606L55.9542 86.2478L61.9542 86.2478L61.9542 31.6606L55.9542 31.6606Z" fill="white"/>
-            <circle cx="59.5" cy="59.5" r="56.5" stroke-width="6"/>
-          </svg>
+          
+          <div className={styles.notVideo}>
+            <h1 className={styles.heroTitle}>We are an interdisciplinary research lab</h1>
+            <h2 className={styles.heroSub}>incubating innovaters and rocketeers</h2>
+            <svg className={styles.heroArrow} width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M56.8328 88.3691C58.0044 89.5407 59.9039 89.5407 61.0755 88.3691L80.1674 69.2772C81.3389 68.1057 81.3389 66.2062 80.1674 65.0346C78.9958 63.863 77.0963 63.863 75.9247 65.0346L58.9542 82.0052L41.9836 65.0346C40.812 63.863 38.9125 63.863 37.741 65.0346C36.5694 66.2062 36.5694 68.1057 37.741 69.2772L56.8328 88.3691ZM55.9542 31.6606L55.9542 86.2478L61.9542 86.2478L61.9542 31.6606L55.9542 31.6606Z" fill="white"/>
+              <circle cx="59.5" cy="59.5" r="56.5" strokeWidth="6"/>
+            </svg>
+          </div>
+          <video autoPlay muted loop className={styles.heroVid} src="videos/trel_loop.mp4" type="video/mp4"></video>
         </div>
         <div className={styles.section}> {/* featured / latest news */}
           <div className={styles.thumb}>
@@ -184,6 +188,32 @@ export default function Home () {
             </div>
           </div>
         </div>
+        {/* <div id={styles.blog} className={styles.section}>
+          <div className={styles.thumb}>
+            {posts.map((post) => (
+              <Link
+              as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
+              href={`/posts/[slug]`}>
+                  <div className={styles.artbox}>
+                      <div className={styles.imgbox}>
+                          <img src={`${post.data.picture}`}></img>
+                      </div>
+                      <div className={styles.infobox}>
+                          <h5>{post.data.date}</h5>
+                          <h6>by {post.data.author}</h6>
+                      </div>
+                      <a>{post.data.title}</a>
+                  </div>
+              </Link>
+            ))}
+          </div>
+          <div className={styles.text}>
+            <h2>our blog</h2>
+            <Link href={'/donate'}>
+              <h1>See What We're Working On</h1>
+            </Link>
+          </div>
+        </div> */}
         <div className={styles.conclude}>
           <h1 className={styles.blastoff}>Blast Off With Us</h1>
           <div className={styles.linebreak} />
