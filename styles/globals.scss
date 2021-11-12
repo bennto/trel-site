@@ -2,11 +2,13 @@
 
 :root {
   font-size: calc(#{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width})));
+  background-color: $dark;
 }
 
 @include for-mobile() {
   :root {
     font-size: calc(#{$mobile-min-font}px + (#{$mobile-max-font} - #{$mobile-min-font}) * ( (100vw - #{$mobile-min-width}px) / ( #{$mobile-max-width} - #{$mobile-min-width})));
+    
   }
 }
 
