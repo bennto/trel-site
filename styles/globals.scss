@@ -2,7 +2,6 @@
 
 :root {
   font-size: calc(#{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width})));
-  background-color: $dark;
 }
 
 @include for-mobile() {
@@ -43,11 +42,25 @@ img {
 @font-face {
   font-family: 'Aeonik';
   src: url('../public/fonts/AeonikTRIAL-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('../public/fonts/AeonikTRIAL-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('../public/fonts/AeonikTRIAL-Light.otf');
+  font-weight: lighter;
 }
 
 @font-face {
   font-family: 'Coanda';
   src: url('../public/fonts/CoandaTRIAL-Regular.otf');
+  font-weight: normal;
 }
 
 li, a, h1, h2, h3, h4, h5 ,h6, p {

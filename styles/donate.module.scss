@@ -1,8 +1,32 @@
 @import "variables";
 
+.hornraiser {
+    margin: 20px 330px 0 330px;
+    border: 1px solid #bebebe;
+    border-radius: 6px;
+    overflow: hidden;
+    a {
+        text-decoration: none;
+        display: flex;
+        img {
+            width: 30%;
+        }
+        .break {
+            width: 30px;
+        }
+        .text {
+            align-self: center;
+            h1 {
+                font-family: $mono;
+                font-weight: bold;
+                font-size: 56px;
+            }
+        }
+    }
+}
 .hero {
     position: relative;
-    height: pem(750px);
+    height: 550px;
     display: grid;
     background-size: cover;
 
@@ -10,7 +34,7 @@
         content: '';
         position: absolute;
         left: 50%;
-        bottom: pem(50px);
+        bottom: pem(30px);
         width: pem(16px);
         height: pem(88px);
         background-image: url('../public/icons/down-arrow.svg');
