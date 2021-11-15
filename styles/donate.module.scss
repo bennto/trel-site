@@ -1,7 +1,7 @@
 @import "variables";
 
 .hornraiser {
-    margin: 20px 330px 0 330px;
+    margin: 20px 200px 0 200px;
     border: 1px solid #bebebe;
     border-radius: 6px;
     overflow: hidden;
@@ -9,7 +9,9 @@
         text-decoration: none;
         display: flex;
         img {
-            width: 30%;
+            object-fit: contain;
+            height: 120px;
+            width: auto;
         }
         .break {
             width: 30px;
