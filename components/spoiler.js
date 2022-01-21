@@ -20,7 +20,8 @@ export default function Spoiler( {type, title, children}) {
         <div className={`${styles.spoiler} ${application ? "" : styles.disabled}`}>
             <button onClick={toggle}>{ title }</button>
             <p style={{display: active?"block":"none"}}>{ children }</p>
-            <a href={application} target="_blank" style={{display: active?"block":"none"}} className={utilStyles.textbutton}>{application ? "Apply" : "Application Closed"}</a>
+            <br />
+            {/* <a href={application} target="_blank" style={{display: active?"block":"none"}} className={utilStyles.textbutton}>{application ? "Apply" : "Application Coming Soon"}</a> */}
         </div>
     )
 }

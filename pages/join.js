@@ -10,34 +10,35 @@ import Link from 'next/link'
 export default function Join () {
     return (
         <Layout>
-            <Head>{siteTitle}</Head>
+            <Head>
+                <title>{siteTitle}</title>
+            </Head>
             <section className={styles.hero}>
                 <div>
-                    <h1>Recruiting is Closed!</h1>
-                    <h2>see how you can't join our team</h2>
+                    <h1>We're Recruiting!</h1>
+                    <h2>see how you join our team</h2>
                 </div>
             </section>
             <section className={styles.application}>
                 <div className={styles.container}>
                     <div className={styles.card}>
                         <h3>Attend an info session</h3>
-                        <p className={styles.desc}>Come see what we're all about! Applicants must attend at least one info session.</p>
+                        <p className={styles.desc}>Come see what we're all about! Applicants must attend at least one info session. Sessions will be held on Zoom this semester due to COVID-19</p>
                         <div className={styles.choices}>
-                            <p><span className = {styles.font1}>session 1 : &emsp;&ensp;</span><span className = {styles.font2}>September 9 &emsp; 5 - 7 PM</span></p>
-                            <p><span className = {styles.font1}>session 2 : &emsp;&ensp;</span><span className = {styles.font2}>September 10 &emsp; 5 - 7 PM</span></p>
+                            <p><span className = {styles.font1}>session 1 : &emsp;&ensp;</span><span className = {styles.font2}>January 27 &emsp; 6 - 7:30 PM</span></p>
+                            <p><span className = {styles.font1}>session 2 : &emsp;&ensp;</span><span className = {styles.font2}>January 28 &emsp; 6 - 7:30 PM</span></p>
                         </div>
                         <h2 className={styles.desc}> Located at:</h2>
                         <div className={styles.address}>
-                            <p>Engineering Education and Research Center</p>
+                            <p>Zoom Code: 981 247 9224</p>
                             <br />
-                            <p>Room 0.904</p>
-                            <br />
-                            <p>2501 Speedway, Austin, TX 78712</p> 
+                            <p>Password: 381575</p>
+                            
                         </div>
                     </div>
                     <div className={styles.card}>
-                        <h3 style = {{visibility: "hidden"}}>blank</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1722.610123488815!2d-97.73637627999825!3d30.287790980683898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59b2584cfb7%3A0xfc70be33186e5baa!2sEngineering%20Education%20and%20Research%20Center%20(EER)!5e0!3m2!1sen!2sus!4v1630706813293!5m2!1sen!2sus" width="600" height="100%" allowfullscreen="" loading="lazy"></iframe>
+                        {/* <h3 style = {{visibility: "hidden"}}>blank</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1722.610123488815!2d-97.73637627999825!3d30.287790980683898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59b2584cfb7%3A0xfc70be33186e5baa!2sEngineering%20Education%20and%20Research%20Center%20(EER)!5e0!3m2!1sen!2sus!4v1630706813293!5m2!1sen!2sus" width="600" height="100%" allowfullscreen="" loading="lazy"></iframe> */}
                     </div>
                     <div className={styles.card}>
                         <h3>Click a position you like</h3>
@@ -96,7 +97,7 @@ export default function Join () {
                                     <br /><br />Desired Skills: <br/><mark>C++</mark> <mark>Linux</mark> <mark>operating systems</mark> <mark>embedded systems</mark>
                                 </Spoiler></li>
                             </ul>
-                            <li>Structures</li>
+                            <li>Structures + COPV</li>
                             <ul>
                                 <li><Spoiler title="Hold Down Engineer">You will design and simulate launch conditions and integrate the hold down system into the overall launch platform.
                                     <br /><br />Desired Skills: <br/><mark>CAD</mark> <mark>Statics</mark> <mark>Solids</mark> <mark>Pneumatic Systems</mark>
@@ -165,13 +166,13 @@ export default function Join () {
                                 <li><p>#1 Poptart flavor</p></li>
                             </ul>
                         </div>
-                        <DateToDate from={"Opened Friday Sep. 10th"} to={"Closed 11:59pm Friday Sep. 17th"} />
-                        <p className={styles.footnote}>Submitting your resume is not required for our application process.</p>
+                        <DateToDate from={"Opened Friday Jan. 28th"} to={"Closed 11:59pm Wednesday Feb. 2nd"} />
+                        <p className={styles.footnote}>We recommend submitting your apps ASAP. A resume is recommended, but optional. </p>
                     </div>
                     <div className={styles.card}>
                         <h3>Interview with our teams</h3>
                         <p className={styles.desc}>We will schedule a time that works for you. Come as you are, we want to know the real you.</p>
-                        <DateToDate from={"Began Friday Sep. 17th"} to={"Decisions Friday Sep. 24th"}/>
+                        <DateToDate from={"Began Wed. Feb. 2nd"} to={"Decisions Thursday Feb. 17th"}/>
                         <p className={styles.footnote}>These interviews will be held on Zoom. You will have one interview for each team you applied for. Submitting an application does not guarantee you will get an interview.</p>
                     </div>
                     <div className={styles.card}></div>

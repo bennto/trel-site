@@ -4,14 +4,13 @@ import styles from '../styles/about.module.scss'
 import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
-
 export default function About () {
-    return (
-        <Layout>
-            <Head>
-                <title>{siteTitle}</title>
-            </Head>
-            <section className={styles.about}>
+  return (
+    <Layout>
+      <Head>
+          <title>{siteTitle}</title>
+      </Head>
+      <section className={styles.about}>
         <div className={styles.container}>
           <h1>We are an interdisciplinary research lab <br />
             incubating the next generation of innovators &amp; rocketeers.</h1>
@@ -93,6 +92,6 @@ export default function About () {
           </Link> */}
         </div>
       </section>
-        </Layout>
-    )
+    </Layout>
+  )
 }
