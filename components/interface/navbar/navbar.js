@@ -20,10 +20,10 @@ export default function Navbar() {
                         </svg>
                     </a></Link>
                 <ul>
-                    <li><Link href={'/halcyon'}><a>Halcyon</a></Link></li>
-                    <li><Link href={'/blog'}><a>Blog</a></Link></li>
-                    <li><Link href={'/join'}><a>Join Us</a></Link></li>
-                    <li><Link href={'/donate'}><a>Donate</a></Link></li>
+                    <li><Link href={'/halcyon'}><a>halcyon</a></Link></li>
+                    <li><Link href={'/blog'}><a>blog</a></Link></li>
+                    <li><Link href={'/join'}><a>join us</a></Link></li>
+                    <li><Link href={'/donate'}><a>donate</a></Link></li>
                 </ul>
             </nav>
             <div className={styles.placeholder}></div>

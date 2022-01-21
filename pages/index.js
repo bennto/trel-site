@@ -35,8 +35,8 @@ export default function Home () {
             <h2>latest news</h2>
             <br />
             <a href="https://hornraiser.utexas.edu/project/28076" target="_blank">
-              <h1>Visit and support our Hornraiser!</h1><br />
-              <p>Contribute for special prizes and awards, as well as heartfelt gratitude from all of our lab members!</p>
+              <h1>Our Hornraiser is closed!</h1><br />
+              <p>Thanks to everybody who contributed!</p>
             </a>
             <br />
           </div>

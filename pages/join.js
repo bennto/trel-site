@@ -41,8 +41,9 @@ export default function Join () {
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1722.610123488815!2d-97.73637627999825!3d30.287790980683898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59b2584cfb7%3A0xfc70be33186e5baa!2sEngineering%20Education%20and%20Research%20Center%20(EER)!5e0!3m2!1sen!2sus!4v1630706813293!5m2!1sen!2sus" width="600" height="100%" allowfullscreen="" loading="lazy"></iframe> */}
                     </div>
                     <div className={styles.card}>
-                        <h3>Click a position you like</h3>
-                        <ul className={styles.openpositions}>
+                        <h3>Positions coming soon!</h3>
+                        
+                        {/* <ul className={styles.openpositions}>
                             <li>Avionics GNC</li>
                             <ul>
                                 <li><Spoiler title="Navigation Engineer">You will work on the Design and Testing of our Navigation System. You can expect to work on algorithm development, IMU testing, and Sensor processing. Through this work, you will ensure that Halcyon always knows its position, velocity, and attitude. Expect significant usage of MATLAB in this role.
@@ -64,18 +65,6 @@ export default function Join () {
                                     <br /><br />Desired Skills: <br/><mark>C++</mark> <mark>Linux</mark> <mark>operating systems</mark> <mark>embedded systems</mark>
                                 </Spoiler></li>
                             </ul>
-                            {/* <li>Fluids</li>
-                            <ul>
-                                <li><Spoiler title="Ground Support Equipment Engineer">You will finalize designs, begin hardware testing campaign, and write test plans. You will communicate heavily with other teams.
-                                    <br /><br />Desired Skills: <br/><mark>communication</mark> <mark>CAD</mark> <mark>interest in Fluid Systems</mark>
-                                </Spoiler></li>
-                                <li><Spoiler title="FW Engineer">You will finalize designs, begin hardware testing campaign, and write test plans. You will communicate heavily with other teams.
-                                    <br /><br />Desired Skills: <br/><mark>communication</mark> <mark>CAD</mark> <mark>interest in Fluid Systems</mark>
-                                </Spoiler></li>
-                                <li><Spoiler title="QD Engineer">You will finalize designs, begin hardware testing campaign, and write test plans. You will communicate heavily with other teams.
-                                    <br /><br />Desired Skills: <br/><mark>communication</mark> <mark>CAD</mark> <mark>interest in Fluid Systems</mark>
-                                </Spoiler></li>
-                            </ul> */}
                             <li>Payload</li>
                             <ul>
                                 <li><Spoiler title="Software Engineer">You will help write Payload's flight code including programming triggers, modify the code to test on ground and simulate code in flight conditions. Since payload is interdisciplinary, you can also jump into projects in other subteams if interested / needed. 
@@ -102,14 +91,11 @@ export default function Join () {
                                 <li><Spoiler title="Hold Down Engineer">You will design and simulate launch conditions and integrate the hold down system into the overall launch platform.
                                     <br /><br />Desired Skills: <br/><mark>CAD</mark> <mark>Statics</mark> <mark>Solids</mark> <mark>Pneumatic Systems</mark>
                                 </Spoiler></li>
-                                {/* <li><Spoiler title="COPV Design Engineer">unfinished
-                                    <br /><br />Desired Skills: <br/><mark>CAD</mark> <mark>Statics</mark> <mark>Solids</mark> <mark>Pneumatic Systems</mark>
-                                </Spoiler></li> */}
                             </ul>
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className={styles.card}>
-                        <h3>&nbsp;</h3>
+                        {/* <h3>&nbsp;</h3>
                         <ul className={styles.openpositions}>
                         <li>Communications</li>
                             <ul>
@@ -129,30 +115,7 @@ export default function Join () {
                                     <br /><br />Desired Skills: <br/><mark>social skills</mark> <mark>business</mark> <mark>effective writing</mark> <mark>social media marketing</mark> <mark>graphic design ability</mark> <mark>Powerpoint</mark> <mark>Excel</mark>
                                 </Spoiler></li>
                             </ul>
-                            {/* <li>Finance and Strategy</li>
-                            <ul>
-                                <li><Spoiler title="Budgeting Manager">You will collaborate to plan spending with the goal of keeping TREL within its margin of safety. As a financial analyst, you will support our Finance and Strategy team through thoughtful analysis of cost expenditures and project forecasts for TREL's $1M Halcyon rocket.<br/><br/> <br /><br />Desired Skills: <br/>Microsoft Excel and Powerpoint is a plus</Spoiler></li>
-                                <li><Spoiler title="Corporate Development">You will be directly responsible for sourcing, developing, and maintaining our vendor relationships. To date, TREL has received over $400k of cash and donations in kinds from companies like Blue Origin, AWS, EOS, NI, and many others.<br/><br/> <br /><br />Desired Skills: <br/>Salesforce is a plus</Spoiler></li>
-                                <li><Spoiler title="Procurement Liaison">You will bridge the gap between our engineering system leads and the finance team as you manage TREL's supply chain by interfacing with Corporate Development and Budget Management. Our rocket, Halcyon, has a complex global supply chain that requires meticulous management to ensure we maintain on schedule.<br/><br/> <br /><br />Desired Skills: <br/>Microsoft Suite, Salesforce, and Procurify is a plus</Spoiler></li>
-                            </ul>
-                            <li>Outreach</li>
-                            <ul>
-                                <li><Spoiler title="STEM Educator">You will help create educational and engaging content for students, inspiring young minds to explore rocketry and STEM. You will explore scientific concepts, applications, and fun activitiies, and inspire the our next generation of rocketeers.<br/><br/> <br /><br />Desired Skills: <br/>Friendly with people and children</Spoiler></li>
-                                <li><Spoiler title="Outreach Coordinator">You will organize outreach projects and events, create demos that demonstrate rocketry and STEM, organize and plan events, and develop strong communication and project management skills. <br/><br/> <br /><br />Desired Skills: <br/>Friendly with people and children</Spoiler></li>
-                            </ul>
-                            <li>Communications</li>
-                            <ul>
-                                <li><Spoiler title="Public Relations Lead">You are the administrative force behind the face of TREL. You will manage the vision and integrity of TREL's public image. You make sure all team logistics are ironed out so the PR subteams can operate at full capacity.<br/><br/> <br /><br />Desired Skills: <br/>Strong organizational and communication skills.</Spoiler></li>
-                                <li><Spoiler title="Content Sublead">You will be responsible for the short-term visions and goals of TREL’s Public Relations team. This subteam includes social media, copywriting, photography, videography, and graphic design.  To help the content team run smoothly, another of your responsibilities will include giving critiques and sending PR team members out in pairs (writer + visual) to create content.<br/><br/> <br /><br />Desired Skills: <br/>Strong organizational and communication skills</Spoiler></li>
-                                <li><Spoiler title="Strategy Sublead">You will be responsible for the long-term visions and goals of TREL’s Public Relations team. This subteam includes website development and strategic planning, as well as any long-term branding objectives.<br/><br/> <br /><br />Desired Skills: <br/>Texas Media or audience research experience is a plus</Spoiler></li>
-                                <li><Spoiler title="Social Media Coordinator">You will directly manage two or three social media platforms simultaneously potentially including Twitter, LinkedIn, Instagram, and Facebook. This role will be a fantastic opportunity for anyone to expand their social media experience while working for one of the largest interdisciplinary collegiate rocket labs in the nation.<br/><br/> <br /><br />Desired Skills: <br/>Great organizational and communication skills</Spoiler></li>
-                                <li><Spoiler title="Copywriter">You will gain scientific communication experience by writing about our engineering milestones for a collegiate rocket lab that manages $1.5 Mil in capital and resources. There are many eyes on the work that we are creating, and we are seeking passionate writers who love to share knowledge with broader audiences.<br/><br/> <br /><br />Desired Skills: <br/>Good communication and people skills</Spoiler></li>
-                                <li><Spoiler title="Graphic Designer">You will create compelling visual media that will be seen (and possibly worn) by industry leaders, our corporate partners, and your fellow UT students. You will practice giving and receiving creative feedback. <br/><br/> <br /><br />Desired Skills: <br/>Adobe Creative Suite—Illustrator Preferred. Portfolio is required to apply.</Spoiler></li>
-                                <li><Spoiler title="Photographer">You will help shoot and edit photos of our different teams and how they contribute to our Halcyon rocket. We are focusing on those who build these big and sleek machines. You will help pioneer new ways to communicate scientific ideas to large audiences.<br/><br/> Every photoshoot will be a different creative endeavor where you will work closely with our teammates to bring aerospace to life.</Spoiler></li>
-                                <li><Spoiler title="Videographer">You will produce a number of short, advertising-style creative films about TREL and its milestones. <br/> <br/>TREL’s ideal videographer candidates have a healthy knowledge of relevant video software, a love for learning new things, a passion for producing engaging, creative, fresh video content, the ability to work well with others, skills to operate relevant equipment, and an interest in STEM programs outside of the visual arts.</Spoiler></li>
-                                <li><Spoiler title="Web Developer">You will work closely with teams across the lab to showcase TREL projects through interactive web experiences. Your role is crucial to our public image, as our primary information hub and content network will center around our website. You will learn to program in react.js through a library called next.js.<br/><br/> <br /><br />Desired Skills: <br/>Front- or Back-end web development experience. Basic understanding of HTML, CSS, js.</Spoiler></li>
-                            </ul> */}
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className={styles.card}>
                         <h3>Fill out the application</h3>
@@ -160,14 +123,15 @@ export default function Join () {
                         <div className={styles.choices}>
                             <p className={styles.heading}>We want to see:</p>
                             <ul>
+                                <li><p>Your passion</p></li>
                                 <li><p>Your thinking</p></li>
                                 <li><p>Who you are</p></li>
-                                <li><p>A resume</p></li>
-                                <li><p>#1 Poptart flavor</p></li>
+                                <li><p>A resume*</p></li>
                             </ul>
                         </div>
                         <DateToDate from={"Opened Friday Jan. 28th"} to={"Closed 11:59pm Wednesday Feb. 2nd"} />
-                        <p className={styles.footnote}>We recommend submitting your apps ASAP. A resume is recommended, but optional. </p>
+                        <p className={styles.footnote}>We recommend submitting your apps ASAP.  </p>
+                        <p className={styles.footnote}>* A resume is recommended, but optional. </p>
                     </div>
                     <div className={styles.card}>
                         <h3>Interview with our teams</h3>

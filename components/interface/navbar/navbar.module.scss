@@ -1,17 +1,13 @@
 @import '../../../styles/variables';
 @import '../../../styles/type';
 
-@function pem($pixel, $context: 18px) {
-    @return ($pixel / $context) * 1em;
-}
-
 .navbar {
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 97%;
-    padding-top: pem(30px);
+    width: 100%;
+    padding-top: 30px;
     z-index: 102;
     
     svg {
@@ -26,16 +22,14 @@
     ul {
         list-style-type: none;
         padding-left: 0;
-        margin-right: pem(44px);
+        margin-right: 90px;
         margin-top: 0;
 
         li {
             display: inline;
-            margin-left: pem(44px);
-            text-transform: lowercase;
-            font-size: 1.5rem;
-            line-height: 125%;
-            color: white;
+            margin-left: 70px;
+            font-size: 30px;
+            color: $light;
         }
 
         @include for-mobile {

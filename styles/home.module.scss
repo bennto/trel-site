@@ -123,7 +123,7 @@
                         height: 100px;
                         // use bottom two variables to calc slider width
                         width: 250px;
-                        margin: 0 100px 16px 100px;
+                        margin: 0 300px 16px 300px;
                     }
                 }
                 .slider2 {
@@ -156,7 +156,7 @@
                         height: 100px;
                         // use bottom two variables to calc slider width
                         width: 250px;
-                        margin: 0 60px 16px 60px;
+                        margin: 0 150px 16px 150px;
                     }
                 }
             }
@@ -299,7 +299,7 @@
 // animations + quirky features
 @keyframes scroll1 {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(calc(-100px*2 - 250px) * 2))}
+	100% { transform: translateX(calc(calc(-300px*2 - 250px) * 2))}
 }
 @keyframes scroll2 {
 	0% { transform: translateX(0); }
@@ -307,5 +307,5 @@
 }
 @keyframes scroll3 {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(calc(-58px*2 - 250px) * 4))}
+	100% { transform: translateX(calc(calc(-148px*2 - 250px) * 4))}
 }
