@@ -111,7 +111,7 @@ export default function Join () {
                             <ul>
                                 <li><Spoiler title="Payload Avionics (Flight Development Software) Engineer">In this position, you will be developing our flight computer’s software. This individual would develop the software from block coding to complete code and move to Hardware-in-the-Loop testing. The individual would work closely with Payload Avionics Hardware (PAvHw) to ensure proper implementation of code with our existing sensor suite. Additionally, communication and integration with Payload Structures is required to properly implement the Payload ejection mechanism with the flight computer. No hard background in software is required. 
                                 </Spoiler></li>
-                                <li><Spoiler title="Payload Recovery Prototyping General Engineer">This individual would be testing and prototyping for our recovery team. This role involves developing test plans and hands-on prototyping for our recovery system. They will be defining goals and requirements, designing test stands, creating test FMEAs and BOMs, and working hands-on with prototyping components. No background in test engineering is required. Interest in testing and hands-on work is desired.
+                                <li><Spoiler title="Payload Recovery Prototyping Engineer">This individual would be testing and prototyping for our recovery team. This role involves developing test plans and hands-on prototyping for our recovery system. They will be defining goals and requirements, designing test stands, creating test FMEAs and BOMs, and working hands-on with prototyping components. No background in test engineering is required. Interest in testing and hands-on work is desired.
                                 </Spoiler></li>
                             </ul>
                             <li>Production</li>
@@ -134,7 +134,7 @@ export default function Join () {
                                 </Spoiler></li>
                                 <li><Spoiler title="Recovery Avionics Hardware Engineer">In this position, the person will be responsible for the design and testing of electronics for the entire recovery system. You will be in charge of the design and testing of enclosure boxes for the protection of said electronic. SOLIDWORKS will be also used in this role. Further, you will assist with the documentation of test plans and work towards preparing for those tests.  
                                 </Spoiler></li>
-                                <li><Spoiler title="Baseplate/Drop Text Engineer">This member will interface with airframe (structures), deployment (recovery), and Firefly test engineers to prepare for the baseplate static qualification and acceptance testing. They will use SOLIDWORKS to update CADs, drawings, and simulations, and relay those updates to vendors. Most importantly, they will set up and facilitate the physical test! Since the baseplate is near completion, after spending the first part of the semester working on baseplate, the second part will include a transition to focusing on the drop test, which will qualify that the recovery system’s sequence of events/deployments will occur properly. In this role, they will design a stand which can release the test article from the helicopter, communicate with pilots and locations to determine how to safely drop the test article, and collaborate with a variety of sub-teams to create a representative integrated recovery system. 
+                                <li><Spoiler title="Baseplate/Drop Test Engineer">This member will interface with airframe (structures), deployment (recovery), and Firefly test engineers to prepare for the baseplate static qualification and acceptance testing. They will use SOLIDWORKS to update CADs, drawings, and simulations, and relay those updates to vendors. Most importantly, they will set up and facilitate the physical test! Since the baseplate is near completion, after spending the first part of the semester working on baseplate, the second part will include a transition to focusing on the drop test, which will qualify that the recovery system’s sequence of events/deployments will occur properly. In this role, they will design a stand which can release the test article from the helicopter, communicate with pilots and locations to determine how to safely drop the test article, and collaborate with a variety of sub-teams to create a representative integrated recovery system. 
                                 </Spoiler></li>
                             </ul>
                             <li>Structures</li>
@@ -173,7 +173,7 @@ export default function Join () {
                     </div>
                     <div className={styles.card}>
                         <h3>Fill out the application</h3>
-                        <p className={styles.desc}>Apply for as many as three positions.</p>
+                        <p className={styles.desc}>Click <a style={{ color: "red" }} href="https://forms.gle/bNxoSkej3mm12UkJ7" target="_blank">here</a> to apply!</p>
                         <div className={styles.choices}>
                             <p className={styles.heading}>We want to see:</p>
                             <ul>
