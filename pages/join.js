@@ -94,7 +94,7 @@ export default function Join () {
                             </ul>
                             <li>Fluids Component Test</li>
                             <ul>
-                                <li><Spoiler title="Hold Down Engineer">This person will Develop and improve LabVIEW code for component testing. This would involve ensuring that the code is up to date with any changes to electronics and/or fluid components, as well as making sure the front panel (the user interface) remains readable and easy to use. Prior programming experience would be helpful but is most definitely NOT a requirement. Good analytical and organizational skills are important.
+                                <li><Spoiler title="Fluids Software Component Test Engineer">This person will Develop and improve LabVIEW code for component testing. This would involve ensuring that the code is up to date with any changes to electronics and/or fluid components, as well as making sure the front panel (the user interface) remains readable and easy to use. Prior programming experience would be helpful but is most definitely NOT a requirement. Good analytical and organizational skills are important.
                                 </Spoiler></li>
                             </ul>
                             <li>Operations and Project Management</li>
@@ -109,7 +109,7 @@ export default function Join () {
                         <ul className={styles.openpositions}>
                             <li>Payload</li>
                             <ul>
-                                <li><Spoiler title="Avionics (Flight Development Software) Engineer">In this position, you will be developing our flight computer’s software. This individual would develop the software from block coding to complete code and move to Hardware-in-the-Loop testing. The individual would work closely with Payload Avionics Hardware (PAvHw) to ensure proper implementation of code with our existing sensor suite. Additionally, communication and integration with Payload Structures is required to properly implement the Payload ejection mechanism with the flight computer. No hard background in software is required. 
+                                <li><Spoiler title="Payload Avionics (Flight Development Software) Engineer">In this position, you will be developing our flight computer’s software. This individual would develop the software from block coding to complete code and move to Hardware-in-the-Loop testing. The individual would work closely with Payload Avionics Hardware (PAvHw) to ensure proper implementation of code with our existing sensor suite. Additionally, communication and integration with Payload Structures is required to properly implement the Payload ejection mechanism with the flight computer. No hard background in software is required. 
                                 </Spoiler></li>
                                 <li><Spoiler title="Payload Recovery Prototyping General Engineer">This individual would be testing and prototyping for our recovery team. This role involves developing test plans and hands-on prototyping for our recovery system. They will be defining goals and requirements, designing test stands, creating test FMEAs and BOMs, and working hands-on with prototyping components. No background in test engineering is required. Interest in testing and hands-on work is desired.
                                 </Spoiler></li>
