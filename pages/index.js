@@ -26,17 +26,17 @@ export default function Home () {
         </div>
         <div className={styles.section}> {/* featured / latest news */}
           <div className={styles.thumb}>
-            <a href="https://hornraiser.utexas.edu/project/28076" target="_blank">
-              <img className={styles.rocketeers} src="placeholder/HornRaiserLogo2.jpg" />
-            </a>
+            <Link href={'/join'}><a>
+              <img className={styles.rocketeers} src="images/Posts/AllLinersHorizontal.jpeg" />
+            </a></Link>
           </div>
           <div className={styles.break}></div>
           <div className={styles.text}>
             <h2>latest news</h2>
             <br />
-            <a href="https://hornraiser.utexas.edu/project/28076" target="_blank">
-              <h1>Our Hornraiser is closed!</h1><br />
-              <p>Thanks to everybody who contributed!</p>
+            <a href="https://www.texasrocketlab.com/join">
+              <h1>We're Recruiting!</h1><br />
+              <p>Learn more about us and how you can become part of the TREL family!</p>
             </a>
             <br />
           </div>
