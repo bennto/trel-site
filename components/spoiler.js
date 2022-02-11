@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.scss'
 
 export default function Spoiler( {type, title, children}) {
 
-    let application = "https://forms.gle/bNxoSkej3mm12UkJ7";
+    let application = "https://docs.google.com/forms/d/e/1FAIpQLScHv1a3RnDwjKsOldkD9GakO-5dSSqNM5nqAXbgVJSgmiCHDQ/viewform?usp=sf_link";
     const [active, show] = React.useState(false);
     function toggle(){
         show(!active);
