@@ -16,7 +16,7 @@ export default function Home () {
           
           <div className={styles.notVideo}>
             <h1 className={styles.heroTitle}>We are an interdisciplinary research lab</h1>
-            <h2 className={styles.heroSub}>incubating innovaters and rocketeers</h2>
+            <h2 className={styles.heroSub}>incubating innovators and rocketeers</h2>
             <svg className={styles.heroArrow} width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M56.8328 88.3691C58.0044 89.5407 59.9039 89.5407 61.0755 88.3691L80.1674 69.2772C81.3389 68.1057 81.3389 66.2062 80.1674 65.0346C78.9958 63.863 77.0963 63.863 75.9247 65.0346L58.9542 82.0052L41.9836 65.0346C40.812 63.863 38.9125 63.863 37.741 65.0346C36.5694 66.2062 36.5694 68.1057 37.741 69.2772L56.8328 88.3691ZM55.9542 31.6606L55.9542 86.2478L61.9542 86.2478L61.9542 31.6606L55.9542 31.6606Z" />
               <circle cx="59.5" cy="59.5" r="56.5" strokeWidth="6"/>
