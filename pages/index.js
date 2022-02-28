@@ -24,7 +24,7 @@ export default function Home () {
           </div>
           <video autoPlay muted loop className={styles.heroVid} src="videos/trel_loop.mp4" type="video/mp4"></video>
         </div>
-        <div className={styles.section}> {/* featured / latest news */}
+        {/* <div className={styles.section}>
           <div className={styles.thumb}>
             <Link href={'/join'}><a>
               <img className={styles.rocketeers} src="images/Posts/AllLinersHorizontal.jpeg" />
@@ -40,7 +40,7 @@ export default function Home () {
             </a>
             <br />
           </div>
-        </div>
+        </div> */}
         <div className={styles.section}> {/* we are TREL */}
           <div className={styles.text}>
             <h3>We are the Texas Rocket Engineering Lab (TREL)</h3>
