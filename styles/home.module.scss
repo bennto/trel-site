@@ -26,7 +26,6 @@
                     margin-bottom: 20px;
                 }
                 @include for-mobile {
-                    
                 }
             }
             .heroSub {
@@ -64,32 +63,32 @@
         }
     }
     .section {
-        margin: 10% 175px 0 175px;
+        margin: 90px 175px 0px 175px;
         display: flex;
         flex-direction: row;
         h3 {
-            font-size: 2.7rem;
+            font-size: 2.2rem;
             font-weight: bold;
             @include for-mobile {
                 font-size: 3rem;
             }
         }
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             opacity: 0.5;
             @include for-tablet {
                 margin-top: 10px;
             }
         }
         h1 {
-            font-size: 3rem;
+            font-size: 2.7rem;
             letter-spacing: 0.1rem;
             font-weight: bold;
         }
         p {
-            font-size: 1.3rem;
-            letter-spacing: 0.03rem;
-            line-height: 50px;
+            font-size: 1rem;
+            line-height: 30px;
+            letter-spacing: 0.2px;
             @include for-tablet {
                 font-size: 1.5rem;
                 margin-top: 10px;
@@ -175,7 +174,7 @@
         .text {
             width: 40%;
             .halcyon {
-                font-size: 4rem;
+                font-size: rem;
                 cursor: pointer;
             }
             .linkbox {
@@ -186,11 +185,11 @@
                 border-style: solid;
                 border-color: $light;
                 border-width: 2px;
-                border-radius: 30px;
                 transition: color 2s;
                 cursor: pointer;
                 p {
                     margin: 0 20px 0 20px;
+                    font-size: 0.9rem;
                 }
             }
             @include for-tablet {
@@ -217,10 +216,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 200px 175px 200px 175px;
+        margin: 90px 175px 200px 175px;
         .blastoff {
-            font-size: 3.5rem;
-            letter-spacing: 0.2rem;
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
             font-weight: bold;
         }
         .linebreak {
