@@ -50,29 +50,42 @@ export default function Donate () {
                     <a href="https://www.ae.utexas.edu/" target="_blank">
                         <img src={'./logos/ASE.svg'} />
                     </a>
-                    <a href="https://www.ni.com/en-us.html" target="_blank">
-                        <img src={'./logos/ni.svg'} />
+                    <a href="https://www.siemens.com/" target="_blank">
+                        <img src={'./logos/siemens.svg'} />
                     </a>
                     <a href="https://www.eos.info/en" target="_blank">
                         <img src={'./logos/eos.svg'} />
                     </a>
+                </div>
+                <div className={styles.supporters}>
                     <a href="https://aws.amazon.com/" target="_blank">
                         <img src={'./logos/aws.svg'} />
+                    </a>
+                    <a href="https://www.epsilon3.io/" target="_blank">
+                        <img src={'./logos/epsilon3.svg'} />
+                    </a>
+                    <a href="https://www.ni.com/en-us.html" target="_blank">
+                        <img src={'./logos/ni.svg'} />
                     </a>
                 </div>
                 <h2>Pioneer</h2>
                 <div className={styles.supporters}>
+                    <a href="https://www.boeing.com/" target="_blank">
+                        <img src={'./logos/boeinglogo.svg'} />
+                    </a>
                     <a href="https://www.procurify.com/" target="_blank">
-                        <img className={styles.smallimage} src={'./logos/procurify.svg'} />
+                        <img src={'./logos/procurify.svg'} />
+                    </a>
+                </div>
+                <div className={styles.supporters}>
+                    <a href="https://www.avcovalve.com/" target="_blank">
+                        <img src={'./logos/avco.svg'} />
+                    </a>
+                    <a href="https://www.blueorigin.com/" target="_blank">
+                        <img src={'./logos/blueorigin.svg'} />
                     </a>
                     <a href="https://www.emerson.com/en-us/global" target="_blank">
                         <img src={'./logos/emerson.svg'} />
-                    </a>
-                    <a href="https://www.boeing.com/" target="_blank">
-                        <img className={styles.smallimage} src={'./logos/boeinglogo.svg'} />
-                    </a>
-                    <a href="https://www.blueorigin.com/" target="_blank">
-                        <img className={styles.smallimage} src={'./logos/blueorigin.svg'} />
                     </a>
                 </div>
                 </div>

@@ -137,7 +137,7 @@
     }
     .supporters {
         display: flex;
-        align-items: center;
+        justify-content: center;
         padding-top: pem(10px);
         padding-bottom: pem(20px);
         font-size: pem(18px, 20px);
