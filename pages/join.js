@@ -43,6 +43,7 @@ export default function Join () {
                     <div className={styles.card}>
                         <h3>Engineer Positions</h3>
                         <ul className={styles.openpositions}>
+<<<<<<< HEAD
                             <li>Avionics Guidance, Navigation, and Control</li>
                             <ul>
                                 <li><Spoiler title="Navigation Engineer">This role will work closely with VectorNav IMU hardware and software, conducting tests to collect data and characterize the IMU's performance as well as researching and implementing data filtration algorithms to process data output from the IMU. This data filtration will later be integrated with the navigation algorithm in Simulink.
@@ -57,10 +58,20 @@ export default function Join () {
                                 <li><Spoiler title="Wiring Harness and Integration Engineer">This person's job is to work on continually updating the wiring harness designs to be most up to date with any changes made by other subteams. Once harnesses are ordered they will proceed with testing and verifying the designs. 
                                 </Spoiler></li>
                                 <li><Spoiler title="Power Systems Engineer">This person's job is to work on converter PCB boards which will connect from the ground power supply to the onboard battery packs along with the rest of the rocket. Someone with PCB design experience is preferred. 
+=======
+                            <li>Avionics GNC</li>
+                            <ul>
+                                <li><Spoiler title="Navigation Engineer">You will work on the Design and Testing of our Navigation System. You can expect to work on algorithm development, IMU testing, and Sensor processing. Through this work, you will ensure that Halcyon always knows its position, velocity, and attitude. Expect significant usage of MATLAB in this role.
+                                    <br /><br />Desired Skills: <br/><mark>Attitude Kinematics</mark> <mark>Filtering</mark> <mark>Sensors</mark> <mark>Dynamics </mark> <mark>MATLAB/Simulink</mark> <mark>Basic Programming </mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="Trick Simulation Engineer">As a Trick Simulation Engineer, you will help develop a comprehensive 6-degree-of-freedom (6DOF) flight simulation for the lab. You will develop models, simulate rocket dynamics, and perform flight trajectory analysis in this role. You will learn essential programming skills and C++.
+                                    <br /><br />Desired Skills: <br/><mark>Attitude Dynamics</mark> <mark>Dynamics</mark> <mark>Modeling/Simulation</mark> <mark>Aerodynamics</mark> <mark>Control Theory</mark> <mark>C++</mark> <mark>Intermediate Programming</mark>
+>>>>>>> 472fe47faaf0b9c47f23ad5dcad3e84b1e5b31ca
                                 </Spoiler></li>
                             </ul>
                             <li>Avionics Software</li>
                             <ul>
+<<<<<<< HEAD
                                 <li><Spoiler title="HIL Simulation Engineer">This position involves writing software for the Hardware-In-the-Loop (HIL) system in order to create mission and vehicle simulations for testing the rocket's flight computer. It will involve working with Veristand, LabView, and C/C++ code. Potential projects: nominal/off-nominal mission modeling, engine modeling, HIL infrastructure, HIL test suite development 
                                 </Spoiler></li>
                                 <li><Spoiler title="HIL Fluids Simulation Engineer">This position involves writing software for the Hardware-In-the-Loop (HIL) system in order to create simulations of the vehicle's fluid systems (propellant feed, RCS, etc). It will involve working with Veristand, LabView, and C/C++ code.
@@ -80,15 +91,58 @@ export default function Join () {
                                 <li><Spoiler title="Hotfire Technician">This position will entail working on the various parts of the engine hotfire test stand: building fluid lines, electrical harness manufacturing, debugging sensors and valves as well as helping run various testing campaigns. Critical thinking, patience, and communication are all desirable skills. 90% of the work will take place at our Briggs test site. 
                                 </Spoiler></li>
                                 <li><Spoiler title="Hotfire Software Technician">This position will entail learning and developing Labview for the engine hotfire test stand. This will include writing and making changes to the code as changes are made to the stand as well as updating the UI. This position will also entail assisting in the testing campaign through data analysis and running the console. Prior programming experience is not required, only a strong desire to learn and take on a challenging project.
+=======
+                                <li><Spoiler title="Hardware-in-the-Loop Engineer">You will develop drivers in LabVIEW and VeriStand which emulate our rocket's more complex devices (e.g., IMUs, altimeter) in full flight simulations. This work is critical to ensuring the high fidelity and verifying power of our HIL simulation.
+                                    <br /><br />Desired Skills: <br/><mark>C</mark> <mark>LabVIEW</mark> <mark>FPGA</mark> <mark>embedded systems</mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="Flight Software Engineer">You will implement and test fault-tolerant avionics software that controls the rocket in flight.  
+                                    <br /><br />Desired Skills: <br/><mark>C++</mark> <mark>Linux</mark> <mark>operating systems</mark> <mark>embedded systems</mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="Flight Computer Test Engineer">You will design and perform tests of flight computer robustness in flight-like environmental conditions. You will periodically work evenings at Briggs Test Site.
+                                    <br /><br />Desired Skills: <br/><mark>C++</mark> <mark>Linux</mark> <mark>operating systems</mark> <mark>embedded systems</mark>
+                                </Spoiler></li>
+                            </ul>
+                            {/* <li>Fluids</li>
+                            <ul>
+                                <li><Spoiler title="Ground Support Equipment Engineer">You will finalize designs, begin hardware testing campaign, and write test plans. You will communicate heavily with other teams.
+                                    <br /><br />Desired Skills: <br/><mark>communication</mark> <mark>CAD</mark> <mark>interest in Fluid Systems</mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="FW Engineer">You will finalize designs, begin hardware testing campaign, and write test plans. You will communicate heavily with other teams.
+                                    <br /><br />Desired Skills: <br/><mark>communication</mark> <mark>CAD</mark> <mark>interest in Fluid Systems</mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="QD Engineer">You will finalize designs, begin hardware testing campaign, and write test plans. You will communicate heavily with other teams.
+                                    <br /><br />Desired Skills: <br/><mark>communication</mark> <mark>CAD</mark> <mark>interest in Fluid Systems</mark>
+                                </Spoiler></li>
+                            </ul> */}
+                            <li>Payload</li>
+                            <ul>
+                                <li><Spoiler title="Software Engineer">You will help write Payload's flight code including programming triggers, modify the code to test on ground and simulate code in flight conditions. Since payload is interdisciplinary, you can also jump into projects in other subteams if interested / needed. 
+                                    <br /><br />Desired Skills: <br/><mark>Python</mark> <mark>flight code structure</mark> <mark>sensors knowledge</mark> <mark>Raspberry Pi</mark> <mark>simulations</mark> <mark>subteam flexibility</mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="Fluids Engineer">You will help finalize a variety of fluids tasks to prep for PDR and CDR including FMEAs and fluid simulations. Will then work on testing fluids components at PRC. Since payload is interdisciplinary, you can also jump into projects in other subteams if interested/needed. 
+                                    <br /><br />Desired Skills: <br/><mark>fluids knowledge</mark> <mark>hands-on work/testing</mark> <mark>PRC building</mark> <mark>subteam flexibility</mark>
+                                </Spoiler></li>
+                            </ul>
+                            <li>Propulsion Testing</li>
+                            <ul>
+                                <li><Spoiler title="Flight Computer Test Engineer">You will for design, manufacture, iterate, and operate test infrastrcuture. Responsible for designing and running expiriments and tests to evaluate propulsion hardware such as engines, valves, injectors, igniters, etc.
+                                    <br /><br />Desired Skills: <br/><mark>C++</mark> <mark>Linux</mark> <mark>operating systems</mark> <mark>embedded systems</mark>
+>>>>>>> 472fe47faaf0b9c47f23ad5dcad3e84b1e5b31ca
                                 </Spoiler></li>
                             </ul>
                             <li>Fins</li>
                             <ul>
+<<<<<<< HEAD
                                 <li><Spoiler title="Fins Manufacturing Engineer">This person will assist the Manufacturing RE in conducting proper manufacturing campaigns. They will also help in the development of documentation and reviews to expedite the manufacturing process. 
+=======
+                                <li><Spoiler title="Deployment General Engineer">You will for design, manufacture, iterate, and operate test infrastrcuture. Responsible for designing and running expiriments and tests to evaluate propulsion hardware such as engines, valves, injectors, igniters, etc.
+                                    <br /><br />Desired Skills: <br/><mark>C++</mark> <mark>Linux</mark> <mark>operating systems</mark> <mark>embedded systems</mark>
+>>>>>>> 472fe47faaf0b9c47f23ad5dcad3e84b1e5b31ca
                                 </Spoiler></li>
                             </ul>
                             <li>Fluids</li>
                             <ul>
+<<<<<<< HEAD
                                 <li><Spoiler title="Fluids/Physical Integration Engineer">This position will be focused on assisting the fluids team in subsystem integration. Strong communication, research, and math skills are used in this position. An interest in learning CAD and Fluids simulation software is also needed.   
                                 </Spoiler></li>
                             </ul>
@@ -101,12 +155,21 @@ export default function Join () {
                             <ul>
                                 <li><Spoiler title="Operations Engineer">This person will spend half of their time maintaining the integrated master schedule and half of their time on general operations and process improvements. This position offers the freedom for the member to make process improvements where they see areas for growth. This position is ideal for someone who is a self-starter, passionate for operational optimization, and has an intuition about how people will interact with an administrative system. This position builds skills for people who want to be CEOs, COOs, and project managers.
                                 </Spoiler></li>
+=======
+                                <li><Spoiler title="Hold Down Engineer">You will design and simulate launch conditions and integrate the hold down system into the overall launch platform.
+                                    <br /><br />Desired Skills: <br/><mark>CAD</mark> <mark>Statics</mark> <mark>Solids</mark> <mark>Pneumatic Systems</mark>
+                                </Spoiler></li>
+                                {/* <li><Spoiler title="COPV Design Engineer">unfinished
+                                    <br /><br />Desired Skills: <br/><mark>CAD</mark> <mark>Statics</mark> <mark>Solids</mark> <mark>Pneumatic Systems</mark>
+                                </Spoiler></li> */}
+>>>>>>> 472fe47faaf0b9c47f23ad5dcad3e84b1e5b31ca
                             </ul>
                         </ul>
                     </div>
                     <div className={styles.card}>
                         <h3>&nbsp;</h3>
                         <ul className={styles.openpositions}>
+<<<<<<< HEAD
                             <li>Payload</li>
                             <ul>
                                 <li><Spoiler title="Avionics (Flight Development Software) Engineer">In this position, you will be developing our flight computer’s software. This individual would develop the software from block coding to complete code and move to Hardware-in-the-Loop testing. The individual would work closely with Payload Avionics Hardware (PAvHw) to ensure proper implementation of code with our existing sensor suite. Additionally, communication and integration with Payload Structures is required to properly implement the Payload ejection mechanism with the flight computer. No hard background in software is required. 
@@ -164,13 +227,43 @@ export default function Join () {
                                 </Spoiler></li>
                                 <li><Spoiler title="Grant Writer">The grant writer completes outlines and rough drafts of proposals (and transmittals) which will include executive summaries, organization credentials, and conclusions. You will meet deadline(s) by setting target dates for collecting information, finalizing rough drafts for proposals and transmittals (cover letters), beginning/ending reviews, and transitioning to the approval process
                                 </Spoiler></li>
+=======
+                        <li>Communications</li>
+                            <ul>
+                                <li><Spoiler title="Web Designer">You will help code pages and components of the TREL website using the Next.js framework. You will learn front-end web development skills such as HTML, CSS, and Javascript.
+                                    <br /><br />Desired Skills: <br/><mark>Figma</mark> <mark>Adobe XD</mark> <mark>web design</mark> <mark>UI/UX</mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="Web Developer">You will help design webpages and features of the TREL website. As your position largely requires you to harness the power of vector illustration software such as Figma or Adobe Illustrator, you will also learn aspects of UI / UX design.  
+                                    <br /><br />Desired Skills: <br/><mark>Javascript</mark> <mark>CSS</mark> <mark>HTML</mark> <mark>ReactJS</mark> <mark>Next.js</mark> <mark>Visual Studio Code</mark>
+                                </Spoiler></li>
                             </ul>
                             <li>Corporate Development</li>
                             <ul>
+                                <li><Spoiler title="Corporate Analyst">You will work directly with us on accounts, help with company and partnership sourcing, and help maintain general investor relations.
+                                    <br /><br />Desired Skills: <br/><mark>social skills</mark> <mark>business</mark> <mark>effective writing</mark> <mark>web coding</mark> <mark>CRM experence </mark>
+                                </Spoiler></li>
+                                <li><Spoiler title="Social Media and Design">You will create powerpoints and graphic assets with companies. You will create sponsorship social media write ups, one pagers and pitch decks. 
+                                    <br /><br />Desired Skills: <br/><mark>social skills</mark> <mark>business</mark> <mark>effective writing</mark> <mark>social media marketing</mark> <mark>graphic design ability</mark> <mark>Powerpoint</mark> <mark>Excel</mark>
+                                </Spoiler></li>
+                            </ul>
+                            {/* <li>Finance and Strategy</li>
+                            <ul>
+                                <li><Spoiler title="Budgeting Manager">You will collaborate to plan spending with the goal of keeping TREL within its margin of safety. As a financial analyst, you will support our Finance and Strategy team through thoughtful analysis of cost expenditures and project forecasts for TREL's $1M Halcyon rocket.<br/><br/> <br /><br />Desired Skills: <br/>Microsoft Excel and Powerpoint is a plus</Spoiler></li>
+                                <li><Spoiler title="Corporate Development">You will be directly responsible for sourcing, developing, and maintaining our vendor relationships. To date, TREL has received over $400k of cash and donations in kinds from companies like Blue Origin, AWS, EOS, NI, and many others.<br/><br/> <br /><br />Desired Skills: <br/>Salesforce is a plus</Spoiler></li>
+                                <li><Spoiler title="Procurement Liaison">You will bridge the gap between our engineering system leads and the finance team as you manage TREL's supply chain by interfacing with Corporate Development and Budget Management. Our rocket, Halcyon, has a complex global supply chain that requires meticulous management to ensure we maintain on schedule.<br/><br/> <br /><br />Desired Skills: <br/>Microsoft Suite, Salesforce, and Procurify is a plus</Spoiler></li>
+>>>>>>> 472fe47faaf0b9c47f23ad5dcad3e84b1e5b31ca
+                            </ul>
+                            <li>Corporate Development</li>
+                            <ul>
+<<<<<<< HEAD
                                 <li><Spoiler title="Corporate Relations Specialist">The corporate relations specialist looks at sourcing companies, organizations, and institutions for prospective partnerships, sponsorship, and grants. You will be responsible for sourcing, managing, and closing partnership deals for the lab as well as working with the communications team to ensure all external business operations and relations are in order.
                                 </Spoiler></li>
                                 <li><Spoiler title="Business Development Analyst">This position is responsible for building and maintaining a CRM database for all corporate relations and business activities. You will be collecting, sorting, and analyzing data to come up with business strategies to improve business operations.
                                 </Spoiler></li>
+=======
+                                <li><Spoiler title="STEM Educator">You will help create educational and engaging content for students, inspiring young minds to explore rocketry and STEM. You will explore scientific concepts, applications, and fun activitiies, and inspire the our next generation of rocketeers.<br/><br/> <br /><br />Desired Skills: <br/>Friendly with people and children</Spoiler></li>
+                                <li><Spoiler title="Outreach Coordinator">You will organize outreach projects and events, create demos that demonstrate rocketry and STEM, organize and plan events, and develop strong communication and project management skills. <br/><br/> <br /><br />Desired Skills: <br/>Friendly with people and children</Spoiler></li>
+>>>>>>> 472fe47faaf0b9c47f23ad5dcad3e84b1e5b31ca
                             </ul>
                         </ul>
                     </div>
@@ -179,6 +272,7 @@ export default function Join () {
                         <ul className={styles.openpositions}>
                         <li>Communications</li>
                             <ul>
+<<<<<<< HEAD
                                 <li><Spoiler title="Technical Writer">The technical writer will be writing regular internal newsletters to update the lab on progress. You will also be writing external newsletters to update our sponsors and the public on lab progress. You will be responsible for gathering information from all teams constantly throughout the semester and regularly compile and sort this data. 
                                 </Spoiler></li>
                                 <li><Spoiler title="Public Affairs Specialist">This position is responsible for writing and publishing press releases for partners, as well as sourcing and writing for news outlets and publications. The public affairs specialist will work with the technical writers to ensure all public affairs are in order. 
@@ -197,6 +291,18 @@ export default function Join () {
                                 <li><Spoiler title="Diversity and Inclusion Associate">As one of the most important members in the lab you will conduct interviews with members to understand thoughts and opinions in the lab. You will be responsible for promoting diversity through outreach initiatives and act as a representative for members to come to with concerns relating to D&I. You will build and give presentations to increase member understanding of the importance of D&I in TREL and life.
                                 </Spoiler></li>
                             </ul>
+=======
+                                <li><Spoiler title="Public Relations Lead">You are the administrative force behind the face of TREL. You will manage the vision and integrity of TREL's public image. You make sure all team logistics are ironed out so the PR subteams can operate at full capacity.<br/><br/> <br /><br />Desired Skills: <br/>Strong organizational and communication skills.</Spoiler></li>
+                                <li><Spoiler title="Content Sublead">You will be responsible for the short-term visions and goals of TREL’s Public Relations team. This subteam includes social media, copywriting, photography, videography, and graphic design.  To help the content team run smoothly, another of your responsibilities will include giving critiques and sending PR team members out in pairs (writer + visual) to create content.<br/><br/> <br /><br />Desired Skills: <br/>Strong organizational and communication skills</Spoiler></li>
+                                <li><Spoiler title="Strategy Sublead">You will be responsible for the long-term visions and goals of TREL’s Public Relations team. This subteam includes website development and strategic planning, as well as any long-term branding objectives.<br/><br/> <br /><br />Desired Skills: <br/>Texas Media or audience research experience is a plus</Spoiler></li>
+                                <li><Spoiler title="Social Media Coordinator">You will directly manage two or three social media platforms simultaneously potentially including Twitter, LinkedIn, Instagram, and Facebook. This role will be a fantastic opportunity for anyone to expand their social media experience while working for one of the largest interdisciplinary collegiate rocket labs in the nation.<br/><br/> <br /><br />Desired Skills: <br/>Great organizational and communication skills</Spoiler></li>
+                                <li><Spoiler title="Copywriter">You will gain scientific communication experience by writing about our engineering milestones for a collegiate rocket lab that manages $1.5 Mil in capital and resources. There are many eyes on the work that we are creating, and we are seeking passionate writers who love to share knowledge with broader audiences.<br/><br/> <br /><br />Desired Skills: <br/>Good communication and people skills</Spoiler></li>
+                                <li><Spoiler title="Graphic Designer">You will create compelling visual media that will be seen (and possibly worn) by industry leaders, our corporate partners, and your fellow UT students. You will practice giving and receiving creative feedback. <br/><br/> <br /><br />Desired Skills: <br/>Adobe Creative Suite—Illustrator Preferred. Portfolio is required to apply.</Spoiler></li>
+                                <li><Spoiler title="Photographer">You will help shoot and edit photos of our different teams and how they contribute to our Halcyon rocket. We are focusing on those who build these big and sleek machines. You will help pioneer new ways to communicate scientific ideas to large audiences.<br/><br/> Every photoshoot will be a different creative endeavor where you will work closely with our teammates to bring aerospace to life.</Spoiler></li>
+                                <li><Spoiler title="Videographer">You will produce a number of short, advertising-style creative films about TREL and its milestones. <br/> <br/>TREL’s ideal videographer candidates have a healthy knowledge of relevant video software, a love for learning new things, a passion for producing engaging, creative, fresh video content, the ability to work well with others, skills to operate relevant equipment, and an interest in STEM programs outside of the visual arts.</Spoiler></li>
+                                <li><Spoiler title="Web Developer">You will work closely with teams across the lab to showcase TREL projects through interactive web experiences. Your role is crucial to our public image, as our primary information hub and content network will center around our website. You will learn to program in react.js through a library called next.js.<br/><br/> <br /><br />Desired Skills: <br/>Front- or Back-end web development experience. Basic understanding of HTML, CSS, js.</Spoiler></li>
+                            </ul> */}
+>>>>>>> 472fe47faaf0b9c47f23ad5dcad3e84b1e5b31ca
                         </ul>
                     </div>
                     <div className={styles.card}>
