@@ -51,7 +51,7 @@ export default function Donate () {
                         <img src={'./logos/ASE.svg'} />
                     </a>
                     <a href="https://www.siemens.com/" target="_blank">
-                        <img src={'./logos/siemens.svg'} />
+                        <img className={styles.smallimg} src={'./logos/siemens.svg'} />
                     </a>
                     <a href="https://www.eos.info/en" target="_blank">
                         <img src={'./logos/eos.svg'} />
@@ -62,7 +62,7 @@ export default function Donate () {
                         <img src={'./logos/aws.svg'} />
                     </a>
                     <a href="https://www.epsilon3.io/" target="_blank">
-                        <img src={'./logos/epsilon3.svg'} />
+                        <img className={styles.smallimg} src={'./logos/epsilon3.svg'} />
                     </a>
                     <a href="https://www.ni.com/en-us.html" target="_blank">
                         <img src={'./logos/ni.svg'} />
@@ -82,7 +82,7 @@ export default function Donate () {
                         <img src={'./logos/avco.svg'} />
                     </a>
                     <a href="https://www.blueorigin.com/" target="_blank">
-                        <img src={'./logos/blueorigin.svg'} />
+                        <img className={styles.smallimg} src={'./logos/blueorigin.svg'} />
                     </a>
                     <a href="https://www.emerson.com/en-us/global" target="_blank">
                         <img src={'./logos/emerson.svg'} />
