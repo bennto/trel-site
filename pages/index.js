@@ -3,8 +3,6 @@ import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/home.module.scss'
 import Link from 'next/link'
 
-// make function here and call in the script tag for get element by id
-
 export default function Home () {
 
   return (
@@ -214,13 +212,6 @@ export default function Home () {
                 <div className={styles.slide}>
                   <img className={styles.small} src={'./logos/ni.svg'} />
                 </div>
-                {/* <script type="text/javascript">
-                  let row = document.getElementById("slider1");
-                  let val = 0;
-                  window.addEventListener('scroll', function(){
-                    console.log(0)
-                  });
-                </script> */}
               </div>
             </div>
           </div>
