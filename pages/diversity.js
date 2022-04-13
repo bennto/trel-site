@@ -81,25 +81,23 @@ export default function Diversity() {
                     <h2 className={styles.head}>Our Initiatives</h2>
                     <h4 className={styles.body}>STEM is a field that has historically underrepresented minorities, and we’ve come a long way in equalizing the playing field. Below are some of the initiatives we're taking to do just that.</h4>
                 </div>
-                <div className={styles.initTable}>
-                    <div className={styles.initEntry}>
-                        <h3 className={styles.initTitle} style={{ color: 'rgb(99, 48, 139)' }}>Anonymous Conflict and Feedback Form</h3>
-                        <div className={styles.initGroup}>
-                            <h5 className={styles.initBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum varius mollis. Donec id odio vitae purus fermentum rutrum eget at nisl.</h5>
-                            <a className={styles.initLink} href="https://forms.office.com/Pages/ResponsePage.aspx?id=peLXMdi9TkGel76pmOvf4U6Qvugwe3NEvb_PQznNKstUMzZRR1NBV1AwUzNIN0s3REIzUkZHQkJTWiQlQCN0PWcu" target="_blank"><h5>Learn more</h5></a>
-                        </div>
+                <div className={styles.initEntry}>
+                    <h3 className={styles.initTitle} style={{ color: 'rgb(99, 48, 139)'}}>Anonymous Conflict and Feedback Form</h3>
+                    <div className={styles.initGroup}>
+                        <h5 className={styles.initBody}>All our members can report a conflict or give feedback through our internal form anonymously if they choose. We want to make sure there are channels of communication available for those who feel unheard.</h5>
+                        <a className={styles.initLink} href="https://forms.office.com/Pages/ResponsePage.aspx?id=peLXMdi9TkGel76pmOvf4U6Qvugwe3NEvb_PQznNKstUMzZRR1NBV1AwUzNIN0s3REIzUkZHQkJTWiQlQCN0PWcu" target="_blank"><h5>Fill out a form →</h5></a>
                     </div>
-                    <div className={styles.initEntry}>
-                        <h3 className={styles.initTitle} style={{ color: 'rgba(188, 71, 71, 1)'}}>Metrics Monitoring</h3>
-                        <div className={styles.initGroup}>
-                            <h5 className={styles.initBody}>Curabitur congue, nulla id placerat sollicitudin, lacus mauris placerat purus, nec ullamcorper lectus tellus non elit. Suspendisse eget velit sit amet massa porttitor viverra.</h5>
-                        </div>
+                </div>
+                <div className={styles.initEntry}>
+                    <h3 className={styles.initTitle} style={{ color: 'rgba(188, 71, 71, 1)'}}>Metrics Monitoring</h3>
+                    <div className={styles.initGroup}>
+                        <h5 className={styles.initBody}>Every semester, we collect and monitor key demographic metrics to keep ourselves accountable. We share these metrics internally and externally to be honest and transparent with our D&I progress.</h5>
                     </div>
-                    <div className={styles.initEntry}>
-                        <h3 className={styles.initTitle} style={{ color: 'rgba(232, 195, 100, 1)' }}>Trellian Check-ins</h3>
-                        <div className={styles.initGroup}>
-                            <h5 className={styles.initBody}>Donec non turpis id lorem sodales tincidunt eu in tortor. Nam mollis ex libero, non vehicula felis vestibulum ac.</h5>
-                        </div>
+                </div>
+                <div className={styles.initEntry}>
+                    <h3 className={styles.initTitle} style={{ color: 'rgba(232, 195, 100, 1)' }}>Member Check-ins and Analysis</h3>
+                    <div className={styles.initGroup}>
+                        <h5 className={styles.initBody}>Every year, TREL’s D&I team hosts check-ins with our new members and many of our old members to create a one-on-one environment where members feel comfortable giving feedback on leadership and social conflict.</h5>
                     </div>
                 </div>
                 <div className={styles.secTitle}>
@@ -169,24 +167,15 @@ export default function Diversity() {
                 <div className={styles.storyTable}>
                     <div className={styles.storyMember}>
                         <div style={{ width: '200px', height: '200px', backgroundColor: 'grey' }} />
-                        <div className={styles.storyProfile}>
-                            <h3 className={styles.storyTitle} style={{ color: 'rgba(99, 48, 139, 1)' }}>Azzurra Demarie</h3>
-                            <h5 className={styles.storyBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum varius mollis. Donec id odio vitae purus fermentum rutrum eget at nisl.</h5>
-                        </div>
+                        <h4 className={styles.storyTitle} style={{ color: 'rgba(99, 48, 139, 1)' }}>Azzurra Demarie</h4>
                     </div>
                     <div className={styles.storyMember}>
                         <div style={{ width: '200px', height: '200px', backgroundColor: 'grey' }} />
-                        <div className={styles.storyProfile}>
-                            <h3 className={styles.storyTitle} style={{ color: 'rgba(188, 71, 71, 1)' }}>Collin Ma</h3>
-                            <h5 className={styles.storyBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum varius mollis. Donec id odio vitae purus fermentum rutrum eget at nisl.</h5>
-                        </div>
+                        <h4 className={styles.storyTitle} style={{ color: 'rgba(188, 71, 71, 1)' }}>Collin Ma</h4>
                     </div>
                     <div className={styles.storyMember}>
                         <div style={{ width: '200px', height: '200px', backgroundColor: 'grey' }} />
-                        <div className={styles.storyProfile}>
-                            <h3 className={styles.storyTitle} style={{ color: 'rgba(232, 195, 100, 1)' }}>Doug Pham</h3>
-                            <h5 className={styles.storyBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum varius mollis. Donec id odio vitae purus fermentum rutrum eget at nisl.</h5>
-                        </div>
+                        <h4 className={styles.storyTitle} style={{ color: 'rgba(232, 195, 100, 1)' }}>Doug Pham</h4>
                     </div>
                 </div>
                 <div className={styles.secTitle}>

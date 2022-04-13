@@ -3,6 +3,7 @@
 
 .dadbod {
     font-size: 25px;
+    background-color: $dark;
     h1 {
         font-size: 3.6em;
     }
@@ -19,7 +20,7 @@
         letter-spacing: 0.5px;
     }
     h5 {
-        font-size: 0.7em;
+        font-size: 0.65em;
         font-weight: lighter;
         letter-spacing: 0.5px;
     }
@@ -36,36 +37,53 @@
                 font-weight: bold;
                 color: #e69e32;
             }
+            @include for-mobile {
+                font-size: 60px;
+            }
         }
         .heroBody {
-            margin: 20px 400px 0 400px;
+            margin: 20px auto 0 auto;
+            max-width: 780px;
         }
     }
     .secTitle {
-        margin-top: 150px;
+        margin-top: 180px;
         text-align: center;
         .body {
-            margin: 20px 390px 0 390px;
+            margin: 20px auto 50px auto;
+            max-width: 780px;
         }
     }
-    .initTable {
-        width: 800px;
-        margin: 100px auto 0 auto;
-        .initEntry {
-            display: flex;
-            flex-direction: row;
-            width: 800px;
-            margin-bottom: 30px;
-            .initTitle {
-                font-weight: bold;
-                width: 300px;
+    .initEntry {
+        display: flex;
+        flex-direction: row;
+        max-width: 780px;
+        margin: 0 auto 30px auto;
+        .initTitle {
+            font-weight: bold;
+            min-width: 300px;
+            margin-right: 20px;
+            @include for-tablet {
+                margin-bottom: 10px;
             }
-            .initGroup {
-                width: 500px;
-                .initBody {
-                    margin-bottom: 15px;
-                }
+            @include for-mobile {
+                margin-bottom: 10px;
             }
+        }
+        .initGroup {
+            margin: 0 auto 0 auto;
+            .initBody {
+                margin-bottom: 15px;
+            }
+            .initLink h5 {
+                color: rgb(255, 98, 98);
+            }
+        }
+        @include for-tablet {
+            flex-direction: column;
+        }
+        @include for-mobile {
+            flex-direction: column;
         }
     }
     .graphFlex{
@@ -97,21 +115,16 @@
         }
     }
     .storyTable {
-        width: 700px;
-        margin: 100px auto 0 auto;
+        width: 800px;
+        margin: 70px auto 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         .storyMember {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 30px;
-            .storyProfile {
-                padding-left: 20px;
-                width: 500px;
-                .storyTitle {
-                    font-weight: bold;
-                }
-                .storyBody {
-                    margin-top: 20px;
-                }
+            .storyTitle {
+                font-weight: bold;
+                margin-top: 10px;
+                text-align: center;
             }
         }
     }
@@ -119,10 +132,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 40px auto 200px auto;
+        margin: 60px auto 300px auto;
         .donate {
             margin-right: 200px;
         }
-
     }
 }
