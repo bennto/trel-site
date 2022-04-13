@@ -3,6 +3,8 @@ import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/home.module.scss'
 import Link from 'next/link'
 
+// make function here and call in the script tag for get element by id
+
 export default function Home () {
 
   return (
@@ -98,54 +100,72 @@ export default function Home () {
                   <img className={styles.sponsor} src={'./logos/firefly.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.sponsor} src={'./logos/cockrell.svg'} />
-                </div>
-                <div className={styles.slide}>
-                  <img className={styles.sponsor} src={'./logos/firefly.svg'} />
+                  <img className={styles.small} src={'./logos/epsilon3.svg'} />
                 </div>
                 <div className={styles.slide}>
                   <img className={styles.sponsor} src={'./logos/cockrell.svg'} />
                 </div>
                 <div className={styles.slide}>
                   <img className={styles.sponsor} src={'./logos/firefly.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/epsilon3.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/cockrell.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/firefly.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/epsilon3.svg'} />
                 </div>
               </div>
               <div className={styles.slider2}>
                 <div className={styles.slide}>
-                  <img src={'./logos/ASE.svg'} />
+                  <img className={styles.small2} src={'./logos/siemens.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/ni.svg'} />
-                </div>
-                <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/eos.svg'} />
-                </div>
-                <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/aws.svg'} />
+                  <img className={styles.small2} src={'./logos/aws.svg'} />
                 </div>
                 <div className={styles.slide}>
                   <img src={'./logos/ASE.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/ni.svg'} />
+                  <img className={styles.small2} src={'./logos/eos.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/eos.svg'} />
+                  <img className={styles.small} src={'./logos/avco.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/aws.svg'} />
+                  <img className={styles.small2} src={'./logos/siemens.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small2} src={'./logos/aws.svg'} />
                 </div>
                 <div className={styles.slide}>
                   <img src={'./logos/ASE.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/ni.svg'} />
+                  <img className={styles.small2} src={'./logos/eos.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/eos.svg'} />
+                  <img className={styles.small} src={'./logos/avco.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.small} src={'./logos/aws.svg'} />
+                  <img className={styles.small2} src={'./logos/siemens.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small2} src={'./logos/aws.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img src={'./logos/ASE.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small2} src={'./logos/eos.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/avco.svg'} />
                 </div>
               </div>
               <div className={styles.slider3}>
@@ -162,16 +182,7 @@ export default function Home () {
                   <img className={styles.sponsor} src={'./logos/blueorigin.svg'} />
                 </div>
                 <div className={styles.slide}>
-                  <img className={styles.sponsor} src={'./logos/procurify.svg'} />
-                </div>
-                <div className={styles.slide}>
-                  <img className={styles.sponsor} src={'./logos/emerson.svg'} />
-                </div>
-                <div className={styles.slide}>
-                  <img className={styles.sponsor} src={'./logos/boeinglogo.svg'} />
-                </div>
-                <div className={styles.slide}>
-                  <img className={styles.sponsor} src={'./logos/blueorigin.svg'} />
+                  <img className={styles.small} src={'./logos/ni.svg'} />
                 </div>
                 <div className={styles.slide}>
                   <img className={styles.sponsor} src={'./logos/procurify.svg'} />
@@ -185,6 +196,31 @@ export default function Home () {
                 <div className={styles.slide}>
                   <img className={styles.sponsor} src={'./logos/blueorigin.svg'} />
                 </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/ni.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/procurify.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/emerson.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/boeinglogo.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.sponsor} src={'./logos/blueorigin.svg'} />
+                </div>
+                <div className={styles.slide}>
+                  <img className={styles.small} src={'./logos/ni.svg'} />
+                </div>
+                {/* <script type="text/javascript">
+                  let row = document.getElementById("slider1");
+                  let val = 0;
+                  window.addEventListener('scroll', function(){
+                    console.log(0)
+                  });
+                </script> */}
               </div>
             </div>
           </div>
