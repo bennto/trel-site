@@ -61,7 +61,7 @@
 
     &>ul {
         list-style: none;
-        padding-left: 30%;
+        padding-left: 30px;
         padding-bottom: pem(24px);
 
         li>button {
@@ -83,7 +83,6 @@
             display: inline-block;
             line-height: 20px;
             background-color: #cecece;
-            padding: 0 4px 0 4px;
             margin-right: 2px;
         } 
     }

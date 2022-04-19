@@ -6,11 +6,18 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-left: 30px;
     margin-bottom: 20px;
     z-index: 100;
 
-    svg {
-        object-fit: contain;
+    .trel {
+        width: auto;
+        height: 24px; 
+    }
+
+    .cockrell {
+        width: auto;
+        height: 24px;
     }
     
     ul {
@@ -27,16 +34,16 @@
             display: inline;
             list-style: none;
             margin-left: pem(30px);
-            
             a {
-
                 svg {
-                    width: pem(20px);
-                    height: pem(20px);
-
+                    width: auto;
+                    height: 24px;
                     path {
                         color: $light;
                         fill: $light;
+                    }
+                    @include for-mobile {
+                        height: 20px;
                     }
                 }
             }
@@ -48,56 +55,16 @@
         margin-bottom: 0;
         color: white;
     }
-}
 
-@media screen and (max-width: 850px) {
-    .footer {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: pem(25px);
-        padding-top: pem(20px);
-
-        &>* {
-            justify-self: start;
-
-            &:nth-child(2n) {
-                justify-self: end;
-            }
+    @include for-mobile {
+        margin-left: 20px;
+        width: 90%;
+        .cockrell {
+            display: none;
         }
-
-        ul {
-            grid-area: 1 / 1 / 2 / 2;
-        }
-
-        p {
-            grid-area: 1 / 2 / 2 / 3;
-        }
-    }
-}
-
-@include for-mobile() {
-    .footer {
-
-        svg {
-            margin-top: pem(30px);
-            &:last-of-type {
-                padding-left: pem(50px);
-            }
-        }
-
-        ul {
-            padding-right: pem(50px);
-            li {
-                a {
-                    svg {
-                        margin-top: 0;
-
-                        &:last-of-type {
-                            padding-left: 0;
-                        }
-                    }
-                }
-            }
+        .trel {
+            width: auto;
+            height: 20px;
         }
     }
 }
