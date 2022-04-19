@@ -1,14 +1,16 @@
 @import '../styles/variables';
 
 .container {
-    width: 100%;
-    padding: 0 3% 0 3%;
+    max-width: 100%;
+    overflow-x: hidden;
     background: $dark;
 
     .placeholder {
+        max-width: 100%;
         height: $navbar;
     }
     .main {
+        max-width: 100%;
         min-height: 80vh;
     }
     
