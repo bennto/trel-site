@@ -123,6 +123,11 @@
                         // use bottom two variables to calc slider width
                         width: 250px;
                         margin: 0 300px 16px 300px;
+                        .small {
+                            height: 65px;
+                            width: 250;
+                            margin-top: 20px;
+                        }
                     }
                 }
                 .slider2 {
@@ -135,12 +140,18 @@
                         overflow: visible;
                         height: 100px;
                         // use bottom two variables to calc slider width
-                        // a little harder bc 3 smalls + 1 large logo
+                        // 5 logos with width 250
                         width: 250px;
                         margin: 0 80px 16px 80px;
-                        .small {
-                            width: 100px;
-                            height: auto;
+                        .small{
+                            height: 70px;
+                            width: 250px;
+                            margin-top: 14px;
+                        }
+                        .small2{
+                            height: 50px;
+                            width: 250px;
+                            margin-top: 25px;
                         }
                     }
                 }
@@ -156,9 +167,27 @@
                         // use bottom two variables to calc slider width
                         width: 250px;
                         margin: 0 150px 16px 150px;
+                        .small{
+                            height: 70px;
+                            width: 250px;
+                            margin-top: 14px;
+                        }
                     }
                 }
             }
+            // .slideshow {
+            //     width: 100%;
+            //     overflow: hidden;
+            //     .slider1 {
+            //         display: flex;
+            //     }
+            //     .slider2{
+            //         display: flex;
+            //     }
+            //     .slider3{
+            //         display: flex;
+            //     }
+            // }
             @include for-tablet {
                 width: 100%;
             }
@@ -298,13 +327,13 @@
 // animations + quirky features
 @keyframes scroll1 {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(calc(-300px*2 - 250px) * 2))}
+	100% { transform: translateX(calc((-300px*2 - 250px) * 3))}
 }
 @keyframes scroll2 {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(calc(-80px*2 - 250px) + calc(-80px*2 - 100px) * 3))}
+	100% { transform: translateX(calc(calc(-80px*2 - 250px) * 5))}
 }
 @keyframes scroll3 {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(calc(-148px*2 - 250px) * 4))}
+	100% { transform: translateX(calc(calc(-150px*2 - 250px) * 5))}
 }
