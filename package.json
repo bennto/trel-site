@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "chart.js": "^3.6.2",
+    "framer-motion": "^6.2.9",
     "gray-matter": "^4.0.3",
     "next": "^11.1.0",
     "next-images": "^1.7.0",
