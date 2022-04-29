@@ -133,7 +133,7 @@
 }
 
 .compete {
-    position: revenue;
+    position: static;
     display: grid;
     height: pem(750px);
     grid-template-rows: pem(60px) 1fr;
@@ -146,9 +146,17 @@
 
     .container {
         grid-area: title;
-        align-self: center;
+        margin-top: 100px;
         width: pem(675px);
         z-index: 10;
+        .apply{
+            margin-left:95px;
+            font-size: 25px;
+        }
+        .donate{
+            margin-right:150px;
+            font-size: 25px;
+        }
     }
 
     .vacuum {
