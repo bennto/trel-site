@@ -46,7 +46,7 @@ export default function Halcyon () {
                 </div>
                 </div>
                 <img className={styles.vacuum} src={'./images/vacuum.png'} />
-            </section >
+            </section>
             {/* <section className={styles.havoc}>
                 <div>
                     <h1>Built to Compete</h1>
