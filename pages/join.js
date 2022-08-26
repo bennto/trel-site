@@ -31,28 +31,28 @@ export default function Join () {
         },
         {
             id: 1,
-            title: 'Avionics GNC',
-            desc: 'The GNC team is primarily tasked with determining the ideal flight path for the vehicle, estimating the vehicle\'s state throughout the flight, and ensuring that the vehicle remains stable along its nominal trajectory.​',
-        },
-        {
-            id: 2,
             title: 'Avionics Hardware',
             desc: 'Avionics Hardware is concerned with all of the physical electronics onboard Halcyon. This includes the physical power system (which makes sure the rest of the rocket can actually function), the physical telemetry systems (which allows for communication with the ground for data collection and flight termination sequences), and the physical connections between all devices and their associated flight computers for data collection.',
         },
         {
-            id: 3,
+            id: 2,
             title: 'Avionics Software',
             desc: 'Create the flight software which controls the vehicle in flight, the mission control software which monitors the vehicle from the ground, and the hardware-in-the-loop testing system used to validate the flight computer in simulated flight-like conditions.​',
         },
         {
-            id: 4,
+            id: 3,
             title: 'Fins',
             desc: 'The role of the Fins team is to maintain the heading of the rocket throughout the flight to ensure that the rocket will reach apogee. The Actuated Fins will mainly be used in the beginning of the flight when the atmosphere is denser and will also allow for the rocket to rapidly correct of the initial 3 degree offset off the rail. The system will consist of 4 actuating fin systems all running control loops that will autonomously correct the heading the heading of the rocket throughout flight. ',
         },
         {
-            id: 5,
+            id: 4,
             title: 'Fluids',
             desc: 'The fluids sub-team is responsible for designing a system capable of delivering cryogenic liquid oxygen, volatile RP-1 and highly pressurized helium gas from the ground system to Halcyon\'s COPV\'s, and from there to the Halcyon\'s engine, all of which must be done in a safe, timely, and highly precise manner The fluids system is in three different parts of the rocket, so it requires meticulous configuration in the overall rocket to fit everything. Likewise, the sensors in the fluids system directly affect the power needed for the rocket. In the timeline of TREL, the fluids system is continuous throughout all stages of development.​',
+        },
+        {
+            id: 5,
+            title: 'Guidance, Navigation, and Control',
+            desc: 'The GNC team is primarily tasked with determining the ideal flight path for the vehicle, estimating the vehicle\'s state throughout the flight, and ensuring that the vehicle remains stable along its nominal trajectory.​',
         },
         {
             id: 6,
@@ -86,7 +86,7 @@ export default function Join () {
         },
         {
             id: 12,
-            title: 'Systems Integration Testing',
+            title: 'Systems Integration Team',
             desc: 'SIT is responsible for test plans that involve multiple sub systems of the rocket, like the integrated stage test, collapse factor test, and control systems and navigation tests. SIT determine the vehicle requirements that shall be tested, the test article configuration, and what sensor data must be collected to determine test success.​',
         },
         {
