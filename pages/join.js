@@ -150,7 +150,7 @@ export default function Join () {
                             <div className={styles.head}>
                                 <h1 className={styles.number}>2</h1>
                                 <div className={styles.break} />
-                                <h3>Peruse our positions</h3>
+                                <h3>Browse our teams</h3>
                             </div>
                             <div className={styles.body}>
                                 <h5 className={styles.info}>We're a BIG lab with lots of different teams doing uniquely cool things. Read through some of the team descriptions to discover what suits your fancy. </h5>
@@ -206,7 +206,7 @@ export default function Join () {
                                 <h3>Interview with our teams</h3>
                             </div>
                             <div className={styles.body}>
-                                <h5 className={styles.info}>Wow! We were really impressed by your application and want to schedule an interview. We'll schedule a time that works for you. Come as you are, we want to know the real you.</h5>
+                                <h5 className={styles.info}>Wow! We were really impressed by your application and want to talk more with you. We'll send you an email and schedule a time that works for you. Come as you are, we want to know the real you.</h5>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Interview Begin:</h4>
                                     <h4 className={styles.sessionTime}>September 1, 2022</h4>
@@ -234,7 +234,7 @@ export default function Join () {
                                 <div className={styles.bonusCard}>
                                     <h1 className={styles.number}>2</h1>
                                     <h4 className={styles.head}>Passion trumps talent, mindset is key.</h4>
-                                    <h5 className={styles.info}>Skills can be learned, but passion cannot. A resume is nice, but not essential.</h5>
+                                    <h5 className={styles.info}>A resume is optional and experience is not required.</h5>
                                 </div>
                                 <div className={styles.bonusCard}>
                                     <h1 className={styles.number}>3</h1>
@@ -247,9 +247,6 @@ export default function Join () {
                                     <h5 className={styles.info}>We look forward to your application and hope to speak to you soon!</h5>
                                 </div>
                             </div>
-                        </div>
-                        <div className={styles.text2}>
-                            
                         </div>
                     </div>
                 </div>
