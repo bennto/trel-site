@@ -82,7 +82,7 @@ export default function Join () {
         {
             id: 11,
             title: 'Recovery',
-            desc: 'Recovery\'s role in TREL is to make sure that all components of the rocket hit the ground without compromising the electronics within the vehicle. Currently, the main Halcyon body is recovered using 3 parachutes (a first and second-stage drogue, and a main) to prevent excessive drift. After testing and completion, Halcyon\'s recovery system will be one of the most tested and advanced recovery systems by a collegiate rocket lab. ​',
+            desc: 'Recovery has several mission critical responsibilities including but not limited to the safe recovery of Halcyon. Our major projects include:\n1) The design and fabrication of the nosecone and the rocket\'s only separation system.\n2) The development of the 2-stage vehicle recovery system and nosecone recovery system.\n3) The planning and execution of drop tests.\n4) The development, and testing of relevant circuits and GPS tracking systems for our components.',
         },
         {
             id: 12,
@@ -188,7 +188,7 @@ export default function Join () {
                                 <h3>Fill out the application</h3>
                             </div>
                             <div className={styles.body}>
-                                <h5 className={styles.info}><a className={styles.apply} onClick={() => { alert('Application opens August 30, 2022. Please click on me again then!') }}>Fill out our application form</a> to apply to the teams you're interested in. We're looking mostly for your passion, thought process, and personality. Resumes are optional, but helpful.</h5>
+                                <h5 className={styles.info}><a className={styles.apply} href="https://forms.gle/PMrTbXnPGQy96gEz5" target="_blank">Fill out our application form</a> to apply to the teams you're interested in. We're looking mostly for your passion, thought process, and personality. Resumes are optional, but helpful.</h5>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Apps Open:</h4>
                                     <h4 className={styles.sessionTime}>August 30, 2022</h4>

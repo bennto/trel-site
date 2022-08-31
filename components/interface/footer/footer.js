@@ -2,7 +2,7 @@ import styles from './footer.module.scss'
 import Link from 'next/link'
 
 const handleEmail = () => {
-    const email = "lauren.saxet@texasrocketlab.com";
+    const email = "texasrocketengineeringlab@gmail.com";
     navigator.clipboard.writeText(email);
     alert("Email copied to clipboard!")
 }
