@@ -87,7 +87,7 @@ export default function Join () {
         {
             id: 12,
             title: 'Systems Integration Team',
-            desc: 'SIT is responsible for test plans that involve multiple sub systems of the rocket, like the integrated stage test, collapse factor test, and control systems and navigation tests. SIT determine the vehicle requirements that shall be tested, the test article configuration, and what sensor data must be collected to determine test success.​',
+            desc: 'The System Integrations Team (SIT) is a bridge between the admin team and design systems. SIT members act as a point of contact between systems and work on full rocket integration problems. With CAD and system engineering principles, SIT defines the integration of the virtual and physical vehicle assembly.​',
         },
         {
             id: 13,
