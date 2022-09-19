@@ -113,8 +113,8 @@ export default function Join () {
             </Head>
             <body className={styles.dadbod}>
                 <div className={styles.hero}>
-                    <h1 className={styles.head}>We're Recruiting!</h1>
-                    <h4 className={styles.sub}>check out our process below</h4>
+                    <h1 className={styles.head}>Recruiting is Closed...</h1>
+                    <h4 className={styles.sub}>but check out our teams and process below</h4>
                 </div>
                 <div className={styles.infoSession}>
                     <div className={styles.one}>
@@ -188,7 +188,8 @@ export default function Join () {
                                 <h3>Fill out the application</h3>
                             </div>
                             <div className={styles.body}>
-                                <h5 className={styles.info}>Apply to be in <a className={styles.apply} href="https://forms.gle/PMrTbXnPGQy96gEz5" target="_blank">engineering</a>, <a className={styles.apply} href="http://tinyurl.com/TrelDEI" target="_blank">DEI</a>, or <a className={styles.apply} href="https://forms.gle/tZKWcyyUiNyQjJxr9" target="_blank">outreach</a>. We're looking mostly for your passion, thought process, and personality. Resumes are optional, but helpful.</h5>
+                                {/* <h5 className={styles.info}>Apply to be in <a className={styles.apply} href="https://forms.gle/PMrTbXnPGQy96gEz5" target="_blank">engineering</a>, <a className={styles.apply} href="http://tinyurl.com/TrelDEI" target="_blank">DEI</a>, or <a className={styles.apply} href="https://forms.gle/tZKWcyyUiNyQjJxr9" target="_blank">outreach</a>. We're looking mostly for your passion, thought process, and personality. Resumes are optional, but helpful.</h5> */}
+                                <h5 className={styles.info}>Our recruitment cycle has finished and we are no longer seeking applicants. Please check this page again next semester for more details!</h5>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Apps Open:</h4>
                                     <h4 className={styles.sessionTime}>August 30, 2022</h4>
