@@ -30,7 +30,7 @@ export default function Donate () {
                 If you are interested in becoming a part of our vision, check out our donation package, go to our donation site or email us. Thank you for your support!</p>
                 <div className={styles.buttons}>
                     <a onClick={() => {alert("New donation packet coming soon!")}} >See our Donation Packet</a>
-                    <a href="https://utdirect.utexas.edu/apps/utgiving/online/nlogon/?menu1=ENTL&solicit=TRL&response=DJ0TRL" target="_blank">Donate to TREL</a>
+                    {/* <a href="https://utdirect.utexas.edu/apps/utgiving/online/nlogon/?menu1=ENTL&solicit=TRL&response=DJ0TRL" target="_blank">Donate to TREL</a> */}
                 </div>
             </section>
             <section className={styles.tiers}>
@@ -50,22 +50,19 @@ export default function Donate () {
                     <a href="https://www.ae.utexas.edu/" target="_blank">
                         <img src={'./logos/ASE.svg'} />
                     </a>
-                    <a href="https://www.siemens.com/" target="_blank">
-                        <img className={styles.smallimg} src={'./logos/siemens.svg'} />
-                    </a>
                     <a href="https://www.eos.info/en" target="_blank">
                         <img src={'./logos/eos.svg'} />
+                    </a>
+                    <a href="https://www.ni.com/en-us.html" target="_blank">
+                        <img src={'./logos/ni.svg'} />
                     </a>
                 </div>
                 <div className={styles.supporters}>
                     <a href="https://aws.amazon.com/" target="_blank">
                         <img src={'./logos/aws.svg'} />
                     </a>
-                    <a href="https://www.epsilon3.io/" target="_blank">
-                        <img className={styles.smallimg} src={'./logos/epsilon3.svg'} />
-                    </a>
-                    <a href="https://www.ni.com/en-us.html" target="_blank">
-                        <img src={'./logos/ni.svg'} />
+                    <a href="https://www.siemens.com/" target="_blank">
+                        <img className={styles.smallimg} src={'./logos/siemens.svg'} />
                     </a>
                 </div>
                 <h2>Pioneer</h2>
@@ -75,6 +72,9 @@ export default function Donate () {
                     </a>
                     <a href="https://www.procurify.com/" target="_blank">
                         <img src={'./logos/procurify.svg'} />
+                    </a>
+                    <a href="https://www.epsilon3.io/" target="_blank">
+                        <img className={styles.smallimg} src={'./logos/epsilon3.svg'} />
                     </a>
                 </div>
                 <div className={styles.supporters}>
