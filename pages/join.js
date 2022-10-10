@@ -229,8 +229,12 @@ export default function Join () {
                             <div className={styles.body}>
                                 <div className={styles.bonusCard}>
                                     <h1 className={styles.number}>1</h1>
-                                    <h4 className={styles.head}>You must be a permenant US resident or citizen.</h4>
-                                    <h5 className={styles.info}>We don't like it either, but the law is the law.</h5>
+                                    <h4 className={styles.head}>Licensing for international students is available</h4>
+                                    <h5 className={styles.info}>Contact us <a style={{color: 'rgb(230, 139, 41)'}} onClick={() => {
+                                                                                                    const email = "texasrocketengineeringlab@gmail.com";
+                                                                                                    navigator.clipboard.writeText(email);
+                                                                                                    alert("Email copied to clipboard!")
+                                                                                                }}>via email</a> for more information.</h5>
                                 </div>
                                 <div className={styles.bonusCard}>
                                     <h1 className={styles.number}>2</h1>

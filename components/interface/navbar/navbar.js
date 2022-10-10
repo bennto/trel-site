@@ -5,6 +5,46 @@ import { motion } from 'framer-motion'
 import { useRefState } from '../../yTrack.js'
 
 export default function Navbar() {
+    
+    const [timer, setTimer] = useState([]);
+
+    useEffect(() => {
+        setInterval(() => {
+        // Get today's date and time
+        var now = new Date().getTime();
+        var destination = new Date("May 15, 2024 00:00:00").getTime();
+
+        // Find the distance between now and the count down date
+        var distance = destination - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            return("Liftoff!!!")
+        }
+
+        // Update hook via setTimer() and format numbers
+        setTimer(() => {
+            let newTimer = [days, hours, minutes, seconds];
+            for(let i=0; i<newTimer.length; i++) {
+            newTimer[i] = newTimer[i].toLocaleString('en-US', {
+                minimumIntegerDigits: 2,
+                useGrouping: false
+            })
+            }
+            return(newTimer);
+        });
+
+        
+        }, 1000);
+    })
+    
     useEffect(()=>{
         setDrop(false)
     }, [])
@@ -58,7 +98,14 @@ export default function Navbar() {
                             </motion.svg>
                         </Link>
                     </a>
+                    <motion.h3 className={styles.counting} data-text="lololol"
+                        initial={{ opacity: 0}}
+                        animate={{ opacity: 1}} 
+                        transition={{ duration: 0.5, delay: 1 }}>
+                        {timer[0]}:{timer[1]}:{timer[2]}:{timer[3]}
+                    </motion.h3>
                 </div>
+                
                 <div className={styles.item}>
                     {isMobile ? (
                         <svg className={styles.burger}

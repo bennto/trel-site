@@ -4,6 +4,8 @@
 .container {
     display: flex;
     flex-direction: column;
+    top: 0;
+    left: 0;
     h1, h2, h3, p {
         color: $light;
     }
@@ -63,7 +65,7 @@
         }
     }
     .section {
-        margin: 90px 175px 0px 175px;
+        margin: 180px 175px 0px 175px;
         display: flex;
         flex-direction: row;
         h3 {

@@ -26,6 +26,66 @@ $light: #f3f3f3;
 $sans: 'Aeonik', sans-serif;
 $mono: 'Coanda', monospace;
 
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../public/fonts/AeonikTRIAL-Light.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../public/fonts/AeonikTRIAL-Regular.otf') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../public/fonts/AeonikTRIAL-Bold.otf') format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../public/fonts/AeonikTRIAL-LightItalic.otf') format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../public/fonts/AeonikTRIAL-RegularItalic.otf') format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../public/fonts/AeonikTRIAL-BoldItalic.otf') format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Coanda';
+    src: url('../public/fonts/CoandaTRIAL-Regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Coanda';
+    src: url('../public/fonts/CoandaTRIAL-Light.otf') format("opentype");
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Coanda';
+    src: url('../public/fonts/CoandaTRIAL-Bold.otf') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cousine';
+    src: url('../public/fonts/Cousine-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 // MOLTEN LEADING
 $min-font: 13;

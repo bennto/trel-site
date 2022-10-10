@@ -20,11 +20,18 @@
     }
 
     .item {
+        display: flex;
+        flex-direction: row;
         max-height: 80px;
+        .counting {
+            font-size: 20px;
+            font-family: "Cousine";
+            margin-left: 50px;
+            cursor: default;
+        }
         .burger {
             color: $light;
             fill: $light;
-
             .rect1 {
                 width: 30px; 
                 height: 5px;
@@ -76,7 +83,7 @@
     flex-direction: column;
     background-color: $dark;
     z-index: 200;
-    top: -30px;
+    top: -100vh;
     left: 0;
     max-width: 100%;
     width: 100vw;
