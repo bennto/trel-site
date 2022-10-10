@@ -100,7 +100,7 @@ export default function Navbar() {
                     </a>
                     <motion.h3 className={styles.counting} data-text="lololol"
                         initial={{ opacity: 0}}
-                        animate={{ opacity: 1}} 
+                        animate={{ opacity: 1}}
                         transition={{ duration: 0.5, delay: 1 }}>
                         {timer[0]}:{timer[1]}:{timer[2]}:{timer[3]}
                     </motion.h3>
