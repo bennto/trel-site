@@ -229,7 +229,7 @@ export default function Join () {
                             <div className={styles.body}>
                                 <div className={styles.bonusCard}>
                                     <h1 className={styles.number}>1</h1>
-                                    <h4 className={styles.head}>Licensing for international students is available</h4>
+                                    <h4 className={styles.head}>Licensing is available for international students</h4>
                                     <h5 className={styles.info}>Contact us <a style={{color: 'rgb(230, 139, 41)'}} onClick={() => {
                                                                                                     const email = "texasrocketengineeringlab@gmail.com";
                                                                                                     navigator.clipboard.writeText(email);
