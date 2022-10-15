@@ -26,12 +26,16 @@ export default function Donate () {
                 </div>
             </section>
             <section className={styles.donate}>
-                <p>Making space travel accessible to everyone takes a village, and some support. We work with organizations across the country who believe in our mission and support our goals through financial support, material donations, and mentorship. <br /> <br />
-                If you are interested in becoming a part of our vision, check out our donation package, go to our donation site or email us. Thank you for your support!</p>
-                <div className={styles.buttons}>
+                <p>We wouldn't be able to do what we do without the support of our wonderful sponsors. To join the cause, please contact us <a style={{color: 'rgb(230, 139, 41)'}} onClick={() => {
+                                                                                                                                                const email = "texasrocketengineeringlab@gmail.com";
+                                                                                                                                                navigator.clipboard.writeText(email);
+                                                                                                                                                alert("Email copied to clipboard!")
+                                                                                                                                            }}>via email</a> for more information. Thanks for all your support!<br /> <br />
+                We plan to release an updated donation packet detailing our lab and project in the near future. Once again, thank you for choosing TREL and we'll do our best to live up to your support!</p>
+                {/* <div className={styles.buttons}>
                     <a onClick={() => {alert("New donation packet coming soon!")}} >See our Donation Packet</a>
-                    {/* <a href="https://utdirect.utexas.edu/apps/utgiving/online/nlogon/?menu1=ENTL&solicit=TRL&response=DJ0TRL" target="_blank">Donate to TREL</a> */}
-                </div>
+                    <a href="https://utdirect.utexas.edu/apps/utgiving/online/nlogon/?menu1=ENTL&solicit=TRL&response=DJ0TRL" target="_blank">Donate to TREL</a>
+                </div> */}
             </section>
             <section className={styles.tiers}>
                 <div>
