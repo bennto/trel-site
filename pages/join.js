@@ -52,7 +52,7 @@ export default function Join () {
         {
             id: 4,
             title: 'Fluids',
-            desc: 'The Fluids team is responsible for designing a system capable of delivering cryogenic liquid oxygen, volatile RP-1, and highly pressurized helium gas from the ground system through Halcyon\'s COPVs to the engine in a safe, timely, and highly precise manner. This system interacts with several parts of the rocket and is continuous throughout all stages of Halcyon’s development. ​',
+            desc: 'The Fluids team is responsible for designing a system capable of delivering cryogenic liquid oxygen, volatile RP-1, and highly pressurized helium gas from the ground system through Halcyon\'s COPVs to the engine in a safe, timely, and highly precise manner. This system interacts with several parts of the rocket and is continuous throughout all stages of Halcyon\’s development. Our team members develop an understanding of how fluids behave and fluid dynamics which is applicable to wide variety of industries.  We also work with advanced hardware, instrumentation, and CAD and gain hands-on experience assembling fluids systems.',
             bullets: []
         },
         {
@@ -106,7 +106,7 @@ export default function Join () {
         {
             id: 13,
             title: 'Stage Test',
-            desc: 'Stage Test works closely with Launch Ops to design, manufacture, and test the components necessary to load and launch the rocket. Systems include the Ground Structure and Ground Support Equipment (GSE) to aid in supporting the weight of the rocket as well as fluid loading. Stage also deals with integration of the different moving parts, and ensures interteam testing is successful.',
+            desc: 'Stage Test works closely with Launch Ops to design, manufacture, and test the components necessary to load and launch the rocket. Systems include the Ground Structure and Ground Support Equipment (GSE) to aid in supporting the weight of the rocket as well as fluid loading. Stage also deals with integration of the different moving parts and ensures inter-team testing is successful. Our teams include engineers working in fluids, structures, and electronics who will learn to problem solve on a large-scale debugging project.',
             bullets: []
         },
         {
@@ -164,8 +164,12 @@ export default function Join () {
         {
             id: 20,
             title: 'Finance and Strategy',
-            desc: 'Finance and Strategy (F&S) manages TREL’s financial and operational positioning through finance and procurement. Together, F&S ensures that the lab properly allocates its $1M budget, secures critical partnerships, and assists the engineering teams in procuring parts/supplies so they can build the best rocket possible.',
-            bullets: []
+            desc: 'Finance and Strategy (F&S) manages TREL’s financial and operational positioning through finance and procurement. Together, F&S ensures that the lab properly allocates its $1M budget, secures critical partnerships, and assists the engineering teams in procuring parts/supplies so they can build the best rocket possible. Our team members actively:',
+            bullets: [
+                'Maintain the budgetary framework of funding for lab’s procurement, production, operations, & testing activities',
+                'Apply performance reporting & forecast appropriate fund issuances to model TREL’s spending rates & burnout capacities',
+                'Track operational & administrative expenditures to build in-depth quarterly reports that represent lab’s financial logistics'
+            ]
         }
     ]
     const positionsEng = {
