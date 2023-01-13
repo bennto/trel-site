@@ -27,6 +27,16 @@
         letter-spacing: 0.5px;
         line-height: 25px;
     }
+    ul {
+        margin: 0;
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+    li {
+        margin: 0;
+        font-size: 0.6em;
+        opacity: 0.8;
+    }
 
     .hero {
         margin-top: 250px;
@@ -118,11 +128,11 @@
         .two {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: left;
             align-items: flex-start;
             flex-wrap: wrap;
             width: 1300px;
-            margin: 0 auto 200px auto;
+            margin: 0 auto 0px auto;
             .text {
                 margin-right: 20px;
                 .head {
@@ -158,6 +168,7 @@
                     }
                     .title {
                         margin: 20px 0 20px 0;
+                        color: rgb(106, 106, 224);
                     }
                     .information {
                         line-height: 2em;
@@ -170,18 +181,46 @@
                     }
                 }
             }
-            .posIndex {
+            .rightSide {
                 display: flex;
-                flex-direction: column;
-                margin-top: 100px;
-                .border {
-                    margin: 0;
+                flex-direction: row;
+                width: 630px;
+                margin-top: 90px;
+                margin-bottom: 200px;
+                .roleTitle {
+                    margin-top: 20px;
+                    font-family: 'Coanda';
+                    @include for-tablet {
+                        text-align: center;
+                        width: 100vw;
+                    }
+                    @include for-mobile {
+                        text-align: center;
+                        width: 100vw;
+                    }
+                }
+                .posIndex {
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    
+                    .border {
+                        opacity: 0;
+                        margin: 0;
+                        width: 360px;
+                    }
+                    @include for-tablet {
+                        margin-top: 20px;
+                    }
+                    @include for-mobile {
+                        margin-top: 20px;
+                    }
                 }
                 @include for-tablet {
-                    margin-top: 20px;
+                    flex-direction: column;
                 }
                 @include for-mobile {
-                    margin-top: 20px;
+                    flex-direction: column;
                 }
             }
             @include for-tablet {

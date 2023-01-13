@@ -10,7 +10,7 @@ import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
 export default function Join () {
-
+    
     const [open, setOpen] = useState(0);
     const slideFade = {
         hidden: {
@@ -23,89 +23,181 @@ export default function Join () {
             }
         }
     }
-    var positions = [
+
+    const positions = [
         {
             id: 0,
             title: '',
             desc: '',
+            bullets: []
         },
         {
             id: 1,
             title: 'Avionics Hardware',
-            desc: 'Avionics Hardware is concerned with all of the physical electronics onboard Halcyon. This includes the physical power system (which makes sure the rest of the rocket can actually function), the physical telemetry systems (which allows for communication with the ground for data collection and flight termination sequences), and the physical connections between all devices and their associated flight computers for data collection.',
+            desc: 'Avionics Hardware is concerned with all the physical electronics onboard Halcyon. This includes the physical power and telemetry systems and the connections between all devices and their associated flight computers for data collection. Our team members gain vast knowledge in the workings of avionics systems in the rocket industry. This ranges from the process of designing and assembling wire harnesses to the design and manufacturing of batteries and their supportive components. The team also utilizes different software for CAD modeling, PCB design, and even testing. Members in the RF sub-team also gain a thorough understanding of radio communication and how to utilize it in different applications.',
+            bullets: []
         },
         {
             id: 2,
             title: 'Avionics Software',
-            desc: 'Create the flight software which controls the vehicle in flight, the mission control software which monitors the vehicle from the ground, and the hardware-in-the-loop testing system used to validate the flight computer in simulated flight-like conditions.​',
+            desc: 'The AvSoftware team creates flight software that controls the vehicle in flight and Mission Control Software which monitors the vehicle from the ground. The team also develops the hardware-in-the-loop testing system used to validate the flight computer in simulated flight-like conditions. Our members gain experience with ground antennae and RF devices, and work primarily in Python and C++.',
+            bullets: []
         },
         {
             id: 3,
             title: 'Fins',
-            desc: 'The role of the Fins team is to maintain the heading of the rocket throughout the flight to ensure that the rocket will reach apogee. The Actuated Fins will mainly be used in the beginning of the flight when the atmosphere is denser and will also allow for the rocket to rapidly correct of the initial 3 degree offset off the rail. The system will consist of 4 actuating fin systems all running control loops that will autonomously correct the heading the heading of the rocket throughout flight. ',
+            desc: 'The Fins team is tasked with designing, manufacturing, and testing the fins aboard Halcyon. To do so, we work extensively with CFD and CADs to create fin geometries and use various manufacturing processes to bring those digital models to life. We also conduct a variety of tests to ensure that the designed and manufactured fins meet our specified criteria.',
+            bullets: []
         },
         {
             id: 4,
             title: 'Fluids',
-            desc: 'The fluids sub-team is responsible for designing a system capable of delivering cryogenic liquid oxygen, volatile RP-1 and highly pressurized helium gas from the ground system to Halcyon\'s COPV\'s, and from there to the Halcyon\'s engine, all of which must be done in a safe, timely, and highly precise manner The fluids system is in three different parts of the rocket, so it requires meticulous configuration in the overall rocket to fit everything. Likewise, the sensors in the fluids system directly affect the power needed for the rocket. In the timeline of TREL, the fluids system is continuous throughout all stages of development.​',
+            desc: 'The Fluids team is responsible for designing a system capable of delivering cryogenic liquid oxygen, volatile RP-1, and highly pressurized helium gas from the ground system through Halcyon\'s COPVs to the engine in a safe, timely, and highly precise manner. This system interacts with several parts of the rocket and is continuous throughout all stages of Halcyon’s development. ​',
+            bullets: []
         },
         {
             id: 5,
             title: 'Guidance, Navigation, and Control',
-            desc: 'The GNC team is primarily tasked with determining the ideal flight path for the vehicle, estimating the vehicle\'s state throughout the flight, and ensuring that the vehicle remains stable along its nominal trajectory.​',
+            desc: 'The Guidance, Navigation, and Control team is primarily tasked with determining the ideal flight path for the vehicle, estimating the vehicle\'s state throughout the flight, and ensuring that the vehicle remains stable along its nominal trajectory. Members of the team use Simulink and C++ to create a computer model of Halcyon\'s flight dynamics and then use control theory to build algorithms that will actively control the rocket in flight. ​',
+            bullets: []
         },
         {
             id: 6,
             title: 'Hotfire',
-            desc: 'This stand involves integrated fluids systems, electronics hardware, and software (LabVIEW and MATLAB). This project also involves working with the propulsion team and creating test plans and procedures. Working on this projects, you will gain hands-on experience with all aspects of systems design and manufacturing as well as test operations and be a part of a focused team environment with a lot of communication.​',
+            desc: 'The Hotfire team creates the engine test stand and tests Halcyon’s engine. Their stand combines integrated fluids systems, electronic hardware, and software (LabVIEW and MATLAB). The team also integrates extensively with the propulsion team to create test plans and procedures. Our team gains hands-on experience with all aspects of systems design, manufacturing, and test operations in a team environment focused on communication.​',
+            bullets: []
         },
         {
             id: 7,
             title: 'Launch Ops + Weather Balloon',
-            desc: 'Launch Operations plans and scopes the details of our launch. Launch Operations covers overviewing launch site, test procedures, and concept of operations in order to successfully launch. Responsibilities include interfacing with ground structure equipment, communications with ground software, and scheduling rocket fueling and fluid lines. Launch Ops also focuses on gathering atmospheric data, done by the Weather Balloon team. Weather Balloon involves creating custom payloads, using telemetry to receive atmospheric data and video, and launching/recovering payloads via weather balloon. Weather balloons will be used on launch day to get atmospheric data for GNC\'s 6DOF simulation and are currently being used to test Payload team sensors and procedures.​',
+            desc: 'Launch Operations plans and scopes the details of our launch. This includes overviewing the launch site, test procedures, and the order of launch operations. The team’s responsibilities include interfacing with ground structure equipment, communications with ground software, and scheduling rocket fueling and fluid lines. Launch Ops also focuses on gathering atmospheric data by the Weather Balloon team. This team offers the opportunity to use CAD and structural analysis as we research and design a launch rail for Halcyon. Launch Ops will also interact with manufacturers and other teams to source materials and plan launch day logistics. The Weather Balloon team creates custom payloads using telemetry to receive atmospheric data and video, and launching/recovering payloads via weather balloon. Weather balloons will be used on launch day to get atmospheric data for GNC\'s 6DOF simulation and are currently being used to test Payload team sensors and procedures.',
+            bullets: []
         },
         {
             id: 8,
             title: 'Payload',
-            desc: 'The Payload will be housed in the nosecone of the rocket and supported by a lightweight chassis. At 100 km, the nosecone detaches from the rocket with the payload inside. Once clear of the rocket, the Payload will eject from the nosecone using a spring and rail system. The Payload is an isolated system from Halcyon, because it must be able to communicate information about temperature, pressure, orientation, and location to the ground after it ejects from the nosecone. The design will utilize a zero-pressure balloon deployed using an onboard Helium tank. This balloon will deploy, along with a drogue parachute, at around 30-40 km altitude after free fall. Once neutral buoyancy is achieved, the balloon deflates and the main chute delivers the Payload to the ground safely.​',
+            desc: 'The Payload will be housed in the nosecone of the rocket and supported by a lightweight chassis. At 100 km, the nosecone detaches from the rocket with the payload inside, from then on the Payload operates entirely autonomously. The Payload has two primary missions; Mesospheric UV Data Collection, and proving a rapid inflation neutral buoyancy meteorological balloon concept. The Payload is very compact and highly integrated, and our team comes from a very diverse suite of backgrounds. All Payload members get hands on experience with test engineering, design, and manufacturing.​',
+            bullets: []
         },
         {
             id: 9,
             title: 'Production',
             desc: 'Production fabricates the designs. Production uses the ME machine shop and various machining equipment to transform our CADs into a reality. Members of the production team take 3D drawings and focus on precision and detail when machining parts.',
+            bullets: []
         },
         {
             id: 10,
             title: 'Propulsion',
-            desc: 'Propulsion is responsible for the design and analysis of all of TREL\'s engines and nozzles. Currently, the propulsion team\'s work is split between our two main engines; a 200 lb heat sink test engine which is nearing its first hotfire test, and the flight-ready Havoc engine which will power the Halcyon rocket to the edge of space. When completed, Havoc\'s regeneratively cooled, pressure fed, additively manufactured design will be one the most advanced ever produced by a collegiate rocketry lab.',
+            desc: 'Propulsion is responsible for the design and analysis of TREL\'s engines and nozzles. Currently, the propulsion team\'s work is split between our two main engines; TXE-2 (manufactured by EOS and Elementum) and the flight-ready Havoc engine which will power the Halcyon rocket to the edge of space. When completed, Havoc\'s regeneratively cooled, pressure fed, additively manufactured design will be one the most advanced ever produced by a collegiate rocketry lab. Currently, the team has completed post-processing the TXE-2 engine and is beginning testing. Our members gain a holistic understanding of TREL’s engines and their testing procedures as well as experience in Python.',
+            bullets: []
         },
         {
             id: 11,
             title: 'Recovery',
-            desc: 'Recovery has several mission critical responsibilities including but not limited to the safe recovery of Halcyon. Our major projects include:\n1) The design and fabrication of the nosecone and the rocket\'s only separation system.\n2) The development of the 2-stage vehicle recovery system and nosecone recovery system.\n3) The planning and execution of drop tests.\n4) The development, and testing of relevant circuits and GPS tracking systems for our components.',
+            desc: 'Recovery has several mission critical responsibilities including but not limited to the safe recovery of Halcyon. Our major projects include: 1) The design and fabrication of the nosecone and the rocket\'s only separation system. 2) The development of the 2-stage vehicle recovery system and nosecone recovery system. 3) The planning and execution of drop tests. Our members gain various experience - including the development and testing of relevant circuits and GPS tracking systems for our components.',
+            bullets: []
         },
         {
             id: 12,
             title: 'Systems Integration Team',
-            desc: 'The System Integrations Team (SIT) is a bridge between the admin team and design systems. SIT members act as a point of contact between systems and work on full rocket integration problems. With CAD and system engineering principles, SIT defines the integration of the virtual and physical vehicle assembly.​',
+            desc: 'The System Integrations Team (SIT) is a bridge between the admin team and design systems. SIT members act as a point of contact between systems and work on full rocket integration problems. With CAD and system engineering principles, SIT defines the integration of the virtual and physical vehicle assembly. SIT acts as a point of contact between subteams and works on full rocket integration problems. As a member, you\'ll work on projects that involve maintaining team-to-team communication and documentation or ones that involve multiple teams working together.​',
+            bullets: []
         },
         {
             id: 13,
             title: 'Stage Test',
             desc: 'Stage Test works closely with Launch Ops to design, manufacture, and test the components necessary to load and launch the rocket. Systems include the Ground Structure and Ground Support Equipment (GSE) to aid in supporting the weight of the rocket as well as fluid loading. Stage also deals with integration of the different moving parts, and ensures interteam testing is successful.',
+            bullets: []
         },
         {
             id: 14,
             title: 'Structures',
             desc: 'The Structures team’s role in TREL is to design the fuel tanks, airframe, and integration mounts the rocket. The fuel tanks are 3 composite overwrapped pressure vessels (COPVs) and comprise most of the volume of the rocket. The airframe is a carbon fiber composite sandwich structure that connects the fuel tanks together. They also design secondary structures for mounting avionics, sensors, fluid lines, valves, etc. as well as an engine mount that transfers thrust from the engine to the rest of the rocket.​',
+            bullets: []
         },
         {
             id: 15,
             title: 'TVC',
-            desc: 'TVC, or Thrust Vector Control is a form of Active control to control the trajectory of the rocket with the engine itself. More specifically, it\'s a two degree of freedom gimbal that attaches to the engine to redirect its thrust around the center axis. Our TVC team is currently in development, with a completed design and model. Going forward, the TVC team is preparing for design reviews, manufacturing, and testing.',
+            desc: 'TVC, or Thrust Vector Control is the primary system that controls Halcyon’s trajectory. More specifically, it\'s a two degree of freedom gimbal that attaches to the engine to redirect its thrust around the center axis.  Currently, we are finalizing the design and running simulations to ensure both our system and test stand will be structurally sound while meeting all the actuation requirements. New members will experience mechanical design and prototyping, and hopefully manufacturing and testing integration as we transition out of our design cycle.',
+            bullets: []
         },
+        {
+            id: 16,
+            title: 'Communications',
+            desc: 'The Communications team is responsible for creating and maintaining TREL’s brand through our website, newsletters, and social media content. We interact extensively with all the engineering teams to highlight their work on Halcyon and share TREL’s mission with the community. Our team members work with a variety of tools and gain experience in:',
+            bullets: [
+                'Website development using HTML, CSS, JavaScript',
+                'Technical Writing and newsletter tools such as MailChimp', 
+                'Social media advertising on Instagram and LinkedIn ',
+                'Creative content brainstorming and creation in photography and videography',
+                'Working in an interdisciplinary team'
+            ]
+        },
+        {
+            id: 17,
+            title: 'Outreach',
+            desc: 'The Outreach team is dedicated to increasing community interest in rockets and in rocketry. We travel around the Austin area visiting schools, orphanages, and doing UT events to educate students about the various fields involved in the rocket industry. Our goal is to develop a passion for space in students. Our members develop skills in:',
+            bullets: [
+                'Public speaking: Communicating with a wide variety of people with various levels of space knowledge, from students to professionals',
+                'Professional communication: Writing emails reaching out to potential partners and schools',
+                'Simplification: Break down complex ideas to educate students',
+                'Creative planning: Producing mini experiments to educate students'
+            ]
+        },
+        {
+            id: 18,
+            title: 'Diversity, Equity, and Inclusion',
+            desc: 'The TREL Diversity Equity and Inclusion Team is an integral part of the Lab. TREL is committed to ensuring that our lab provides equal opportunity and inclusion. Members gain skills and work on projects that are like those in the aerospace industry. Our team members:',
+            bullets: [
+                'Organize DEI speaker events and trainings',
+                'Analyze lab metrics and feedback forms, write grants, and improve the recruitment process',
+                'Communicate and maintain relationships with all TREL teams and DEI sources in the Cockrell School of Engineering',
+                'Communicate with team members, TREL teams, and DEI sources within the Cockrell School of Engineering on a regular basis'
+            ]
+        },
+        {
+            id: 19,
+            title: 'Corporate Development',
+            desc: 'The Corporate Development team actively develops and maintains partnerships and corporate support for TREL\'s projects. Our team members gain experience advocating for TREL\'s interests and working with professionals in various industries and across Cockrell. ',
+            bullets: []
+        },
+        {
+            id: 20,
+            title: 'Finance and Strategy',
+            desc: 'Finance and Strategy (F&S) manages TREL’s financial and operational positioning through finance and procurement. Together, F&S ensures that the lab properly allocates its $1M budget, secures critical partnerships, and assists the engineering teams in procuring parts/supplies so they can build the best rocket possible.',
+            bullets: []
+        }
     ]
+    const positionsEng = {
+        start: 1,
+        end: 16
+    }
+    const positionsBus = {
+        start: 16,
+        end: 21
+    }
 
+    function RoleList(props) {
+        return(
+            <div className={styles.posIndex}>
+                {positions.slice(props.start,props.end).map((position) => (
+                    <div>
+                        <hr className={styles.border} />
+                        <div onMouseEnter={() => {
+                            setOpen(position.id)
+                        }} 
+                        // onMouseLeave={() => {
+                        //     setOpen(0)
+                        // }}
+                        >
+                            <Spoiler className={styles.collapsible} title={position.title} bullets={position.bullets}>{position.desc}</Spoiler>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        )
+    }
+    
     return (
         <Layout>
             <Head>
@@ -132,11 +224,11 @@ export default function Join () {
                                 </div>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Session 1: </h4>
-                                    <h4 className={styles.sessionTime}>August 29, 2022, 6:30 - 8:00pm</h4>
+                                    <h4 className={styles.sessionTime}>January 17, 2023, 6:00 - 7:30pm</h4>
                                 </div>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Session 2: </h4>
-                                    <h4 className={styles.sessionTime}>August 30, 2022, 6:30 - 8:00pm</h4>
+                                    <h4 className={styles.sessionTime}>January 18, 2023, 6:00 - 7:30pm</h4>
                                 </div>
                                
                             </div>
@@ -163,22 +255,41 @@ export default function Join () {
                                 {open != 0 && <hr className={styles.border} />}
                                 <h3 className={styles.title}>{positions[open].title}</h3>
                                 <h6 className={styles.information}>{positions[open].desc}</h6>
+                                <ul>
+                                    {positions[open].bullets.map((bullet) => (
+                                            <li className={styles.information}>{bullet}</li>
+                                        
+                                        
+                                    ))}
+                                </ul>
                             </motion.div>
                         </div>
-                        <div className={styles.posIndex}>
-                            {positions.slice(1,positions.length).map((position) => (
+                        <div className={styles.rightSide}>
+                            <div className={styles.eng}>
+                                <h6 className={styles.roleTitle}>Engineering</h6>
+                                <RoleList start={positionsEng.start} end={positionsEng.end} />
+                            </div>
+                            <div className={styles.bus}>
+                                <h6 className={styles.roleTitle}>Business</h6>
+                                <RoleList start={positionsBus.start} end={positionsBus.end} />
+                            </div>
+                        </div>
+                        {/* <div className={styles.posIndex}>
+                            {positions.slice(1,positionsEng.end).map((position) => (
                                 <div>
                                     <hr className={styles.border} />
                                     <div onMouseEnter={() => {
                                         setOpen(position.id)
-                                    }} onMouseLeave={() => {
-                                        setOpen(0)
-                                    }}>
+                                    }} 
+                                    // onMouseLeave={() => {
+                                    //     setOpen(0)
+                                    // }}
+                                    >
                                         <Spoiler className={styles.collapsible} title={position.title}>{position.desc}</Spoiler>
                                     </div>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.three}>
                         <div className={styles.text}>
@@ -192,11 +303,11 @@ export default function Join () {
                                 <h5 className={styles.info}>Our recruitment cycle has finished and we are no longer seeking applicants. Please check this page again next semester for more details!</h5>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Apps Open:</h4>
-                                    <h4 className={styles.sessionTime}>August 30, 2022</h4>
+                                    <h4 className={styles.sessionTime}>January 17, 2023</h4>
                                 </div>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Apps Close: </h4>
-                                    <h4 className={styles.sessionTime}>September 3, 2022</h4>
+                                    <h4 className={styles.sessionTime}>January 20, 2023</h4>
                                 </div>
                             </div>
                         </div>
@@ -210,11 +321,11 @@ export default function Join () {
                                 <h5 className={styles.info}>Wow! We were really impressed by your application and want to talk more with you. We'll send you an email and schedule a time that works for you. Come as you are, we want to know the real you.</h5>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Interview Begin:</h4>
-                                    <h4 className={styles.sessionTime}>September 1, 2022</h4>
+                                    <h4 className={styles.sessionTime}>January 26, 2023</h4>
                                 </div>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Decisions: </h4>
-                                    <h4 className={styles.sessionTime}>September 15, 2022</h4>
+                                    <h4 className={styles.sessionTime}>February 3, 2023</h4>
                                 </div>
                             </div>
                         </div>

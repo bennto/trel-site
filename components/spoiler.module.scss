@@ -2,7 +2,13 @@
 @import "../styles/type";
 
 .spoiler {
-    width: 600px;
+    width: 360px;
+    ul {
+        padding: 10px;
+    }
+    .bullet {
+        margin-bottom: 4px;
+    }
     button {
         font-size: 18px;
         font-weight: bold;
@@ -14,9 +20,10 @@
         color: white;
         outline: none;
         border: none;
-        padding: 10px 20px 10px 20px;
+        padding: 10px 10px 10px 20px;
         transition: background-color 0.3s;
-        width: 600px;
+        width: 360px;
+        border-radius: 5px;
         &:hover {
             cursor: pointer;
             background-color: rgb(222, 152, 21);
@@ -24,9 +31,15 @@
         }
         @include for-tablet {
             padding: 15px 15px 15px 90px;
+            width: 100vw;
+            padding-left: 10px;
+            text-align: center;
         }
         @include for-mobile {
             padding-left: 15px 15px 15px 90px;
+            width: 100vw;
+            padding-left: 10px;
+            text-align: center;
         }
     }
     
