@@ -311,7 +311,7 @@ export default function Join () {
                                 </div>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Apps Close: </h4>
-                                    <h4 className={styles.sessionTime}>January 20, 2023</h4>
+                                    <h4 className={styles.sessionTime}>January 18, 2023</h4>
                                 </div>
                             </div>
                         </div>
@@ -325,7 +325,7 @@ export default function Join () {
                                 <h5 className={styles.info}>Wow! We were really impressed by your application and want to talk more with you. We'll send you an email and schedule a time that works for you. Come as you are, we want to know the real you.</h5>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Interview Begin:</h4>
-                                    <h4 className={styles.sessionTime}>January 26, 2023</h4>
+                                    <h4 className={styles.sessionTime}>January 20, 2023</h4>
                                 </div>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Decisions: </h4>
