@@ -209,8 +209,8 @@ export default function Join () {
             </Head>
             <body className={styles.dadbod}>
                 <div className={styles.hero}>
-                    <h1 className={styles.head}>Recruiting is Closed...</h1>
-                    <h4 className={styles.sub}>but check out our teams and process below</h4>
+                    <h1 className={styles.head}>We Are Recruiting!</h1>
+                    <h4 className={styles.sub}>check out our application process below</h4>
                 </div>
                 <div className={styles.infoSession}>
                     <div className={styles.one}>
