@@ -250,7 +250,7 @@ export default function Join () {
                             </div>
                             <div className={styles.body}>
                                 <h5 className={styles.info}>We're a BIG lab with lots of different teams doing uniquely cool things. Read through some of the team descriptions to discover what suits your fancy. </h5>
-                                <h5 className={styles.info}>We recommend choosing and applying for several different teams (max 3), as different teams may be looking to onboard more or fewer new Trellians this semester.</h5>
+                                <h5 className={styles.info}>We recommend choosing and applying for several different teams (max 2), as different teams may be looking to onboard more or fewer new Trellians this semester.</h5>
                             </div>
                             <motion.div className={styles.descriptions}
                                         variants={slideFade}
@@ -311,7 +311,7 @@ export default function Join () {
                                 </div>
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Apps Close: </h4>
-                                    <h4 className={styles.sessionTime}>January 18, 2023</h4>
+                                    <h4 className={styles.sessionTime}>January 20, 2023</h4>
                                 </div>
                             </div>
                         </div>
