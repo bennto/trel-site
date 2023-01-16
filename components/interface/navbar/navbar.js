@@ -45,9 +45,9 @@ export default function Navbar() {
         }, 1000);
     })
     
-    useEffect(()=>{
-        setDrop(false)
-    }, [])
+    // useEffect(()=>{
+    //     setDrop(false)
+    // }, [])
     
     const [yRef, setYRef] = useRefState()
     const [dropped, setDrop] = useState(false)
@@ -63,17 +63,15 @@ export default function Navbar() {
             opacity: 0
         },
         step: {
-            opacity: 100,
+            opacity: 1,
             transition: {
-                duration: 8,
+                duration: 0.8,
                 delay: 0.1
             }
         },
         drop: { 
-            y: 30,
-            transition: { 
-                duration: 0.5,
-            } 
+            y: 1060,
+            transition: { duration: 0.5 } 
         },
         undrop: { 
             y: -1000,
@@ -87,6 +85,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: -5 }}
                 animate={{ opacity: 1, y: 0 }} 
                 transition={{ duration: 0.6, delay: 0.2 }}>
+                
                 <div className={styles.item}>
                     <a>
                         <Link href={'/'}>
@@ -106,23 +105,26 @@ export default function Navbar() {
                     </motion.h3>
                 </div>
                 
-                <div className={styles.item}>
+                {/* <div className={styles.item}> */}
                     {isMobile ? (
                         <svg className={styles.burger}
-                        onClick={() => {setDrop(dropped ? false : true)}}>
+                        onClick={() => {
+                            setDrop(dropped ? false : true)
+                            console.log(dropped)
+                            }}>
                             <rect className={styles.rect1} y="0"></rect>
                             <rect className={styles.rect2} y="9"></rect>
                             <rect className={styles.rect3} y="18"></rect>
                         </svg>
                     ) : (
-                        <ul>
+                        <ul className={styles.deskItems}>
                             <li><Link href={'/halcyon'}><a>halcyon</a></Link></li>
                             <li><Link href={'/blog'}><a>blog</a></Link></li>
                             <li><Link href={'/join'}><a>join us</a></Link></li>
                             <li><Link href={'/donate'}><a>donate</a></Link></li>
                         </ul>
                     )}
-                </div>
+                {/* </div> */}
             </motion.div>
             
             <motion.div className={styles.placeholder}
@@ -131,7 +133,7 @@ export default function Navbar() {
                         transition={{ duration: 0.2 }}></motion.div>
 
             <motion.div className={styles.burgerMenu} variants={variants}
-                initial={{ y: -1000 }} 
+                initial={{ y: 0 }} 
                 animate={dropped ? "drop" : "undrop"}>
                 <motion.ul variants={variants}
                     initial={{ opacity: 0 }} 
