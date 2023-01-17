@@ -304,7 +304,8 @@ export default function Join () {
                             </div>
                             <div className={styles.body}>
                                 {/* <h5 className={styles.info}>Apply to be in <a className={styles.apply} href="https://forms.gle/PMrTbXnPGQy96gEz5" target="_blank">engineering</a>, <a className={styles.apply} href="http://tinyurl.com/TrelDEI" target="_blank">DEI</a>, or <a className={styles.apply} href="https://forms.gle/tZKWcyyUiNyQjJxr9" target="_blank">outreach</a>. We're looking mostly for your passion, thought process, and personality. Resumes are optional, but helpful.</h5> */}
-                                <h5 className={styles.info}>Our recruitment cycle has finished and we are no longer seeking applicants. Please check this page again next semester for more details!</h5>
+                                <h5>Applications will open tonight after the info session.</h5>
+                                {/* <h5 className={styles.info}>Our recruitment cycle has finished and we are no longer seeking applicants. Please check this page again next semester for more details!</h5> */}
                                 <div className={styles.sessionDate}>
                                     <h4 className={styles.sessionHead}>Apps Open:</h4>
                                     <h4 className={styles.sessionTime}>January 17, 2023</h4>
