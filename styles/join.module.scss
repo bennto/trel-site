@@ -1,445 +1,333 @@
 @import "variables";
 @import "type";
 
-.dadbod {
-    font-size: 25px;
-    background-color: $dark;
-    h1 {
-        font-size: 3.6em;
-        font-weight: bold;
-    }
-    h2 {
-        font-size: 2.5em;
-        font-weight: bold;
-    }
-    h3 {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-    h4 {
-        font-size: 0.8em;
-        font-weight: lighter;
-        letter-spacing: 0.5px;
-    }
-    h5 {
-        font-size: 0.65em;
-        font-weight: lighter;
-        letter-spacing: 0.5px;
-        line-height: 25px;
-    }
-    ul {
-        margin: 0;
-        padding-left: 15px;
-        padding-top: 20px;
-    }
-    li {
-        margin: 0;
-        font-size: 0.6em;
-        opacity: 0.8;
-    }
+.container {
+  top: 0;
+  left: 0;
+  background-color: $dark;
 
-    .hero {
-        margin-top: 250px;
-        margin-bottom: 400px;
+  .section1 {
+    height: 100vh;
+    .backgroundFrame {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      width: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      .background {
+        object-fit: cover;
+        display: inline-block;
+        min-height: 100vh;
+        width: 100vw;
+        margin: auto;
+        opacity: 0.4;
+      }
+    }
+    .content {
+      position: relative;
+      top: 48vh;
+      margin: 0;
+      width: 100%;
+      h1,
+      h5 {
         text-align: center;
+      }
     }
+  }
+  .section2 {
+    height: auto;
+    margin: 48px auto;
+    padding-left: 48px;
+    max-width: 1300px;
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto 0;
 
-    .infoSession {
-        .one {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            width: 1300px;
-            margin: 0 auto 200px auto;
-            .text {
-                .head {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: baseline;
-                    word-wrap: break-word;
-                    .number {
-                        color: rgb(106, 106, 224);
-                        font-family: 'Coanda';
-                    }
-                    .break {
-                        width: 30px;
-                    }
-                    @include for-tablet {
-                        width: 90vw;
-                    }
-                    @include for-mobile {
-                        width: 90vw;
-                    }
-                }
-                .body {
-                    margin-left: 75px;
-                    width: 600px;
-                    .info {
-                        margin-bottom: 20px;
-                    }
-                    .sessionDate {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        max-width: 500px;
-                        margin-top: 10px;
-                        .sessionHead {
-                            font-weight: bold;
-                            margin-right: 30px;
-                        }
-                        @include for-tablet {
-                            justify-content: left;
-                        }
-                        @include for-mobile {
-                            justify-content: left;
-                        }
-                    }
-                    @include for-tablet {
-                        width: 80vw;
-                    }
-                    @include for-mobile {
-                        width: 80vw;
-                    }
-                }
-            }
-            .mapImbed {
-                margin-top: 10px;
-                height: 400px;
-                width: 600px;
-                @include for-laptop {
-                    width: 30vw;
-                }
-                @include for-tablet {
-                    visibility: hidden;
-                }
-            }
-            @include for-laptop {
-                justify-content: flex-start;
-            }
-            @include for-tablet {
-                margin-left: 10px;
-            }
-            @include for-mobile {
-                margin-left: 10px;
-            }
+      width: 84%;
+      color: $light;
+      .intro {
+        width: 640px;
+        :nth-child(1) {
+          margin-bottom: 20px;
         }
-        .two {
-            display: flex;
-            flex-direction: row;
-            justify-content: left;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            width: 1300px;
-            margin: 0 auto 0px auto;
-            .text {
-                margin-right: 20px;
-                .head {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: baseline;
-                    .number {
-                        color: rgb(230, 139, 41);
-                        font-family: 'Coanda';
-                    }
-                    .break {
-                        width: 30px;
-                    }
-                }
-                .body {
-                    margin-left: 90px;
-                    width: 560px;
-                    .info {
-                        margin-bottom: 20px;
-                    }
-                    @include for-tablet {
-                        width: 80vw;
-                    }
-                    @include for-mobile {
-                        width: 80vw;
-                    }
-                }
-                .descriptions {
-                    margin-left: 90px;
-                    width: 560px;
-                    .border {
-                        margin: 50px 0 0 0;
-                    }
-                    .title {
-                        margin: 20px 0 20px 0;
-                        color: rgb(106, 106, 224);
-                    }
-                    .information {
-                        line-height: 2em;
-                    }
-                    @include for-tablet {
-                        display: none;
-                    }
-                    @include for-mobile {
-                        display: none;
-                    }
-                }
-            }
-            .rightSide {
-                display: flex;
-                flex-direction: row;
-                width: 630px;
-                margin-top: 90px;
-                margin-bottom: 200px;
-                .roleTitle {
-                    margin-top: 20px;
-                    font-family: 'Coanda';
-                    @include for-tablet {
-                        text-align: center;
-                        width: 100vw;
-                    }
-                    @include for-mobile {
-                        text-align: center;
-                        width: 100vw;
-                    }
-                }
-                .posIndex {
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    
-                    .border {
-                        opacity: 0;
-                        margin: 0;
-                        width: 360px;
-                    }
-                    @include for-tablet {
-                        margin-top: 20px;
-                    }
-                    @include for-mobile {
-                        margin-top: 20px;
-                    }
-                }
-                @include for-tablet {
-                    flex-direction: column;
-                }
-                @include for-mobile {
-                    flex-direction: column;
-                }
-            }
-            @include for-tablet {
-                flex-direction: column;
-            }
-            @include for-mobile {
-                flex-direction: column;
-            }
+        :nth-child(2) {
+          margin-left: 36px;
+          width: 564px;
+          @include for-tablet {
+            width: auto;
+            margin-left: 0;
+          }
         }
-        .three {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            width: 1300px;
-            margin: 0 auto 250px auto;
-            .text {
-                width: 600px;
-                margin-left: 10px;
-                .head {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: baseline;
-                    word-wrap: break-word;
-                    .number {
-                        color: rgb(106, 106, 224);
-                        font-family: 'Coanda';
-                    }
-                    .break {
-                        width: 30px;
-                    }
-                    @include for-tablet {
-                        width: 90vw;
-                    }
-                    @include for-mobile {
-                        width: 90vw;
-                        margin-bottom: 20px;
-                    }
-                }
-                .body {
-                    margin-left: 90px;
-                    padding-right: 100px;
-                    width: 650px;
-                    overflow-wrap: break-word;
-                    .info {
-                        margin-bottom: 20px;
-                        .apply {
-                            color: rgb(231, 166, 45);
-                            cursor: pointer;
-                        }
-                    }
-                    .sessionDate {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        max-width: 500px;
-                        margin-top: 10px;
-                        .sessionHead {
-                            font-weight: bold;
-                            margin-right: 30px;
-                            
-                        }
-                        @include for-tablet {
-                            justify-content: left;
-                        }
-                        @include for-mobile {
-                            justify-content: left;
-                        }
-                    }
-                    @include for-tablet {
-                        width: 80vw;
-                    }
-                    @include for-mobile {
-                        width: 80vw;
-                    }
-                }
-                @media (max-width: 1300px) {
-                    margin-bottom: 100px;     
-                }
-            }
-            .text2 {
-                width: 600px;
-                margin-left: 10px;
-                .head {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: baseline;
-                    word-wrap: break-word;
-                    .number {
-                        color: rgb(230, 139, 41);
-                        font-family: 'Coanda';
-                    }
-                    .break {
-                        width: 30px;
-                    }
-                    @include for-tablet {
-                        width: 90vw;
-                    }
-                    @include for-mobile {
-                        width: 90vw;
-                        margin-bottom: 20px;
-                    }
-                }
-                .body {
-                    margin-left: 90px;
-                    padding-right: 60px;
-                    width: 600px;
-                    overflow-wrap: break-word;
-                    .info {
-                        margin-bottom: 20px;
-                    }
-                    .sessionDate {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        max-width: 500px;
-                        margin-top: 10px;
-                        .sessionHead {
-                            font-weight: bold;
-                            margin-right: 30px;
-                        }
-                        @include for-tablet {
-                            justify-content: left;
-                        }
-                        @include for-mobile {
-                            justify-content: left;
-                        }
-                    }
-                    @include for-tablet {
-                        width: 80vw;
-                    }
-                    @include for-mobile {
-                        width: 80vw;
-                    }
-                }
-            }
-            @media (max-width: 1300px) {
-                flex-direction: column;      
-            }
-            @include for-tablet {
-                flex-direction: column;
-            }
-            @include for-mobile {
-                flex-direction: column;
-            }
+      }
+      .info {
+        max-width: 400px;
+        .pill {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          margin-top: 20px;
+          margin-left: 48px;
+          background-color: rgb(32, 32, 32);
+          transition-duration: 0.2s;
+          cursor: default;
+          :nth-child(1) {
+            padding: 20px 16px 20px 36px;
+          }
+          hr {
+            height: 20px;
+            width: 1px;
+            padding: 0;
+          }
+          :nth-child(3) {
+            padding: 20px 36px;
+          }
         }
-        .bonus {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 100vw;
-            max-width: 1300px;
-            margin: 0 auto 250px auto;
-            .text {
-                .head {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: baseline;
-                    word-wrap: break-word;
-                    .number {
-                        color: rgb(106, 106, 224);
-                        font-family: 'Coanda';
-                    }
-                    .break {
-                        width: 30px;
-                    }
-                    @include for-mobile {
-                        flex-direction: column;
-                        width: 90vw;
-                    }
-                }
-                .body {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    margin-left: 70px;
-                    padding-right: 100px;
-                    overflow-wrap: break-word;
-                    max-width: 1300px;
-                    .bonusCard {
-                        width: 21%;
-                        margin: 0 20px 0 20px;
-                        .number {
-                            font-size: 2em;
-                            color: rgb(230, 139, 41);
-                            font-family: 'Coanda';
-                        }
-                        .head {
-                            margin-bottom: 20px;
-                            font-weight: bold;
-                        }
-                        @include for-tablet {
-                            width: 40%;
-                        }
-                        @include for-mobile {
-                            margin-top: 20px;
-                        }
-                        @media screen and (max-width: 570px) {
-                            width: 80vw;
-                        }
-                    }
-                    @include for-tablet {
-                        margin-left: 0px;
-                        margin-right: 10px;
-                    }
-                    @include for-mobile {
-                        margin-left: 0px;
-                        margin-top: 20px;
-                    }
-                }
-            }
-            @include for-tablet {
-                margin-left: 10px;
-            }
-            @include for-mobile {
-                margin-left: 10px;
-            }
+        .pill:hover {
+          border-radius: 36px;
         }
+        .pill:nth-child(odd):hover {
+          background-color: $theme1;
+        }
+        .pill:nth-child(even):hover {
+          background-color: $theme2;
+        }
+      }
+      @include for-tablet {
+        align-items: center;
+        .info {
+          margin-top: 20px;
+          .pill {
+            margin-left: 0;
+          }
+        }
+      }
     }
-}    
+  }
+  .section3 {
+    max-width: 1300px;
+    height: auto;
+    margin: 64px auto;
+    padding-left: 48px;
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: auto 0;
+
+      max-width: 800px;
+      width: 84vw;
+      color: $light;
+      :nth-child(1) {
+        margin-bottom: 16px;
+      }
+      :nth-child(2),
+      :nth-child(3) {
+        margin-left: 42px;
+        @include for-tablet {
+          margin-left: 0;
+        }
+      }
+      :nth-child(2) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .section4 {
+    height: auto;
+    margin: 64px auto;
+    padding-left: 48px;
+    display: flex;
+    justify-items: center;
+    max-width: 1300px;
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto 0;
+
+      width: 84%;
+      color: $light;
+      .intro {
+        width: 640px;
+        :nth-child(1) {
+          margin-bottom: 20px;
+        }
+        :nth-child(2) {
+          margin-left: 36px;
+          width: 564px;
+          @include for-tablet {
+            width: auto;
+            margin-left: 0;
+          }
+        }
+      }
+      .info {
+        max-width: 400px;
+        .pill {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          margin-top: 20px;
+          margin-left: 48px;
+          background-color: rgb(32, 32, 32);
+          transition-duration: 0.2s;
+          cursor: default;
+          :nth-child(1) {
+            padding: 20px 16px 20px 36px;
+          }
+          hr {
+            height: 20px;
+            width: 1px;
+            padding: 0;
+          }
+          :nth-child(3) {
+            padding: 20px 36px;
+          }
+        }
+        .pill:hover {
+          border-radius: 36px;
+        }
+        .pill:nth-child(odd):hover {
+          background-color: $theme1;
+        }
+        .pill:nth-child(even):hover {
+          background-color: $theme2;
+        }
+      }
+      @include for-tablet {
+        align-items: center;
+        .info {
+          margin-top: 20px;
+          .pill {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .section5 {
+    height: auto;
+    margin: 64px auto;
+    padding-left: 48px;
+    display: flex;
+    justify-items: center;
+    max-width: 1300px;
+    .backgroundFrame {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      opacity: 0.4;
+      top: 80vh;
+      left: 0;
+      right: 0;
+      height: 48vh;
+      width: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      background-color: rgb(175, 141, 229);
+    }
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto 0;
+      width: 84%;
+      color: $light;
+      .intro {
+        width: 640px;
+        :nth-child(1) {
+          margin-bottom: 20px;
+        }
+        :nth-child(2) {
+          margin-left: 36px;
+          width: 564px;
+          @include for-tablet {
+            width: auto;
+            margin-left: 0;
+          }
+        }
+      }
+      .info {
+        max-width: 400px;
+        .pill {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          margin-top: 20px;
+          margin-left: 48px;
+          background-color: rgb(32, 32, 32);
+          transition-duration: 0.2s;
+          cursor: default;
+          :nth-child(1) {
+            padding: 20px 16px 20px 36px;
+          }
+          hr {
+            height: 20px;
+            width: 1px;
+            padding: 0;
+          }
+          :nth-child(3) {
+            padding: 20px 36px;
+          }
+        }
+        .pill:hover {
+          border-radius: 36px;
+        }
+        .pill:nth-child(odd):hover {
+          background-color: $theme1;
+        }
+        .pill:nth-child(even):hover {
+          background-color: $theme2;
+        }
+      }
+      @include for-tablet {
+        align-items: center;
+        .info {
+          margin-top: 20px;
+          .pill {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .section6 {
+    height: auto;
+    margin: 80px auto;
+    padding-left: 48px;
+    max-width: 1300px;
+    .title {
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .flex {
+      display: flex;
+      justify-items: center;
+      flex-wrap: wrap;
+      .card {
+        max-width: 280px;
+        padding: 10px;
+        :nth-child(1) {
+          font-weight: bold;
+          margin-bottom: 16px;
+        }
+        :nth-child(2) {
+        }
+      }
+    }
+  }
+}

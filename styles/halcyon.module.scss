@@ -1,297 +1,133 @@
 @import "variables";
 @import "type";
 
-.hero {
-    display: grid;
-    height: pem(750px);
-    grid-template-rows: pem(60px) 1fr;
-    grid-template-areas: "desc" "title";
-    background-color: transparent;
-    padding-left: pem(107px);
-    padding-right: pem(50px);
-    padding-top: pem(73px);
-    max-width: pem(1700px);
-
-    .halcyon {
-        position: absolute;
-        height: 80vw;
-        left: 45%;
-        top: -35%;
-        transform: rotate(80deg);
-        z-index: 2;
-        object-fit: contain;
-    }
-
-    .project_title {
-        grid-area: title;
-        align-self: center;
-        width: pem(675px);
-        z-index: 10;
-    
-        h1 {
-            font-family: 'Coanda';
-            font-size: pem(18px);
-            line-height: pem(22px, 18px);
-            text-transform: lowercase;
-            padding-left: pem(7px, 18px);
-            z-index: 10;
-        }
-    
-        @include for-mobile() {
-            h1 {
-                font-size: pem(15px);
-            }
-        }
-        
-        h2 {
-            @extend %hype-set;
-            font-size: pem(150px);
-            z-index: 10;
-        }
-    
-        h3 {
-            @extend %section-sub;
-            margin-top: pem(50px, 24px);
-            margin-bottom: pem(14px, 24px);
-            margin-left: pem(10px, 24px);
-            z-index: 10;
-        }
-    }
-}
-
-.overview {
-    position: relative;
-    display: grid;
-    height: pem(750px);
-    grid-template-rows: pem(60px) 1fr;
-    grid-template-areas: "desc" "title";
-    background-color: transparent;
-    padding-left: pem(107px);
-    padding-right: pem(50px);
-    padding-top: pem(73px);
-    max-width: pem(1700px);
-
-    div {
-        grid-area: title;
-        align-self: center;
-        width: pem(675px);
-        z-index: 10;
-    }
-
-    .halcyon {
-        position: absolute;
-        height: 40vw;
-        right: 20%;
-        top: 15%;
-        z-index: 2;
-        object-fit: contain;
-    }
-
-    h1 {
-        @extend %hype-set;
-        font-size: pem(80px);
-        z-index: 10;
-    }
-
-    h2 {
-        @extend %section-sub;
-        margin-top: pem(60px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
-    }
-
-    p {
-        @extend %section-sub;
-        margin-top: pem(50px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
-    }
-
-    ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-
-        li {
-            list-style: none;
-            margin: pem(15px);
-
-            &:first-of-type {
-                margin-left: 0;
-            }
-
-            p {
-                font-family: $mono;
-                font-size: pem(18px);
-            }
-        }
-    }
-}
-
-.compete {
-    position: static;
-    display: grid;
-    height: pem(750px);
-    grid-template-rows: pem(60px) 1fr;
-    grid-template-areas: "desc" "title";
-    background-color: transparent;
-    padding-left: pem(107px);
-    padding-right: pem(50px);
-    padding-top: pem(73px);
-    max-width: pem(1700px);
-
-    .container {
-        grid-area: title;
-        margin-top: 100px;
-        width: pem(675px);
-        z-index: 10;
-        .apply{
-            margin-left:95px;
-            font-size: 25px;
-        }
-        .donate{
-            margin-right:150px;
-            font-size: 25px;
-        }
-    }
-
-    .vacuum {
-        position: absolute;
-        height: 40vw;
-        right: 0;
-       // z-index: 0;
-        object-fit: contain;
-    }
-
-    h1 {
-        @extend %hype-set;
-        font-size: pem(80px);
-        z-index: 10;
-    }
-
-    h2 {
-        @extend %section-sub;
-        margin-top: pem(60px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
-    }
-
-    a {
-        position: relative;
-        font-size: pem(18px);
-        line-height: 88%;
-        letter-spacing: 0;
-        margin-left: pem(10px, 18px);
-        z-index: 10;
-    }
-
-    p {
-        @extend %section-sub;
-        margin-top: pem(50px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
-    }
-
-    .flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        margin-top: pem(50px);
-        width: 100%;
-        padding: 0 pem(15px);
-    }
-}
-
-.havoc {
-    position: relative;
-    display: grid;
-    height: pem(750px);
-    grid-template-rows: pem(60px) 1fr;
-    grid-template-areas: "desc" "title";
-    background-color: transparent;
-    padding-left: pem(107px);
-    padding-right: pem(50px);
-    padding-top: pem(73px);
-    max-width: pem(1700px);
-
-    div {
-        grid-area: title;
-        align-self: center;
-        width: pem(675px);
-        z-index: 10;
-    }
-
-    .havocfire {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+.container {
+  top: 0;
+  left: 0;
+  .section1 {
+    height: 100vh;
+    .backgroundFrame {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      width: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      .background {
         object-fit: cover;
-        width: 100%;
-        height: 100%;
+        display: inline-block;
+        min-height: 100vh;
+        width: 100vw;
+        margin: auto;
+        opacity: 0.4;
+      }
     }
-
-    h1 {
-        @extend %hype-set;
-        font-size: pem(80px);
-        z-index: 10;
+    .content {
+      position: relative;
+      margin: 0 auto;
+      top: 40vh;
+      h1,
+      h6 {
+        text-align: center;
+        max-width: 100%;
+      }
+      h1 {
+        margin-bottom: 16px;
+      }
     }
-
-    h2 {
-        @extend %section-sub;
-        margin-top: pem(60px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
+  }
+  .section2 {
+    height: 64vh;
+    .backgroundFrame {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 100vh;
+      left: 0;
+      right: 0;
+      height: 64vh;
+      width: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      .background {
+        object-fit: contain;
+        display: inline-block;
+        min-height: 64vh;
+        width: 100vw;
+        margin: auto;
+        opacity: 0.6;
+      }
     }
-
-    a {
-        position: relative;
-        font-size: pem(18px);
-        line-height: 88%;
-        letter-spacing: 0;
-        margin-left: pem(10px, 18px);
-        z-index: 10;
-    }
-
-    p {
-        @extend %section-sub;
-        margin-top: pem(50px, 24px);
-        margin-bottom: pem(14px, 24px);
-        margin-left: pem(10px, 24px);
-        z-index: 10;
-    }
-}
-
-@media screen and (max-width: 1650px) {
-    .hero {
-        .halcyon {
-            top: -12%;
+    .content {
+      position: relative;
+      margin: 0 auto;
+      top: 22vh;
+      .title {
+        font-weight: normal;
+        text-align: center;
+        max-width: 100%;
+      }
+      .break {
+        width: 40px;
+        margin: 24px auto;
+        border: 1px solid $light;
+        border-radius: 1px;
+      }
+      .numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card {
+          margin: 0 16px 32px 16px;
+          text-align: center;
+          :nth-child(1) {
+            font-weight: bold;
+          }
+          :nth-child(2) {
+          }
         }
+      }
     }
-}
-
-@media screen and (max-width: 1100px) {
-    .hero {
-        .halcyon {
-            top: -6%;
-        }
+  }
+  .section3 {
+    height: 100vh;
+    .backgroundFrame {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 164vh;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      width: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      .background {
+        object-fit: cover;
+        display: inline-block;
+        min-height: 100vh;
+        width: 100vw;
+        margin: auto;
+        opacity: 0.4;
+      }
     }
-}
-
-@include for-mobile() {
-    .hero {
-        .halcyon {
-            top: 5%;
-        }
+    .content {
+      position: relative;
+      margin: 0 auto;
+      top: 40vh;
+      h1,
+      h6 {
+        text-align: center;
+        max-width: 100%;
+      }
+      h1 {
+        margin-bottom: 16px;
+      }
     }
+  }
 }

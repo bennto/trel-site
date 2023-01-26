@@ -1,18 +1,18 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 // custom function to calculate vertical scroll
-export const useRefState = ( initialVal ) => {
-    const [offsetY, setOffsetY] = useState(initialVal)
-    const yRef = useRef(offsetY)
-    
-    const handleScroll = () => {
-        setOffsetY(window.pageYOffset)
-    };
+export const useRefState = (initialVal) => {
+  const [offsetY, setOffsetY] = useState(initialVal);
+  const yRef = useRef(offsetY);
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        yRef.current = offsetY
-    }, [offsetY]);
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
 
-    return [yRef,setOffsetY];
-}
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    yRef.current = offsetY;
+  }, [offsetY]);
+
+  return [yRef, setOffsetY];
+};

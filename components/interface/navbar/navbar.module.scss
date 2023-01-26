@@ -1,85 +1,112 @@
-@import '../../../styles/variables';
-@import '../../../styles/type';
+@import "../../../styles/variables";
+@import "../../../styles/type";
 
-.navbar {
+.container {
+  width: 100vw;
+  .navbar {
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 97%;
-    padding-top: 30px;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 200;
-    margin-left: 40px;
+    padding: 16px 72px 0 72px;
     svg {
-        width: 100px;
-        height: auto;
-        path {
-            color: $light;
-            fill: $light;
-        }
+      width: 100px;
+      height: auto;
+      path {
+        color: $light;
+        fill: $light;
+      }
+    }
+    @include for-tablet {
+      padding: 16px 36px 0 36px;
     }
 
     .item {
-        display: flex;
-        flex-direction: row;
-        max-height: 80px;
-        .counting {
-            font-size: 20px;
-            font-family: "Cousine";
-            margin-left: 50px;
-            cursor: default;
-            @include for-tablet {
-                display: none;
-            }
-            @include for-mobile {
-                display: none;
-            }
+      display: flex;
+      flex-direction: row;
+      max-height: 80px;
+      .counting {
+        font-size: 20px;
+        margin-left: 50px;
+        cursor: default;
+        @include for-tablet {
+          display: none;
         }
+        @include for-mobile {
+          display: none;
+        }
+      }
+      @include for-tablet {
+        margin: 0 0px;
+      }
+      @include for-mobile {
+      }
+      .deskItems {
+        padding: 0;
+        margin-top: 0;
+        list-style: none;
+        .button {
+          position: relative;
+          margin: 0;
+          border: 2px solid rgba(243, 243, 243, 0);
+          transition: 0.16s ease-out;
+          -o-transition: 0.16s ease-out;
+          -ms-transition: 0.16s ease-out;
+          -moz-transition: 0.16s ease-out;
+          -webkit-transition: 0.16s ease-out;
+        }
+        .button:before {
+          content: "";
+          position: absolute;
+          background: $theme1;
+          opacity: 1;
+          top: 39px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 0%;
+          margin: auto;
+          transition: top 0.16s ease-out;
+          -webkit-transition: width 0.16s ease-out;
+        }
+
+        .button:hover:before {
+          width: 72px;
+        }
+      }
+      .burger {
+        color: $light;
+        fill: $light;
+        width: 30px;
+        height: 23px;
+        .rect1 {
+          width: 30px;
+          height: 5px;
+        }
+        .rect2 {
+          width: 30px;
+          height: 5px;
+        }
+        .rect3 {
+          width: 30px;
+          height: 5px;
+        }
+      }
     }
-        .burger {
-            color: $light;
-            fill: $light;
-            .rect1 {
-                width: 30px; 
-                height: 5px;
-            }
-            .rect2 {
-                width: 30px; 
-                height: 5px;
-            }
-            .rect3 {
-                width: 30px; 
-                height: 5px;
-            }
-        }
-        .deskItems{
-            padding: 0;
-            margin-top: 0;
-            margin-right: 24px;
-            list-style: none;
-            li {
-                float: left;
-                margin-left: 48px;
-                a {
-                    font-size: 20px;
-                    text-decoration: none;
-                    opacity: 0.7;
-                    transition: opacity 0.5s;
-                }
-                a:hover {
-                    opacity: 1;
-                }
-            }
-        }
     // @include for-tablet {
     //     display: none;
     // }
     // @include for-mobile {
     //     display: none;
     // }
-}
+  }
 
-.placeholder {
+  .placeholder {
     position: fixed;
     background-color: $dark;
     top: 0;
@@ -87,32 +114,31 @@
     max-width: 100%;
     width: 100%;
     height: 75px;
-    z-index: 1;
-}
+    z-index: 180;
+  }
 
-.burgerMenu {
+  .burgerMenu {
     position: absolute;
     display: inline-flex;
     flex-direction: column;
     background-color: $dark;
-    z-index: 200;
-    top: -100vh;
+    z-index: 199;
     left: 0;
     max-width: 100%;
     width: 100vw;
     height: 100vh;
     ul {
-        padding-top: 100px;
-        li {
-            text-align: right;
-            margin-right: 60px;
-            margin-bottom: 20px;
-            list-style: none;
-            a {
-                font-size: 56px;
-                font-family: 'Coanda';
-                font-weight: bold;
-            }
+      padding-top: 100px;
+      li {
+        text-align: right;
+        margin-right: 60px;
+        margin-bottom: 20px;
+        list-style: none;
+        a {
+          font-size: 56px;
+          font-weight: bold;
         }
+      }
     }
+  }
 }

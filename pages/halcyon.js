@@ -1,60 +1,67 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import styles from '../styles/halcyon.module.scss'
-import utilStyles from '../styles/utils.module.scss'
-import Link from 'next/link'
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import styles from "../styles/halcyon.module.scss";
+import utilStyles from "../styles/utils.module.scss";
+import Link from "next/link";
 
-
-export default function Halcyon () {
-    return (
-        <Layout>
-            <Head>
-                <title>{siteTitle}</title>
-            </Head>
-            <section className={styles.hero}>
-                <div className={styles.project_title}>
-                    <h1>Launch Vehicle</h1>
-                    <h2>Halcyon</h2>
-                    <h3>Liquid Propelled—Student Built—100km Capable</h3>
-                </div>
-                <img className={styles.halcyon} src={'./images/Halcyon.png'} />
-            </section>
-            <section className={styles.overview}>
-                <div>
-                    <h1>Overview</h1>
-                    <p>Halcyon is our student-designed liquid propellant rocket that will
-    launch past the Karman Line.<br/><br/>
-                    We’re using the most advanced technologies and
-    pushing the boundaries of collegiate rocketry.</p>
-                    <ul>
-                        <li><p>thrust <br/>3,500 lbf</p></li>
-                        <li><p>propellants <br/>RP-1 LOx</p></li>
-                        <li><p>apogee <br/>100+ km</p></li>
-                        <li><p>payload <br/>13.2 lbs</p></li>
-                        <li><p>max speed <br/>mach 3.5</p></li>
-                    </ul>
-                </div>
-                <img className={styles.halcyon} src={'./images/Halcyon.png'} />
-            </section>
-            < section className={styles.compete}>
-                <div className={styles.container}>
-                    <h1>Join Us</h1>
-                    <p>Halcyon is ushering in a new age of ambitious rocketeers and innovators who are shaping the future of space. Find out how to contribute to our dream of reaching the Karman Line.</p>
-                <div className={styles.flex}>
-                    <Link href={'/join'}><a className={styles.apply}>How to Apply</a></Link>
-                    <Link href={'/donate'}><a className={styles.donate}>Donate</a></Link>
-                </div>
-                </div>
-                <img className={styles.vacuum} src={'./images/vacuum.png'} />
-            </section>
-            {/* <section className={styles.havoc}>
-                <div>
-                    <h1>Built to Compete</h1>
-                    <p>Our Halcyon rocket is going head-to-head with
-    other student rocket groups across America.</p>
-                </div>
-                <img className={styles.havocfire} src={'./images/havoc.png'} />
-        </section> */}
-        </Layout>
-    )
+export default function Halcyon() {
+  return (
+    <Layout>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <div className={styles.container}>
+        <div className={styles.section1}>
+          <div className={styles.backgroundFrame}>
+            <img
+              className={styles.background}
+              src={"../images/Halcyon/HalcyonLaunchSunsetNoSun.png"}
+            ></img>
+          </div>
+          <div className={styles.content}>
+            <h1>Halcyon</h1>
+            <h6>TREL's very own Big Rocket</h6>
+          </div>
+        </div>
+        <div className={styles.section2}>
+          <div className={styles.backgroundFrame}>
+            <img
+              className={styles.background}
+              src={"../images/Halcyon/HalcyonExplodedView.png"}
+            ></img>
+          </div>
+          <div className={styles.content}>
+            <h3 className={styles.title}>A Big Rocket</h3>
+            <hr className={styles.break} />
+            <div className={styles.numbers}>
+              <div className={styles.card}>
+                <h3>3500 lbf</h3>
+                <p>thrust</p>
+              </div>
+              <div className={styles.card}>
+                <h3>RP-1 LOx</h3>
+                <p>propellants</p>
+              </div>
+              <div className={styles.card}>
+                <h3>mach 3.5</h3>
+                <p>max speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.section3}>
+          <div className={styles.backgroundFrame}>
+            <img
+              className={styles.background}
+              src={"../images/BenJ Test Stand Walkie 1-31.JPG"}
+            ></img>
+          </div>
+          <div className={styles.content}>
+            <h1>Halcyon</h1>
+            <h6>TREL's very own Big Rocket</h6>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
 }
