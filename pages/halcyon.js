@@ -20,7 +20,7 @@ export default function Halcyon() {
           </div>
           <div className={styles.content}>
             <h1>Halcyon</h1>
-            <h6>TREL's very own Big Rocket</h6>
+            <h6>The Premiere Collegiete Rocket</h6>
           </div>
         </div>
         <div className={styles.section2}>
@@ -31,7 +31,7 @@ export default function Halcyon() {
             ></img>
           </div>
           <div className={styles.content}>
-            <h3 className={styles.title}>A Big Rocket</h3>
+            <h3 className={styles.title}>About Halcyon</h3>
             <hr className={styles.break} />
             <div className={styles.numbers}>
               <div className={styles.card}>

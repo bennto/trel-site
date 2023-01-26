@@ -63,7 +63,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.contentL}>
-            <h2 className={styles.title}>Work With Meaning</h2>
+            <h2 className={styles.title}>Support our Work</h2>
             {/* <hr className={styles.break} /> */}
             <p className={styles.body}>
               We aim to be the best collegiete-level rocketry team around and we
@@ -90,11 +90,12 @@ export default function Home() {
             <p className={styles.body}>
               While TREL is at its core about rocket engineering, we need
               students of all fields and expertises to help continue growing and
-              connecting with the broader community.
+              connecting with the broader community. If you're a UT student
+              passionate about aerospace, we'd love to have you!
             </p>
             <Link href="/join">
               <button className={styles.button} type="button">
-                <h6>Join the Squad</h6>
+                <h6>Join the Team</h6>
               </button>
             </Link>
           </div>

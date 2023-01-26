@@ -219,7 +219,7 @@ export default function Join() {
             <img className={styles.background} src={"../images/Circuits.JPG"} />
           </div>
           <div className={styles.content}>
-            <h1 className={styles.head}>We Are Recruiting!</h1>
+            <h1 className={styles.head}>Recruiting Closed</h1>
             <h5 className={styles.sub}>
               check out our application process below
             </h5>

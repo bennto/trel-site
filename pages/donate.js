@@ -28,9 +28,10 @@ export default function Donate() {
       <section className={styles.donate}>
         <p>
           We wouldn't be able to do what we do without the support of our
-          wonderful sponsors. To join the cause, please contact us{" "}
+          wonderful sponsors. We will be releasing our updated donation packet
+          in the near future. Please contact us{" "}
           <a
-            style={{ color: "rgb(230, 139, 41)" }}
+            style={{ color: "rgb(230, 139, 41)", cursor: "pointer" }}
             onClick={() => {
               const email = "texasrocketengineeringlab@gmail.com";
               navigator.clipboard.writeText(email);
@@ -39,7 +40,7 @@ export default function Donate() {
           >
             via email
           </a>{" "}
-          for more information. Thanks for all your support!
+          for more information. Thank you for your support!"
           <br /> <br />
           We plan to release an updated donation packet detailing our lab and
           project in the near future. Once again, thank you for choosing TREL
