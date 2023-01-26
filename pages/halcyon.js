@@ -49,7 +49,7 @@ export default function Halcyon() {
             </div>
           </div>
         </div>
-        <div className={styles.section3}>
+        {/* <div className={styles.section3}>
           <div className={styles.backgroundFrame}>
             <img
               className={styles.background}
@@ -60,7 +60,7 @@ export default function Halcyon() {
             <h1>Halcyon</h1>
             <h6>TREL's very own Big Rocket</h6>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );
