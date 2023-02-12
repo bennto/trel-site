@@ -87,8 +87,8 @@ export default function Donate() {
             <a href="https://www.boeing.com/" target="_blank">
               <img src={"./logos/boeinglogo.svg"} />
             </a>
-            <a href="https://www.procurify.com/" target="_blank">
-              <img src={"./logos/procurify.svg"} />
+            <a href="https://www.lockheedmartin.com/" target="_blank">
+              <img src={"./logos/lockheedMartin.png"} />
             </a>
             <a href="https://www.epsilon3.io/" target="_blank">
               <img className={styles.smallimg} src={"./logos/epsilon3.svg"} />

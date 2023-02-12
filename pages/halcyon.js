@@ -20,7 +20,7 @@ export default function Halcyon() {
           </div>
           <div className={styles.content}>
             <h1>Halcyon</h1>
-            <h6>The Premiere Collegiete Rocket</h6>
+            <h6>The Premier Collegiate Rocket</h6>
           </div>
         </div>
         <div className={styles.section2}>

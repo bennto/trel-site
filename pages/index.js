@@ -48,10 +48,9 @@ export default function Home() {
             <h2 className={styles.title}>Our Mission</h2>
             <hr className={styles.break} />
             <p className={styles.body}>
-              TREL aims to demystify applied rocket science in an environment
-              focused on diversity, equity and inclusion, knowledge-sharing, and
-              community engagement to teach the interdisciplinary collaboration
-              required by aerospace organizations.
+              At TREL, we make people who make rockets. Our lab demystifies
+              applied rocket science in an space focused on diversity, equity
+              and inclusion, knowledge-sharing, and community engagement."
             </p>
           </div>
         </div>
@@ -88,9 +87,9 @@ export default function Home() {
             <h2 className={styles.title}>Calling All Students</h2>
             {/* <hr className={styles.break} /> */}
             <p className={styles.body}>
-              While TREL is at its core about rocket engineering, we need
-              students of all fields and expertises to help continue growing and
-              connecting with the broader community. If you're a UT student
+              While TREL is at its core about rocket engineering, we need space
+              enthusiasts of all fields and expertises to help continue growing
+              and connecting with the broader community. If you're a UT student
               passionate about aerospace, we'd love to have you!
             </p>
             <Link href="/join">
