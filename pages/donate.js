@@ -81,14 +81,14 @@ export default function Donate() {
             <a href="https://www.siemens.com/" target="_blank">
               <img className={styles.smallimg} src={"./logos/siemens.svg"} />
             </a>
+            <a href="https://www.lockheedmartin.com/" target="_blank">
+              <img src={"./logos/lockheedMartin.png"} />
+            </a>
           </div>
           <h3>Pioneer</h3>
           <div className={styles.supporters}>
             <a href="https://www.boeing.com/" target="_blank">
               <img src={"./logos/boeinglogo.svg"} />
-            </a>
-            <a href="https://www.lockheedmartin.com/" target="_blank">
-              <img src={"./logos/lockheedMartin.png"} />
             </a>
             <a href="https://www.epsilon3.io/" target="_blank">
               <img className={styles.smallimg} src={"./logos/epsilon3.svg"} />
