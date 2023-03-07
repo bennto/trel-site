@@ -1,7 +1,18 @@
+@import "variables";
+@import "type";
+
 .container {
   margin-bottom: 60px;
+  h5 {
+    font-family: $mono;
+    margin-top: 10px;
+  }
   p {
     font-size: 0.9em;
+    line-height: 1.6em;
+    line-break: 2em;
+    margin-bottom: 10px;
+    text-align: justify;
   }
   li {
     font-size: 0.86em;

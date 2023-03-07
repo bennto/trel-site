@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { getAssetURL } from "../../components/lib/getAssetUrl";
 import { getDirectusClient } from "../../components/lib/directus";
 import Layout, { siteTitle } from "../../components/layout";
 import styles from "../../styles/post.module.scss";
@@ -15,9 +16,15 @@ const Post = ({ post, author }) => {
       <div className={styles.container}>
         <div className="max-w-xl mx-auto mt-36">
           <h2>{post.title}</h2>
-          <h5 className="mb-2">
+          <hr />
+          <h5 className="mb-2 text-sm">
             Written by {first_name} {last_name}
           </h5>
+          <img
+            className="w-full h-auto"
+            src={getAssetURL(post.blog_face)}
+            alt=""
+          />
           <div dangerouslySetInnerHTML={{ __html: post.body }}></div>
         </div>
       </div>

@@ -16,24 +16,24 @@ const Blog = ({ posts }) => {
       </head>
 
       <section>
-        <h1 class="mt-40 mb-10 text-center">Blog</h1>
+        <h1 className="mt-40 mb-10 text-center">Blog</h1>
         <div className={styles.container}>
           {/* outer flex to keep content centered */}
           <div className={styles.gutter}></div>
-          <div class="flex flex-row justify-center flex-wrap">
+          <div className="flex flex-row justify-center flex-wrap">
             {posts.map((post) => (
               <Link href={`/posts/${post.id}`}>
-                <div class="max-w-xs rounded m-4 overflow-hidden bg-zinc-900 cursor-pointer">
-                  <div class="w-auto h-52 overflow-hidden">
+                <div className="max-w-xs rounded m-4 overflow-hidden bg-zinc-900 cursor-pointer">
+                  <div className="object-cover w-auto h-52 overflow-hidden">
                     <img
-                      class="w-full h-auto"
+                      className="w-full min-h-full h-auto"
                       src={getAssetURL(post.blog_face)}
                       alt=""
                     />
                   </div>
-                  <div class="px-6 py-6">
-                    <h2 class="font-bold text-xl mb-2">{post.title}</h2>
-                    <p class="text-gray-300 text-sm">{post.date_created}</p>
+                  <div className="px-6 py-6">
+                    <h2 className="font-bold text-xl mb-2">{post.title}</h2>
+                    <p className="text-gray-300 text-sm">{post.date_created}</p>
                   </div>
                 </div>
               </Link>
@@ -55,6 +55,7 @@ export async function getStaticProps() {
   try {
     response = await directus.items("blogs").readByQuery({
       fields: ["*"],
+      sort: ["date_created"],
     });
   } catch (err) {
     console.log("error");
