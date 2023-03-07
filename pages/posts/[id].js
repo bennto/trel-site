@@ -7,7 +7,7 @@ import styles from "../../styles/post.module.scss";
 const Post = ({ post, author }) => {
   const { first_name, last_name } = author.data[0];
   return (
-    <Layout className="container">
+    <Layout>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>{siteTitle}</title>
