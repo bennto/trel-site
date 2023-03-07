@@ -47,7 +47,6 @@ export default function Navbar() {
   // useEffect(()=>{
   //     setDrop(false)
   // }, [])
-
   const [yRef, setYRef] = useRefState();
   const [visibility, setVis] = useState(false);
   let isMobile = false;

@@ -1,16 +1,20 @@
 import Head from "next/head";
+import React, { useEffect } from "react";
 import Layout, { siteTitle } from "../components/layout";
+import { getDirectusClient } from "../components/lib/directus";
 import styles from "../styles/home.module.scss";
 import Link from "next/link";
 import fac2 from "../public/images/PRC/fac-2.jpg";
 
-export default function Home() {
+export default function Home({ output }) {
+  // console.log(output[0].position[1]);
   return (
     <Layout>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>{siteTitle}</title>
       </Head>
+
       <div className={styles.container}>
         <div className={styles.hero}>
           <div className={styles.notVideo}>
@@ -101,4 +105,35 @@ export default function Home() {
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const directus = await getDirectusClient();
+  // GET DATA
+  // We don't need to authenticate if the public role has access to some_public_collection.
+  let response;
+  try {
+    response = await directus.items("members").readByQuery({
+      fields: ["*"],
+    });
+  } catch (err) {
+    console.log("error");
+  }
+
+  const output = response.data;
+  // .map((n) => {
+  //   return {
+  //     id: n.id,
+  //     name: n.name,
+  //     email: n.email,
+  //     ut_eid: n.ut_eid,
+  //     status: n.status,
+  //     position: n.position,
+  //   };
+  // });
+  return {
+    props: {
+      output,
+    },
+  };
 }
