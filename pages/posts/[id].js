@@ -15,11 +15,14 @@ const Post = ({ post, author }) => {
       </Head>
       <div className={styles.container}>
         <div className="max-w-xl mx-auto mt-36">
-          <h2>{post.title}</h2>
+          <h2 className="leading-tight">{post.title}</h2>
           <hr />
-          <h5 className="mb-2 text-sm">
-            Written by {first_name} {last_name}
-          </h5>
+          <div className="mb-2 flex flex-row justify-between">
+            <h5 className="text-sm">
+              Written by {first_name} {last_name}
+            </h5>
+            <h5 className="text-sm">{post.date_created}</h5>
+          </div>
           <img
             className="w-full h-auto"
             src={getAssetURL(post.blog_face)}
@@ -57,6 +60,13 @@ export const getStaticProps = async ({ params }) => {
   const post = await directus.items("blogs").readOne(id, {
     fields: ["*"],
   });
+
+  const initialDate = new Date(post.date_created);
+  let year = initialDate.getFullYear();
+  let month = initialDate.getMonth();
+  let day = initialDate.getDate();
+  let endDate = month + "/" + day + "/" + year;
+  post.date_created = endDate;
 
   const uuid = post.user_created;
   const author = await directus.users.readByQuery({

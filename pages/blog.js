@@ -23,7 +23,7 @@ const Blog = ({ posts }) => {
           <div className="flex flex-row justify-center flex-wrap">
             {posts.map((post) => (
               <Link href={`/posts/${post.id}`}>
-                <div className="max-w-xs rounded m-4 overflow-hidden bg-zinc-900 cursor-pointer">
+                <div className="max-w-xs rounded m-4 overflow-hidden bg-zinc-900 cursor-pointer transition-all hover:bg-sky-800 hover:rounded-none hover:scale-105">
                   <div className="object-cover w-auto h-52 overflow-hidden">
                     <img
                       className="w-full min-h-full h-auto"
@@ -55,23 +55,22 @@ export async function getStaticProps() {
   try {
     response = await directus.items("blogs").readByQuery({
       fields: ["*"],
-      sort: ["date_created"],
+      sort: ["-date_created"],
     });
   } catch (err) {
     console.log("error");
   }
 
+  response.data.map((post) => {
+    const initialDate = new Date(post.date_created);
+    let year = initialDate.getFullYear();
+    let month = initialDate.getMonth();
+    let day = initialDate.getDate();
+    let endDate = month + "/" + day + "/" + year;
+    post.date_created = endDate;
+  });
+
   const posts = response.data;
-  // .map((n) => {
-  //   return {
-  //     id: n.id,
-  //     name: n.name,
-  //     email: n.email,
-  //     ut_eid: n.ut_eid,
-  //     status: n.status,
-  //     position: n.position,
-  //   };
-  // });
 
   return {
     props: {
