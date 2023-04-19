@@ -22,7 +22,7 @@ const Teams = ({ engineer, business }) => {
 
   return (
     <Layout>
-      <div className="p-3 flex-col content-center">
+      <div className="p-3 flex-col content-center overflow-hidden">
         <div className="mb-20" />
         <h1 className="text-center m-8">Teams</h1>
         <div className="flex flex-row flex-wrap justify-center">
