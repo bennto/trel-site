@@ -14,8 +14,8 @@ const Teams = ({ engineer, business }) => {
     visibility: `hidden`,
   };
   const transitionStyles = {
-    entering: { maxHeight: `300px`, opacity: 1, visibility: `visible` },
-    entered: { maxHeight: `300px`, opacity: 1, visibility: `visible` },
+    entering: { maxHeight: `1000px`, opacity: 1, visibility: `visible` },
+    entered: { maxHeight: `1000px`, opacity: 1, visibility: `visible` },
     exiting: { maxHeight: 0, opacity: 0, visibility: `hidden` },
     exited: { maxHeight: 0, opacity: 0, visibility: `hidden` },
   };
