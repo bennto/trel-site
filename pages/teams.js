@@ -5,10 +5,10 @@ import Layout from "../components/layout.js";
 import styles from "../styles/teams.module.scss";
 
 const Teams = ({ engineer, business }) => {
-  const duration = 200;
+  const duration = 600;
 
   const defaultStyles = {
-    transition: `all ${duration}ms ease-in-out`,
+    transition: `all ${duration}ms cubic-bezier(.6,-0.01,.4,1)`,
     maxHeight: 0,
     opacity: 0,
     visibility: `hidden`,
