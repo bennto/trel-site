@@ -135,6 +135,11 @@ export default function Navbar() {
                   <h6>join</h6>
                 </button>
               </Link>
+              <Link href={"/teams"}>
+                <button className={styles.button} type="button">
+                  <h6>teams</h6>
+                </button>
+              </Link>
               <Link href={"/donate"}>
                 <button className={styles.button} type="button">
                   <h6>donate</h6>
@@ -173,6 +178,11 @@ export default function Navbar() {
           <li>
             <Link href={"/join"}>
               <a>join us</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/teams"}>
+              <a>teams</a>
             </Link>
           </li>
           <li>

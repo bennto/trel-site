@@ -107,33 +107,33 @@ export default function Home({ output }) {
   );
 }
 
-export async function getStaticProps() {
-  const directus = await getDirectusClient();
-  // GET DATA
-  // We don't need to authenticate if the public role has access to some_public_collection.
-  let response;
-  try {
-    response = await directus.items("members").readByQuery({
-      fields: ["*"],
-    });
-  } catch (err) {
-    console.log("error");
-  }
-
-  const output = response.data;
-  // .map((n) => {
-  //   return {
-  //     id: n.id,
-  //     name: n.name,
-  //     email: n.email,
-  //     ut_eid: n.ut_eid,
-  //     status: n.status,
-  //     position: n.position,
-  //   };
-  // });
-  return {
-    props: {
-      output,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const directus = await getDirectusClient();
+//   // GET DATA
+//   // We don't need to authenticate if the public role has access to some_public_collection.
+//   let response;
+//   try {
+//     response = await directus.items("members").readByQuery({
+//       fields: ["*"],
+//     });
+//   } catch (err) {
+//     console.log("error");
+//   }
+//   console.log(response);
+//   const output = response.data;
+//   // .map((n) => {
+//   //   return {
+//   //     id: n.id,
+//   //     name: n.name,
+//   //     email: n.email,
+//   //     ut_eid: n.ut_eid,
+//   //     status: n.status,
+//   //     position: n.position,
+//   //   };
+//   // });
+//   return {
+//     props: {
+//       output,
+//     },
+//   };
+// }
