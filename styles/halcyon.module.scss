@@ -4,6 +4,7 @@
 .container {
   top: 0;
   left: 0;
+  overflow: hidden;
   .section1 {
     height: 100vh;
     .backgroundFrame {
@@ -95,38 +96,35 @@
     }
   }
   .section3 {
-    height: 100vh;
-    .backgroundFrame {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      top: 164vh;
-      left: 0;
-      right: 0;
-      height: 100vh;
-      width: auto;
+    min-height: 100vh;
+    position: absolute;
+    .stickyContainer {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      margin: 48px;
+      height: 86vh;
       overflow: hidden;
-      margin: 0 auto;
-      .background {
-        object-fit: cover;
-        display: inline-block;
-        min-height: 100vh;
-        width: 100vw;
-        margin: auto;
-        opacity: 0.4;
+      border-radius: 0.6em;
+      background-color: #1d1c1c;
+      .details {
+        padding: 2em;
+        :nth-child(1) {
+          text-align: center;
+        }
       }
-    }
-    .content {
-      position: relative;
-      margin: 0 auto;
-      top: 40vh;
-      h1,
-      h6 {
-        text-align: center;
-        max-width: 100%;
-      }
-      h1 {
-        margin-bottom: 16px;
+      .imgContainer {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        .image {
+          object-fit: contain;
+          height: 100%;
+          max-width: none;
+        }
       }
     }
   }

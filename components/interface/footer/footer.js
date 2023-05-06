@@ -2,8 +2,8 @@ import styles from "./footer.module.scss";
 import Link from "next/link";
 
 const handleEmail = () => {
-  const email = "texasrocketengineeringlab@gmail.com";
-  navigator.clipboard.writeText(email);
+  const email = "trel@utexas.edu";
+  navigator.clipboard.writeText("trel@utexas.edu");
   alert("Email copied to clipboard!");
 };
 
@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <div className={styles.footer}>
       <ul className="list-none">
-        <li className="float-left h-10 w-10">
+        <li className="icon">
           <a
             className="m-0 p-0"
             href="https://www.linkedin.com/company/texas-rocket-engineering-lab"
@@ -34,7 +34,7 @@ export default function Footer() {
             </svg>
           </a>
         </li>
-        <li className="float-left h-10 w-10">
+        <li className="icon">
           <a
             className="m-0 p-0"
             href="https://www.instagram.com/texasrocketlab/"
@@ -48,7 +48,7 @@ export default function Footer() {
             </svg>
           </a>
         </li>
-        <li className="float-left h-10 w-10">
+        <li className="icon">
           <a
             className="m-0 p-0"
             href="https://twitter.com/texasrocketlab/"
@@ -60,7 +60,7 @@ export default function Footer() {
             </svg>
           </a>
         </li>
-        <li className="float-left h-12 w-12">
+        <li className="icon">
           <a
             className="m-0 p-0"
             href="https://linktr.ee/texasrocketlab"
@@ -95,8 +95,8 @@ export default function Footer() {
             </svg>
           </a>
         </li>
-        <li className="float-left h-10 w-10">
-          <a className="m-0 p-0" onClick={handleEmail}>
+        <li className="icon">
+          <a className="m-0 p-0" href="mailto:trel@utexas.edu">
             <svg
               className="h-full w-full fill-white"
               version="1.1"
@@ -116,7 +116,7 @@ export default function Footer() {
             </svg>
           </a>
         </li>
-        <li className="float-left h-10 w-10">
+        <li className="icon">
           <a
             className="m-0 p-0"
             href="https://www.youtube.com/channel/UCpN-B6VsBV0ttcIctrbTVAw"

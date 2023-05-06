@@ -59,7 +59,7 @@ export default function Join() {
       <body className={styles.container}>
         <div className={styles.section1}>
           <div className={styles.backgroundFrame}>
-            <img className={styles.background} src={"../images/Circuits.JPG"} />
+            <img className={styles.background} src={"../images/TREL2022.JPG"} />
           </div>
           <div className={styles.content}>
             <h1 className={styles.head}>Recruiting Closed</h1>
@@ -88,12 +88,12 @@ export default function Join() {
               <div className={styles.pill}>
                 <p>Session 1</p>
                 <hr />
-                <p>Jan. 17, 6-7pm</p>
+                <p>Pending</p>
               </div>
               <div className={styles.pill}>
                 <p>Session 2</p>
                 <hr />
-                <p>Jan. 18, 6-7pm</p>
+                <p>Pending</p>
               </div>
             </div>
           </div>
@@ -127,12 +127,12 @@ export default function Join() {
               <div className={styles.pill}>
                 <p>Apps Open</p>
                 <hr />
-                <p>January 17</p>
+                <p>Pending</p>
               </div>
               <div className={styles.pill}>
                 <p>Apps Close</p>
                 <hr />
-                <p>January 20</p>
+                <p>Pending</p>
               </div>
             </div>
           </div>
@@ -152,12 +152,12 @@ export default function Join() {
               <div className={styles.pill}>
                 <p>Start</p>
                 <hr />
-                <p>January 20</p>
+                <p>Pending</p>
               </div>
               <div className={styles.pill}>
                 <p>Decisions</p>
                 <hr />
-                <p>February 3</p>
+                <p>Pending</p>
               </div>
             </div>
           </div>

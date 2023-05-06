@@ -32,11 +32,7 @@ export default function Donate() {
           in the near future. Please contact us{" "}
           <a
             style={{ color: "rgb(230, 139, 41)", cursor: "pointer" }}
-            onClick={() => {
-              const email = "texasrocketengineeringlab@gmail.com";
-              navigator.clipboard.writeText(email);
-              alert("Email copied to clipboard!");
-            }}
+            href="mailto:trel@utexas.edu"
           >
             via email
           </a>{" "}

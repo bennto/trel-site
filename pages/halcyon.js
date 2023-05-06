@@ -1,10 +1,17 @@
+import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import styles from "../styles/halcyon.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
 
 export default function Halcyon() {
+  // const { ref, inView } = useInView({
+  //   threshold: [0.1, 1],
+  //   triggerOnce: false,
+  // });
+
   return (
     <Layout>
       <Head>
@@ -49,6 +56,92 @@ export default function Halcyon() {
             </div>
           </div>
         </div>
+        <div className={styles.section3}>
+          <div className={styles.stickyContainer}>
+            <div className={styles.details}>
+              <h2>Engine</h2>
+              <p>
+                Pokem ipsum dolor sit amet Shiftry Combee Aipom Gastrodon
+                Professor Oak Manectric. Kanto Cerulean City Haxorus Electric
+                Abomasnow Porygon2 Cubchoo. Leaf Green Donphan Baltoy Unown
+                Water Gun Staryu Dugtrio.
+              </p>
+            </div>
+            <div className={styles.imgContainer}>
+              <img
+                className={styles.image}
+                src={"../images/Halcyon/HalcyonLaunchSunsetNoSun.png"}
+              />
+            </div>
+          </div>
+          <div className="h-screen" />
+          <div className="h-screen" />
+          <div className="h-screen" />
+        </div>
+        <div className="h-screen" />
+        <div className={styles.section3}>
+          <div className={styles.stickyContainer}>
+            <div className={styles.details}>
+              <h2>Lorem</h2>
+              <p>
+                Pokem ipsum dolor sit amet Shiftry Combee Aipom Gastrodon
+                Professor Oak Manectric. Kanto Cerulean City Haxorus Electric
+                Abomasnow Porygon2 Cubchoo. Leaf Green Donphan Baltoy Unown
+                Water Gun Staryu Dugtrio.
+              </p>
+            </div>
+            <div className={styles.imgContainer}>
+              <img
+                className={styles.image}
+                src={"../images/Burst Stand Action Torque 1-21.JPG"}
+              />
+            </div>
+          </div>
+          <div className="h-screen" />
+          <div className="h-screen" />
+        </div>
+        <div className="h-screen" />
+        <div className={styles.section3}>
+          <div className={styles.stickyContainer}>
+            <div className={styles.details}>
+              <h2>Lorem</h2>
+              <p>
+                Pokem ipsum dolor sit amet Shiftry Combee Aipom Gastrodon
+                Professor Oak Manectric. Kanto Cerulean City Haxorus Electric
+                Abomasnow Porygon2 Cubchoo. Leaf Green Donphan Baltoy Unown
+                Water Gun Staryu Dugtrio.
+              </p>
+            </div>
+            <div className={styles.imgContainer}>
+              <img
+                className={styles.image}
+                src={"../images/Halcyon/HalcyonLaunchSunsetNoSun.png"}
+              />
+            </div>
+          </div>
+          <div className="h-screen" />
+        </div>
+        <div className="h-screen" />
+        <div className={styles.section3}>
+          <div className={styles.stickyContainer}>
+            <div className={styles.details}>
+              <h2>Lorem</h2>
+              <p>
+                Pokem ipsum dolor sit amet Shiftry Combee Aipom Gastrodon
+                Professor Oak Manectric. Kanto Cerulean City Haxorus Electric
+                Abomasnow Porygon2 Cubchoo. Leaf Green Donphan Baltoy Unown
+                Water Gun Staryu Dugtrio.
+              </p>
+            </div>
+            <div className={styles.imgContainer}>
+              <img
+                className={styles.image}
+                src={"../images/Burst Stand Action Torque 1-21.JPG"}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="h-screen" />
         {/* <div className={styles.section3}>
           <div className={styles.backgroundFrame}>
             <img
