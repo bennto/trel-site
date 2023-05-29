@@ -103,9 +103,9 @@ export default function Halcyon() {
                 ring is connected to a linear actuator that pushes and pulls on
                 the ring.
               </p>
-              <h4 className={styles.partSub}>Details</h4>
+              {/* <h4 className={styles.partSub}>Details</h4>
               <hr className={styles.partDivide} />
-              {/* <ol className={styles.partBullets}>
+              <ol className={styles.partBullets}>
                 <li>Kerolox engine</li>
                 <li>Regeneratively cooled</li>
                 <li>Additively manufactured / 3D printed</li>
