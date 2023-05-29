@@ -112,8 +112,21 @@
       background-color: #1d1c1c;
       .details {
         padding: 2em;
-        :nth-child(1) {
+        .partName {
           text-align: center;
+          margin-bottom: 8px;
+        }
+        .partSub {
+          text-align: left;
+          margin-top: 0.5em;
+        }
+        .partDivide {
+          margin: 0.4em 0 0.4em 0.5em;
+          width: 1em;
+        }
+        .partBullets {
+          list-style-type: square;
+          margin-left: 1.4em;
         }
       }
       .imgContainer {
