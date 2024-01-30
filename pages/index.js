@@ -52,9 +52,7 @@ export default function Home({ output }) {
             <h2 className={styles.title}>Our Mission</h2>
             <hr className={styles.break} />
             <p className={styles.body}>
-              At TREL, we make people who make rockets. Our lab demystifies
-              applied rocket science in an space focused on diversity, equity
-              and inclusion, knowledge-sharing, and community engagement.
+              We make people who make rockets. Through long-term rocket projects, TREL demystifies applied rocket science in an environment focused on kindness, access, knowledge-sharing, and community engagement to teach the interdisciplinary collaboration required by aerospace organizations.
             </p>
           </div>
         </div>

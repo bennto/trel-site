@@ -88,12 +88,12 @@ export default function Join() {
               <div className={styles.pill}>
                 <p>Session 1</p>
                 <hr />
-                <p>Pending</p>
+                <p>Jan 22</p>
               </div>
               <div className={styles.pill}>
                 <p>Session 2</p>
                 <hr />
-                <p>Pending</p>
+                <p>Jan 23</p>
               </div>
             </div>
           </div>
@@ -127,12 +127,12 @@ export default function Join() {
               <div className={styles.pill}>
                 <p>Apps Open</p>
                 <hr />
-                <p>Pending</p>
+                <p>Jan 23</p>
               </div>
               <div className={styles.pill}>
                 <p>Apps Close</p>
                 <hr />
-                <p>Pending</p>
+                <p>Jan 26</p>
               </div>
             </div>
           </div>
@@ -152,12 +152,12 @@ export default function Join() {
               <div className={styles.pill}>
                 <p>Start</p>
                 <hr />
-                <p>Pending</p>
+                <p>Jan 27</p>
               </div>
               <div className={styles.pill}>
                 <p>Decisions</p>
                 <hr />
-                <p>Pending</p>
+                <p>Feb 7</p>
               </div>
             </div>
           </div>

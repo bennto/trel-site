@@ -4,7 +4,7 @@ import Layout, { siteTitle } from "../components/layout";
 import styles from "../styles/halcyon.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
-import { useInView } from "react-intersection-observer";
+ import { useInView } from "react-intersection-observer";
 
 export default function Halcyon() {
   // const { ref, inView } = useInView({
@@ -61,10 +61,7 @@ export default function Halcyon() {
             <div className={styles.details}>
               <h3 className={styles.partName}>Engine</h3>
               <p className={styles.partBody}>
-                Pokem ipsum dolor sit amet Shiftry Combee Aipom Gastrodon
-                Professor Oak Manectric. Kanto Cerulean City Haxorus Electric
-                Abomasnow Porygon2 Cubchoo. Leaf Green Donphan Baltoy Unown
-                Water Gun Staryu Dugtrio.
+
               </p>
               <h4 className={styles.partSub}>Details</h4>
               <hr className={styles.partDivide} />
